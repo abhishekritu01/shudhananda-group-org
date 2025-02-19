@@ -42,7 +42,7 @@ const ContactSection = () => (
           />
           <textarea
             placeholder="Your Message"
-            rows="5"
+            rows={5}
             className="w-full p-4 rounded-lg border border-gray-300 text-gray-900 focus:outline-none focus:ring-2 focus:ring-purple-500 transition"
             required
           />
