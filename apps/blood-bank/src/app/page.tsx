@@ -12,7 +12,6 @@ import Footer from './component/Footer'
 const page = () => {
   return (
     <>
-    
       <HeaderNavigation />
       <HeroSection />
       <HowItWorks />
