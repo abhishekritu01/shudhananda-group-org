@@ -117,7 +117,7 @@ import { motion } from "framer-motion";
 
 const HeroSection = () => {
   return (
-    <div className="h-screen flex flex-col bg-gray-50">
+    <div className=" flex flex-col bg-gray-50">
       <section
         className="relative w-full bg-cover bg-center text-white py-20 px-6 md:px-16 lg:px-24 flex-grow"
         style={{
@@ -126,7 +126,7 @@ const HeroSection = () => {
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-purple-900 via-purple-800 to-purple-700 bg-opacity-90"></div>
-        <div className="relative max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-16">
+        <div className="relative max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-16 mt-20">
           {/* Left Content */}
           <motion.div
             initial={{ opacity: 0, y: -30 }}

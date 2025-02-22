@@ -1,8 +1,8 @@
 
 const AboutSection = () => (
     <section className="py-20 bg-gray-50">
-      <div className="max-w-6xl mx-auto text-center px-6">
-        <h2 className="text-4xl font-extrabold text-gray-900 mb-6">
+      <div className="max-w-6xl mx-auto text-center px-6 lg:px-0">
+        <h2 className="text-4xl font-extrabold text-gray-900 mb-6 ">
           About CurePlus Hospitals
         </h2>
         <p className="text-lg text-gray-700 leading-relaxed">
