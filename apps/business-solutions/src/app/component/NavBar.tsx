@@ -62,7 +62,7 @@ const NavBar = () => {
         {/* Logo */}
         <div className="flex items-center space-x-3">
           <Image src="/SBPL.png" alt="SBPL Logo" width={50} height={50} />
-          <h1 className="text-xl font-semibold text-white tracking-wide">
+          <h1 className=" text-sm md:text-xl font-semibold text-white tracking-wide">
             Sudhanand Business Solutions
           </h1>
         </div>
@@ -98,8 +98,8 @@ const NavBar = () => {
       {/* Mobile Navigation */}
       <div
         ref={menuRef}
-        className={`fixed top-16 left-0 w-full bg-gray-900 shadow-md p-6 transition-transform duration-300 ease-in-out ${
-          isOpen ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
+        className={`absolute top-16 left-0 w-full bg-gray-900 shadow-md p-6 transition-all duration-300 ease-in-out z-50 ${
+          isOpen ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"
         } md:hidden`}
       >
         <nav className="flex flex-col space-y-4 text-center">
