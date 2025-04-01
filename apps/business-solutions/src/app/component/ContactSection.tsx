@@ -62,7 +62,7 @@ const ContactUsSection = () => {
 
       <div className="mx-auto max-w-6xl text-center relative z-10">
         <h2 className="text-4xl font-extrabold tracking-tight text-gray-800 sm:text-5xl animate-fade-in-up">
-          Get In Touch <span className="text-blue-600">With Us</span>
+          Get In Touch <span className="text-orange-600">With Us</span>
         </h2>
         <p className="mt-6 text-lg text-gray-600 max-w-3xl mx-auto animate-fade-in">
           Have a question? We&apos;re here to assist you. Get in touch with our team for any inquiries, suggestions, or support.
@@ -81,7 +81,7 @@ const ContactUsSection = () => {
           <div className="text-lg text-gray-600 flex gap-2">
             For quick assistance, email us at{' '}
             <div className="animate-bounce">
-              <Link href="mailto:info@sudhanandgroup.com" className="text-blue-600 font-semibold hover:text-blue-800 transition duration-300">
+              <Link href="mailto:info@sudhanandgroup.com" className="text-orange-600 font-semibold hover:text-orange-800 transition duration-300 text-xs sm:text-sm">
               info@sudhanandgroup.com
               </Link>
             </div>
@@ -145,7 +145,7 @@ const ContactUsSection = () => {
               <button
                 type="submit"
                 disabled={loading}
-                className="rounded-md bg-gradient-to-r from-blue-600 to-blue-800 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:from-blue-700 hover:to-blue-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 transition duration-300"
+                className="rounded-md bg-gradient-to-r from-orange-600 to-orange-700 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:from-orange-800 hover:to-orange-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 transition duration-300"
               >
                 {loading ? 'Sending...' : 'Send Message'}
               </button>

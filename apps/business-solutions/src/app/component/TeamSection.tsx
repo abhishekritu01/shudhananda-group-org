@@ -41,7 +41,7 @@ const teams = [
 
 const TeamSection = () => {
   return (
-    <section className="bg-gray-50 " id="projects">
+    <section className="bg-gray-50 " id="team">
       <motion.div
         whileHover={{ scale: 1.02 }}
         transition={{ type: "spring", stiffness: 200 }}

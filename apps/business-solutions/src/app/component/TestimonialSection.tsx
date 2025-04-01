@@ -8,7 +8,7 @@ const TestimonialSection = () => {
           {/* Left Side - Title & Description */}
           <div className="lg:col-span-5 text-center lg:text-left">
             <h2 className="text-5xl font-bold text-gray-900">
-              Client <span className="text-blue-600">Testimonials</span>
+              Client <span className="text-orange-600">Testimonials</span>
             </h2>
             <p className="mt-6 text-lg text-gray-600">
               What Our Partners Say About SBPL&apos;s Impact on Their Businesses.
