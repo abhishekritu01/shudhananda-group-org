@@ -11,13 +11,13 @@ import ContactUs from './component/ContactUs'
 
 
 const navigation = [
-  // { name: 'Home', href: '/', current: false },
+  { name: 'Home', href: '/', current: true },
   { name: 'Who We Are', href: '/story', current: false },
   { name: 'Blood Facts', href: '/facts', current: false },
   { name: 'Can I donate', href: '/donate', current: false },
-  { name: 'FAQs' ,href:'/faq',current :false}
+  { name: 'FAQs', href: '/faq', current: false },
+  { name: 'Join Us', href: '/join', current: false }
 ];
-
 
 const page = () => {
   return (
@@ -34,5 +34,4 @@ const page = () => {
     </>
   )
 }
-
 export default page

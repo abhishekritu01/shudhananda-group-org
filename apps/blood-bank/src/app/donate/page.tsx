@@ -288,9 +288,13 @@ const navigation = [
   { name: 'Home', href: '/', current: false },
   { name: 'Who We Are', href: '/story', current: false },
   { name: 'Blood Facts', href: '/facts', current: false },
-  { name: 'Eligibility', href: '/donate', current: true },
-  { name: 'Contact', href: '#', current: false },
+  { name: 'Can I donate', href: '/donate', current: true },
+  { name: 'FAQs' ,href:'/faq',current :false},
+  {name: 'Join Us', href: '/join', current: false}
+
 ];
+
+
 
 const EligibilitySection = () => (
   <section className="max-w-5xl mx-auto px-4 py-8">
@@ -336,7 +340,8 @@ const EligibilitySection = () => (
         </ul>
       </div>
     </div>
-
+    
+    <div className="grid md:grid-cols-2 gap-6 mb-10">
     <div className="mb-10">
       <h3 className="text-2xl font-bold mb-4 flex items-center gap-2 text-blue-700">
         <FaCheckCircle /> Do’s (Before & After Donation)
@@ -366,9 +371,10 @@ const EligibilitySection = () => (
         <li>Avoid aspirin/blood thinners 48 hrs before platelet donation.</li>
       </ul>
     </div>
+    </div>
 
-    <div>
-      <h2 className="text-3xl font-bold mb-6 flex items-center gap-2 text-red-600">
+    <div  className='mb-10'>
+      <h2 className="text-3xl font-bold mb-6 flex items-center gap-2 text-red-600 ">
         <FaTint /> What Happens to Donated Blood?
       </h2>
       <ol className="list-decimal ml-6 text-gray-800 space-y-3">

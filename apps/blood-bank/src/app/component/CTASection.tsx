@@ -2,6 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { MdBloodtype } from "react-icons/md";
+import Link from "next/link";
 
 const CTASection = () => {
   return (
@@ -17,13 +18,15 @@ const CTASection = () => {
       <p className="text-lg mb-6">
         Your blood donation can save lives. Join us in our mission today!
       </p>
+      <Link href='/donor-form'> 
       <motion.button 
         className="bg-white text-red-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-200 transition"
         whileHover={{ scale: 1.1 }}
       >
-        Donate Now
+       Donate Now
         <MdBloodtype className="inline-block ml-2" />
       </motion.button>
+      </Link>
     </section>
   );
 };

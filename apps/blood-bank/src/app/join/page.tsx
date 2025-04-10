@@ -9,7 +9,6 @@ const navigation = [
   { name: 'Home', href: '/', current: false },
   { name: 'Who We Are', href: '/story', current: false },
   { name: 'Can I Donate?', href: '/donate', current: false },
-  { name: 'Contact', href: '#', current: false },
   { name: 'Blood Facts', href: '/facts', current: false },
   { name: 'Join Us', href: '/join', current: true },
 ];

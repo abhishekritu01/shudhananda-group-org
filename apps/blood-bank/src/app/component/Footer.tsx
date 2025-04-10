@@ -4,6 +4,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -56,7 +57,13 @@ const Footer = () => {
             </div>
           </div>
           <div className="grid md:grid-cols-3 gap-8 mb-6">
-            <div>
+
+            <div className= "flex flex-col items-center">
+            <img
+              className="h-20 w-auto rounded-md bg-white p-1 shadow-md mb-4"
+              src="/bloodBank.png"
+              alt="Blood Bank"
+            />
               <h3 className="text-xl font-semibold mb-2">Contact Us</h3>
               <p className="text-gray-400">Email: support@blooddonation.org</p>
               <p className="text-gray-400">Phone: +1 234 567 890</p>
@@ -64,9 +71,9 @@ const Footer = () => {
             <div>
               <h3 className="text-xl font-semibold mb-2">Quick Links</h3>
               <ul className="text-gray-400">
-                <li><a href="#hero" className="hover:text-red-600 transition">Home</a></li>
-                <li><a href="#how-it-works" className="hover:text-red-600 transition">How It Works</a></li>
-                <li><a href="#about" className="hover:text-red-600 transition">About</a></li>
+                <li><Link href="/" className="hover:text-red-600 transition">Home</Link></li>
+                <li><Link href="#how-it-works" className="hover:text-red-600 transition">How It Works</Link></li>
+                <li><Link href="#about" className="hover:text-red-600 transition">About</Link></li>
               </ul>
             </div>
             <div>

@@ -4,11 +4,10 @@ import {
   DisclosureButton,
   DisclosurePanel,
   Menu,
-  MenuButton,
   MenuItem,
-  MenuItems,
+  MenuItems
 } from '@headlessui/react';
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import clsx from 'clsx';
 import Link from 'next/link';
 
@@ -40,11 +39,13 @@ const BloodBankNavbar = ({ navigation }: Props) => {
 
           {/* Logo */}
           <div className="flex items-center gap-3">
+            <Link href="/" className="flex items-center">
             <img
               className="h-10 w-auto rounded-md bg-white p-1 shadow-md"
               src="/bloodBank.png"
               alt="Blood Bank"
             />
+            </Link>
             
           </div>
 
@@ -73,19 +74,18 @@ const BloodBankNavbar = ({ navigation }: Props) => {
               type="button"
               className="rounded-full bg-red-900 p-1 text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-white"
             >
-              <BellIcon className="h-6 w-6" aria-hidden="true" />
-              <span className="sr-only">View notifications</span>
+              {/* <BellIcon className="h-6 w-6" aria-hidden="true" />
+              <span className="sr-only">View notifications</span> */}
             </button>
 
-            {/* Profile dropdown */}
             <Menu as="div" className="relative">
-              <MenuButton className="flex rounded-full bg-red-900 text-sm focus:outline-none focus:ring-2 focus:ring-white">
+              {/* <MenuButton className="flex rounded-full bg-red-900 text-sm focus:outline-none focus:ring-2 focus:ring-white">
                 <img
                   className="h-8 w-8 rounded-full object-cover"
                   src="https://i.pravatar.cc/300"
                   alt="User Avatar"
                 />
-              </MenuButton>
+              </MenuButton> */}
               <MenuItems className="absolute right-0 mt-2 w-48 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black/10 focus:outline-none">
                 <MenuItem>
                   {({ focus }) => (
@@ -126,6 +126,7 @@ const BloodBankNavbar = ({ navigation }: Props) => {
               </MenuItems>
             </Menu>
           </div>
+
         </div>
       </div>
 

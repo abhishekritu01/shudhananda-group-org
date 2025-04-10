@@ -9,36 +9,41 @@ import HeaderNavigation from '../component/HeaderNavigation'
 
 const navigation = [
   { name: 'Home', href: '/', current: false },
-  // { name: 'Who We Are', href: '/story', current: true },
+  { name: 'Who We Are', href: '/story', current: true },
   { name: 'Blood Facts', href: '/facts', current: false },
-  { name: 'Can I Donate?', href: '/donate', current: false },
-  { name: 'Contact', href: '#', current: false },
-]
+  { name: 'Can I donate', href: '/donate', current: false },
+  { name: 'FAQs', href: '/faq', current: false },
+  { name: 'Join Us', href: '/join', current: false }
+];
 
 const teamMembers = [
   {
     name: 'Dr. Arjun Sachidanand',
     role: 'Managing Trustee',
     image: '/ArjunSachidanand.jpeg',
+    bio: 'Dr. Arjun Sachidanand is a visionary leader and the driving force behind CurePlus Blood Bank. With a deep commitment to healthcare and community service, he has dedicated his career to improving access to life-saving resources in rural Karnataka.',
   },
   {
     name: 'Dr. Sini Arjun',
     role: 'Medical Officer',
     image: '/DrSiniArjun.jpeg',
+    bio: 'Dr. Sini Arjun is a compassionate medical officer at CurePlus Blood Bank, dedicated to ensuring the safety and quality of blood donations. Her expertise and commitment to patient care are invaluable to our mission.',
   },
   {
     name: 'Capt. Raghu Das',
     role: 'Chief Operating Officer',
     image: '/RaghuDas.jpeg',
+    bio: 'Capt. Raghu Das is a seasoned professional with extensive experience in operations management. His strategic vision and leadership skills are instrumental in ensuring the efficient functioning of CurePlus Blood Bank.',
   },
   {
     name: 'Mrs. Rashmi N. Raj',
     role: 'General Manager',
     image: '/RashmiRaj.jpeg',
+    bio: 'Mrs. Rashmi N. Raj is a dynamic general manager at CurePlus Blood Bank, overseeing daily operations and ensuring that our mission of saving lives is met with efficiency and compassion.',
   },
 ]
 
-export default function WhoWeArePage() {
+const page = () => {
   return (
     <>
       <HeaderNavigation navigation={navigation} />
@@ -107,9 +112,9 @@ export default function WhoWeArePage() {
       </section>
 
       {/* Leadership Team */}
-      <section className="bg-white py-20 px-6 md:px-20">
+      <section className="bg-white py-20 px-6 md:px-20 ">
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-red-700 mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12">
             Meet Our Leadership
           </h2>
 
@@ -118,22 +123,54 @@ export default function WhoWeArePage() {
               <motion.div
                 key={index}
                 whileHover={{ scale: 1.03 }}
-                className="bg-red-50 p-6 rounded-2xl shadow-lg text-center"
+                className="relative bg-gray-50 border border-gray-200 rounded-2xl shadow-md overflow-hidden group transition duration-300 ease-in-out hover:shadow-xl h-[300px]"
               >
-                <Image
-                  src={member.image}
-                  alt={member.name}
-                  width={120}
-                  height={120}
-                  className="rounded-full mx-auto mb-4 object-cover"
-                />
-                <h4 className="text-lg font-bold text-gray-800">{member.name}</h4>
-                <p className="text-sm text-gray-600">{member.role}</p>
+                {/* Default View */}
+                <motion.div
+                  initial={{ opacity: 1 }}
+                  whileHover={{ opacity: 0 }}
+                  transition={{ duration: 0.3 }}
+                  className="absolute inset-0 flex flex-col items-center justify-center p-6 z-10"
+                >
+                  <motion.div
+                    whileHover={{ y: -10 }}
+                    transition={{ type: 'spring', stiffness: 200 }}
+                    className="mb-4"
+                  >
+                    <Image
+                      src={member.image}
+                      alt={member.name}
+                      width={100}
+                      height={100}
+                      className="rounded-full border-4 border-white shadow-md"
+                    />
+                  </motion.div>
+                  <h4 className="text-lg font-semibold text-gray-800">{member.name}</h4>
+                  <p className="text-sm text-gray-500">{member.role}</p>
+                </motion.div>
+
+                {/* Hover View - Slide Up Bio */}
+                <motion.div
+                  initial={{ y: 50, opacity: 0 }}
+                  whileHover={{ y: 0, opacity: 1 }}
+                  transition={{ duration: 0.5, ease: 'easeOut' }}
+                  className="absolute inset-0 flex flex-col items-center justify-center bg-white px-6 text-center z-20"
+                >
+                  <Image
+                    src={member.image}
+                    alt={member.name}
+                    width={50}
+                    height={50}
+                    className="rounded-full border-4 border-white shadow-md mb-4"
+                  />
+                  <p className="text-sm text-gray-700 leading-relaxed">{member.bio}</p>
+                </motion.div>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
+
 
       {/* CTA Section */}
       <section className="bg-red-700 text-white py-16 text-center px-6 md:px-20">
@@ -157,3 +194,5 @@ export default function WhoWeArePage() {
     </>
   )
 }
+
+export default page

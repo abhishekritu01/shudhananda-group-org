@@ -12,9 +12,10 @@ type FAQ = {
 const navigation = [
   { name: 'Home', href: '/', current: false },
   { name: 'Who We Are', href: '/story', current: false },
-  { name: 'Can I Donate?', href: '/donate', current: false },
-  { name: 'Contact', href: '#', current: false },
-  { name: 'Blood Facts', href: '/facts', current: true },
+  { name: 'Blood Facts', href: '/facts', current: false },
+  { name: 'Can I donate', href: '/donate', current: false },
+  { name: 'FAQs' ,href:'/faq',current :true},
+  {name: 'Join Us', href: '/join', current: false}
 ];
 
 const faqs: FAQ[] = [

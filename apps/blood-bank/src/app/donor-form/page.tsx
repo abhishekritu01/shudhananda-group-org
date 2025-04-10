@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import { FaUser, FaEnvelope, FaPhoneAlt, FaMapMarkerAlt, FaTint } from 'react-icons/fa';
 import HeaderNavigation from '../component/HeaderNavigation';
 import Footer from '../component/Footer';
+import axios from 'axios';
+import { toast } from 'react-toastify';
 
 const navigation = [
   { name: 'Home', href: '/', current: false },
@@ -23,15 +25,46 @@ const DonorFormPage = () => {
     bloodGroup: '',
   });
 
+  const [loading, setLoading] = useState(false);
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Donor Form Submitted:', formData);
-    // Optional: API call or form validation
+    setLoading(true);
+
+    try {
+      const res = await axios.post('/api/doner', {
+        name: formData.fullName,
+        email: formData.email,
+        phone: formData.phone,
+        location: formData.location,
+        bloodGroup: formData.bloodGroup,
+      });
+
+      if (res.status === 201) {
+        toast.success('Donor registered successfully!', { autoClose: 2000, position: "top-right" });
+        setFormData({
+          fullName: '',
+          email: '',
+          phone: '',
+          location: '',
+          bloodGroup: '',
+        });
+      }
+    } catch (err: unknown) {
+      if (axios.isAxiosError(err)) {
+        toast.error(err.response?.data.message || 'An error occurred!', { autoClose: 2000, position: "top-right" });
+      }
+      else {
+        toast.error('An unexpected error occurred!', { autoClose: 2000, position: "top-right" });
+      }
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -50,6 +83,7 @@ const DonorFormPage = () => {
               value={formData.fullName}
               onChange={handleChange}
               placeholder="Full Name"
+              required
               className="w-full bg-transparent outline-none"
             />
           </div>
@@ -60,6 +94,7 @@ const DonorFormPage = () => {
               name="email"
               value={formData.email}
               onChange={handleChange}
+              required
               placeholder="Email Address"
               className="w-full bg-transparent outline-none"
             />
@@ -70,6 +105,7 @@ const DonorFormPage = () => {
               type="tel"
               name="phone"
               value={formData.phone}
+              required
               onChange={handleChange}
               placeholder="Phone Number"
               className="w-full bg-transparent outline-none"
@@ -81,6 +117,7 @@ const DonorFormPage = () => {
               type="text"
               name="location"
               value={formData.location}
+              required
               onChange={handleChange}
               placeholder="Location"
               className="w-full bg-transparent outline-none"
@@ -91,6 +128,7 @@ const DonorFormPage = () => {
             <select
               name="bloodGroup"
               value={formData.bloodGroup}
+              required
               onChange={handleChange}
               className="w-full bg-transparent outline-none"
             >
@@ -105,9 +143,36 @@ const DonorFormPage = () => {
           <div className="text-center">
             <button
               type="submit"
-              className="bg-red-600 hover:bg-red-700 text-white py-2 px-6 rounded-md font-medium transition"
+              className="bg-red-600 hover:bg-red-700 text-white py-2 px-6 rounded-md font-medium transition flex items-center justify-center gap-2"
+              disabled={loading}
             >
-              Submit
+              {loading ? (
+                <>
+                  <svg
+                    className="animate-spin h-5 w-5 text-white"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <circle
+                      className="opacity-25"
+                      cx="12"
+                      cy="12"
+                      r="10"
+                      stroke="currentColor"
+                      strokeWidth="4"
+                    ></circle>
+                    <path
+                      className="opacity-75"
+                      fill="currentColor"
+                      d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
+                    ></path>
+                  </svg>
+                  Submitting...
+                </>
+              ) : (
+                'Submit'
+              )}
             </button>
           </div>
         </form>

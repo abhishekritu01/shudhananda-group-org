@@ -193,7 +193,8 @@ const Testimonials = () => {
         {testimonials.map((testimonial, index) => (
           <motion.div 
             key={index} 
-            className="bg-gradient-to-r from-red-600 to-red-900 p-8 rounded-lg shadow-xl hover:scale-105 transition-all duration-300"
+            // className="bg-gradient-to-r from-red-600 to-red-900 p-8 rounded-lg shadow-xl hover:scale-105 transition-all duration-300"
+            className="bg-gray-100 p-8 rounded-lg shadow-xl hover:scale-105 transition-all duration-300 text-zinc-900"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.3 }}
@@ -205,13 +206,13 @@ const Testimonials = () => {
                 className="w-20 h-20 rounded-full border-4 border-white shadow-lg"
               />
             </div>
-            <p className="italic text-white mb-4 relative">
-              <FaQuoteLeft className="absolute top-0 left-0 text-2xl text-white -ml-6" />
+            <p className="italic text-zinc-900 mb-4 relative">
+              <FaQuoteLeft className="absolute top-0 left-0 text-2xl text-zinc-900  -ml-6" />
               <span>{testimonial.feedback}</span>
-              <FaQuoteRight className="absolute bottom-0 right-0 text-2xl text-white -mr-6" />
+              <FaQuoteRight className="absolute bottom-0 right-0 text-2xl text-zinc-900 -mr-6" />
             </p>
-            <h3 className="text-xl font-semibold text-white">{testimonial.name}</h3>
-            <p className="text-white text-sm">{testimonial.role}</p>
+            <h3 className="text-xl font-semibold text-zinc-900 ">{testimonial.name}</h3>
+            <p className="text-zinc-900  text-sm">{testimonial.role}</p>
           </motion.div>
         ))}
       </div>
