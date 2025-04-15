@@ -13,7 +13,7 @@ const NavBar = () => {
     { id: "about", label: "About" },
     { id: "services", label: "Services" },
     { id: "team", label: "Our Team" },
-    { id: "projects", label: "Projects & Case Studies" },
+    { id: "projects", label: "Projects" },
     { id: "testimonials", label: "Testimonials" },
     { id: "contact", label: "Contact" },
   ];
@@ -98,7 +98,7 @@ const NavBar = () => {
           </Link>
           <Link href="/about" passHref>
             <p className="text-sm font-medium text-orange-600 hover:text-orange-800 transition-colors duration-300">
-              About Us
+            Who We Are
             </p>
           </Link>
         </nav>
@@ -142,7 +142,7 @@ const NavBar = () => {
 
         <Link href="/about" passHref>
           <p className="text-lg font-medium text-orange-600 hover:text-orange-800 transition-colors duration-300">
-            About Us
+          Who We Are
           </p>
         </Link>
         </div>

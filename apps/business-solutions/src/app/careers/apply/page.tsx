@@ -24,79 +24,79 @@ interface JobListing {
     applyLink: string
 }
 
-const jobListings = [
-    {
-        id: 1,
-        title: 'Frontend Developer',
-        location: 'Remote',
-        type: 'Full-time',
-        description:
-            'We are looking for a talented Frontend Developer to build intuitive user interfaces using React and modern web technologies.',
-        techStack: 'React, JavaScript, CSS, HTML, Redux',
-        salary: '₹8-12 LPA',
-        experience: '3-5 years',
-        applyLink: '/apply/frontend-developer',
-    },
-    {
-        id: 2,
-        title: 'Backend Engineer',
-        location: 'Remote',
-        type: 'Full-time',
-        description:
-            'Join our backend team to design and implement scalable APIs and database solutions for our SaaS products.',
-        techStack: 'Node.js, Express, MongoDB, AWS, Docker',
-        salary: '₹10-15 LPA',
-        experience: '3-6 years',
-        applyLink: '/apply/backend-engineer',
-    },
-    {
-        id: 3,
-        title: 'Product Manager',
-        location: 'Bangalore, India',
-        type: 'Full-time',
-        description:
-            'We need a Product Manager to define and drive product strategy, ensuring alignment with business objectives.',
-        techStack: 'Product Management, Agile, Jira, Scrum',
-        salary: '₹15-20 LPA',
-        experience: '5+ years',
-        applyLink: '/apply/product-manager',
-    },
-    // Add more jobs as needed...
-]
+// const jobListings = [
+//     {
+//         id: 1,
+//         title: 'Frontend Developer',
+//         location: 'Remote',
+//         type: 'Full-time',
+//         description:
+//             'We are looking for a talented Frontend Developer to build intuitive user interfaces using React and modern web technologies.',
+//         techStack: 'React, JavaScript, CSS, HTML, Redux',
+//         salary: '₹8-12 LPA',
+//         experience: '3-5 years',
+//         applyLink: '/apply/frontend-developer',
+//     },
+//     {
+//         id: 2,
+//         title: 'Backend Engineer',
+//         location: 'Remote',
+//         type: 'Full-time',
+//         description:
+//             'Join our backend team to design and implement scalable APIs and database solutions for our SaaS products.',
+//         techStack: 'Node.js, Express, MongoDB, AWS, Docker',
+//         salary: '₹10-15 LPA',
+//         experience: '3-6 years',
+//         applyLink: '/apply/backend-engineer',
+//     },
+//     {
+//         id: 3,
+//         title: 'Product Manager',
+//         location: 'Bangalore, India',
+//         type: 'Full-time',
+//         description:
+//             'We need a Product Manager to define and drive product strategy, ensuring alignment with business objectives.',
+//         techStack: 'Product Management, Agile, Jira, Scrum',
+//         salary: '₹15-20 LPA',
+//         experience: '5+ years',
+//         applyLink: '/apply/product-manager',
+//     },
+//     // Add more jobs as needed...
+// ]
 
 const ApplyPage = () => {
     const [showModal, setShowModal] = useState(false)
     const [selectedJob, setSelectedJob] = useState<JobListing | null>(null)
-    const [currentPage, setCurrentPage] = useState(1)
-    const jobsPerPage = 2
+    // const [currentPage, setCurrentPage] = useState(1)
+    // const jobsPerPage = 2
 
-    const totalPages = Math.ceil(jobListings.length / jobsPerPage)
-    const indexOfLastJob = currentPage * jobsPerPage
-    const indexOfFirstJob = indexOfLastJob - jobsPerPage
-    const currentJobs = jobListings.slice(indexOfFirstJob, indexOfLastJob)
+    // const totalPages = Math.ceil(jobListings.length / jobsPerPage)
+    // const indexOfLastJob = currentPage * jobsPerPage
+    // const indexOfFirstJob = indexOfLastJob - jobsPerPage
+    // const currentJobs = jobListings.slice(indexOfFirstJob, indexOfLastJob)
 
-    const handleApplyClick = (job: JobListing) => {
+    // const handleApplyClick = (job: JobListing) => {
 
-        setSelectedJob(job)
-        setShowModal(true)
-    }
+    //     setSelectedJob(job)
+    //     setShowModal(true)
+    // }
 
     const handleCloseModal = () => {
         setShowModal(false)
         setSelectedJob(null)
     }
 
-    const handleNextPage = () => {
-        if (currentPage < totalPages) {
-            setCurrentPage(currentPage + 1)
-        }
-    }
+    // const handleNextPage = () => {
+    //     if (currentPage < totalPages) {
+    //         setCurrentPage(currentPage + 1)
+    //     }
+    // }
 
-    const handlePreviousPage = () => {
-        if (currentPage > 1) {
-            setCurrentPage(currentPage - 1)
-        }
-    }
+    // const handlePreviousPage = () => {
+    //     if (currentPage > 1) {
+    //         setCurrentPage(currentPage - 1)
+    //     }
+    // }
 
     return (
         <div className="bg-white">
@@ -106,13 +106,6 @@ const ApplyPage = () => {
                     aria-hidden="true"
                     className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80 animate-gradient-flow"
                 >
-                    {/* <div
-                        style={{
-                            clipPath:
-                                'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
-                        }}
-                        className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
-                    /> */}
                 </div>
 
                 <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-28 animate-fade-in-up">
@@ -125,7 +118,7 @@ const ApplyPage = () => {
                         </p>
                     </div>
 
-                    <div className="mt-12 space-y-10">
+                    {/* <div className="mt-12 space-y-10">
                         {currentJobs.map((job) => (
                             <div
                                 key={job.id}
@@ -181,12 +174,12 @@ const ApplyPage = () => {
                                 Next
                             </button>
                         </div>
-                    </div>
+                    </div> */}
 
                     <p className="mt-12 text-center text-sm text-gray-600">
                         Don’t see a position that fits you?{' '}
-                        <Link href="/contact" className="font-medium text-primary">
-                            Contact us
+                        <Link href="/" className="font-medium text-primary">
+                            Send a message
                         </Link>{' '}
                         to share your interest.
                     </p>

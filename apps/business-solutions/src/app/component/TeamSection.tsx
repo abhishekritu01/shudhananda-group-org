@@ -2,7 +2,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { FaBug, FaDatabase, FaLaptopCode, FaShieldAlt, FaUsers } from "react-icons/fa";
+import { FaBug, FaDatabase, FaShieldAlt, FaUsers } from "react-icons/fa";
 
 const teams = [
   {
@@ -29,18 +29,18 @@ const teams = [
       "Expertise in fraud prevention and regulatory adherence",
     ],
   },
-  {
-    id:'team-003',
-    icon: <FaLaptopCode className="text-purple-600 text-6xl" />, 
-    title: "Software Development Team",
-    description:
-      "Delivering scalable, secure, and data-driven solutions for enterprise applications and AI-powered systems.",
-    highlights: [
-      "Expertise in Java, AI, Web Tech, and Cybersecurity",
-      "Built ERP, AI analytics, and enterprise solutions",
-      "Security-driven development with encryption compliance",
-    ],
-  },
+  // {
+  //   id:'team-003',
+  //   icon: <FaLaptopCode className="text-purple-600 text-6xl" />, 
+  //   title: "Software Development Team",
+  //   description:
+  //     "Delivering scalable, secure, and data-driven solutions for enterprise applications and AI-powered systems.",
+  //   highlights: [
+  //     "Expertise in Java, AI, Web Tech, and Cybersecurity",
+  //     "Built ERP, AI analytics, and enterprise solutions",
+  //     "Security-driven development with encryption compliance",
+  //   ],
+  // },
   {
     id:'team-004',
     icon: <FaBug className="text-red-600 text-6xl" />, 

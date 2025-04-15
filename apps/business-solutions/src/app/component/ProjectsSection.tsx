@@ -1,7 +1,6 @@
 "use client";
-import React from "react";
 import { motion } from "framer-motion";
-import { FaShieldAlt, FaChartLine, FaStethoscope, FaServer, FaVoteYea } from "react-icons/fa";
+import { FaChartLine, FaShieldAlt, FaStethoscope } from "react-icons/fa";
 
 const projects = [
   {
@@ -22,18 +21,18 @@ const projects = [
     description:
       "Enabled affordable healthcare for 600,000+ members across Karnataka and Assam, processing over 35,000 surgeries and $1.5 million in claims.",
   },
-  {
-    icon: <FaServer className="text-red-600 text-6xl" />,
-    title: "Enterprise ERP System",
-    description:
-      "Designed a cloud-based ERP solution for HR, finance, and customer operations, improving efficiency by 50% through workflow automation.",
-  },
-  {
-    icon: <FaVoteYea className="text-indigo-600 text-6xl" />,
-    title: "Blockchain-Based Smart Voting System",
-    description:
-      "Developed a secure, tamper-proof voting system using blockchain technology, ensuring transparency and fraud prevention in government elections.",
-  },
+  // {
+  //   icon: <FaServer className="text-red-600 text-6xl" />,
+  //   title: "Enterprise ERP System",
+  //   description:
+  //     "Designed a cloud-based ERP solution for HR, finance, and customer operations, improving efficiency by 50% through workflow automation.",
+  // },
+  // {
+  //   icon: <FaVoteYea className="text-indigo-600 text-6xl" />,
+  //   title: "Blockchain-Based Smart Voting System",
+  //   description:
+  //     "Developed a secure, tamper-proof voting system using blockchain technology, ensuring transparency and fraud prevention in government elections.",
+  // },
 ];
 
 const ProjectsSection = () => {
