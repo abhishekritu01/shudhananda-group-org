@@ -1,6 +1,4 @@
 'use client'
-
-'use client'
 import React from "react";
 import { motion } from "framer-motion";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
@@ -56,27 +54,32 @@ const Footer = () => {
               </motion.a>
             </div>
           </div>
-          <div className="grid md:grid-cols-3 gap-8 mb-6">
 
-            <div className= "flex flex-col items-center">
-            <img
-              className="h-20 w-auto rounded-md bg-white p-1 shadow-md mb-4"
-              src="/bloodBank.png"
-              alt="Blood Bank"
-            />
-              <h3 className="text-xl font-semibold mb-2">Contact Us</h3>
-              <p className="text-gray-400">Email: support@blooddonation.org</p>
-              <p className="text-gray-400">Phone: +1 234 567 890</p>
+          {/* Make spacing mobile friendly */}
+          <div className="grid md:grid-cols-3 gap-8 mb-6">
+            <div className="flex flex-col items-center md:-mt-20 -mt-0">
+              <img
+                className="h-28 w-80 rounded-md p-1 mb-4"
+                src="/finallogo.png"
+                alt="Blood Bank"
+              />
+              <div className="mt-8 text-center">
+                <h3 className="text-xl font-semibold mb-2">Contact Us</h3>
+                <p className="text-gray-400">Email: support@blooddonation.org</p>
+                <p className="text-gray-400">Phone: +1 234 567 890</p>
+              </div>
             </div>
+
             <div>
               <h3 className="text-xl font-semibold mb-2">Quick Links</h3>
               <ul className="text-gray-400">
                 <li><Link href="/" className="hover:text-red-600 transition">Home</Link></li>
                 <li><Link href="#how-it-works" className="hover:text-red-600 transition">How It Works</Link></li>
-                <li><Link href="#about" className="hover:text-red-600 transition">About</Link></li>
+                <li><Link href="/story" className="hover:text-red-600 transition">About</Link></li>
               </ul>
             </div>
-            <div>
+
+            <div className="md:-mt-16 -mt-0">
               <h3 className="text-xl font-semibold mb-2">Subscribe to Our Newsletter</h3>
               <input
                 type="email"
@@ -86,7 +89,6 @@ const Footer = () => {
               <motion.button
                 className="bg-gradient-to-r from-red-600 to-red-900 hover:bg-red-900 text-white py-2 px-4 rounded-lg"
                 whileHover={{ scale: 1.1 }}
-                
               >
                 Subscribe
               </motion.button>
