@@ -7,12 +7,14 @@ import ServiceSection from "./component/ServiceSection";
 import TestimonialSection from "./component/TestimonialSection";
 import ProjectsSection from "./component/ProjectsSection";
 import TeamSection from "./component/TeamSection";
+import HistoryTimeline from "./component/History";
 
 const LandingPage = () => {
   return (
     <div className="font-sans">
       <NavBar />
       <HeroSection />
+      <HistoryTimeline />
       <AboutSection />
       <ServiceSection />
       <TeamSection /> {/* Our Teams */}

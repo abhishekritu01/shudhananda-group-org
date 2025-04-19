@@ -2,12 +2,68 @@
 "use client";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { FaBug, FaDatabase, FaShieldAlt, FaUsers } from "react-icons/fa";
+// import { FaBug, FaDatabase, FaShieldAlt, FaUsers } from "react-icons/fa";
+
+// const teams = [   
+//   {
+//     id:'team-001',
+//     icon: <FaShieldAlt className="text-blue-600 text-6xl" />, 
+//     title: "Policy Processing Team",
+//     description:
+//       "Ensuring accuracy, compliance, and efficiency in policy management across insurance, banking, and healthcare sectors.",
+//     highlights: [
+//       "Led by Ms. Ashwini A., 10+ years experience",
+//       "50+ professionals ensuring streamlined execution",
+//       "End-to-End Processing – from underwriting to claims",
+//     ],
+//   },
+//   {
+//     id:'team-002',
+//     icon: <FaUsers className="text-green-600 text-6xl" />, 
+//     title: "Pre-Claims Team",
+//     description:
+//       "Specializing in accurate and efficient claims processing, fraud detection, and compliance.",
+//     highlights: [
+//       "Led by Ms. Chandana, senior claims expert",
+//       "15+ professionals handling claims across industries",
+//       "Expertise in fraud prevention and regulatory adherence",
+//     ],
+//   },
+
+//   {
+//     id:'team-004',
+//     icon: <FaBug className="text-red-600 text-6xl" />, 
+//     title: "Software Testing Team",
+//     description:
+//       "Ensuring software excellence through rigorous testing, automation, and continuous improvement.",
+//     highlights: [
+//       "Led by Nagashree Nagaraj, 10+ years experience",
+//       "20+ experts in manual & automated testing",
+//       "Specialized in Selenium, API testing, and performance analysis",
+//     ],
+//   },
+//   {
+//     id:'team-005',
+//     icon: <FaDatabase className="text-orange-600 text-6xl" />, 
+//     title: "Data Engineering & Analysis Team",
+//     description:
+//       "Transforming raw data into actionable insights for business intelligence and decision-making.",
+//     highlights: [
+//       "Led by Panduranga B P, expert in Python & SQL",
+//       "Managing ETL, data pipelines, and cloud data storage",
+//       "Expertise in Power BI, AWS, and insurance data management",
+//     ],
+//   },
+// ];
+
+
+
+import { FaShieldAlt, FaUsers, FaBug, FaDatabase, FaChartLine, FaMoneyCheckAlt } from "react-icons/fa";
 
 const teams = [
   {
-    id:'team-001',
-    icon: <FaShieldAlt className="text-blue-600 text-6xl" />, 
+    id: 'team-001',
+    icon: <FaShieldAlt className="text-blue-600 text-6xl" />,
     title: "Policy Processing Team",
     description:
       "Ensuring accuracy, compliance, and efficiency in policy management across insurance, banking, and healthcare sectors.",
@@ -18,8 +74,8 @@ const teams = [
     ],
   },
   {
-    id:'team-002',
-    icon: <FaUsers className="text-green-600 text-6xl" />, 
+    id: 'team-002',
+    icon: <FaUsers className="text-green-600 text-6xl" />,
     title: "Pre-Claims Team",
     description:
       "Specializing in accurate and efficient claims processing, fraud detection, and compliance.",
@@ -29,21 +85,9 @@ const teams = [
       "Expertise in fraud prevention and regulatory adherence",
     ],
   },
-  // {
-  //   id:'team-003',
-  //   icon: <FaLaptopCode className="text-purple-600 text-6xl" />, 
-  //   title: "Software Development Team",
-  //   description:
-  //     "Delivering scalable, secure, and data-driven solutions for enterprise applications and AI-powered systems.",
-  //   highlights: [
-  //     "Expertise in Java, AI, Web Tech, and Cybersecurity",
-  //     "Built ERP, AI analytics, and enterprise solutions",
-  //     "Security-driven development with encryption compliance",
-  //   ],
-  // },
   {
-    id:'team-004',
-    icon: <FaBug className="text-red-600 text-6xl" />, 
+    id: 'team-004',
+    icon: <FaBug className="text-red-600 text-6xl" />,
     title: "Software Testing Team",
     description:
       "Ensuring software excellence through rigorous testing, automation, and continuous improvement.",
@@ -54,8 +98,8 @@ const teams = [
     ],
   },
   {
-    id:'team-005',
-    icon: <FaDatabase className="text-orange-600 text-6xl" />, 
+    id: 'team-005',
+    icon: <FaDatabase className="text-orange-600 text-6xl" />,
     title: "Data Engineering & Analysis Team",
     description:
       "Transforming raw data into actionable insights for business intelligence and decision-making.",
@@ -63,6 +107,30 @@ const teams = [
       "Led by Panduranga B P, expert in Python & SQL",
       "Managing ETL, data pipelines, and cloud data storage",
       "Expertise in Power BI, AWS, and insurance data management",
+    ],
+  },
+  {
+    id: 'team-006',
+    icon: <FaChartLine className="text-indigo-600 text-6xl" />,
+    title: "Data Analyst (Product)",
+    description:
+      "Delivering critical data support for pricing, reporting, and integration needs through scripting, automation, and deep domain expertise.",
+    highlights: [
+      "Team of 4 skilled data analysts",
+      "Expertise in Pandas, NumPy, SQL, and ASTEC",
+      "Specialization in raters, data transformation, and report generation",
+    ],
+  },
+  {
+    id: 'team-007',
+    icon: <FaMoneyCheckAlt className="text-emerald-600 text-6xl" />,
+    title: "Accounts",
+    description:
+      "Managing end-to-end finance operations with a focus on GAAP compliance and financial transparency.",
+    highlights: [
+      "Led by Mr. Akshay Othayoth - 4+ years’ experience",
+      "10+ professionals handling client finance",
+      "Expertise in invoicing, bookkeeping, AR/AP, and reconciliation",
     ],
   },
 ];
@@ -74,7 +142,7 @@ const TeamSection = () => {
       <motion.div
         whileHover={{ scale: 1.02 }}
         transition={{ type: "spring", stiffness: 200 }}
-        className="w-full bg-white shadow-xl rounded-3xl p-10"
+        className="w-full  p-10"
       >
         {/* Header */}
         <div className="text-center mb-10">

@@ -134,6 +134,64 @@ const teams = [
             "Healthcare – Improving patient records and analytics",
         ],
     },
+    {
+        id: "team-006",
+        name: "Data Analyst (Product)",
+        description:
+            "Focused on transforming raw insurance data into actionable insights through advanced analytics, automation, and reporting tools.",
+        leadership: {
+            leaderName: "TBD",
+            experience: "Experienced in data analysis, scripting, and insurance product insights.",
+        },
+        teamSize: 4,
+        coreServices: [
+            "Raters & Insurance Data – Managing raters (Excel, ASTEC, Python) for premium calculations",
+            "Data Cleaning & Transformation – Using Pandas, NumPy, and SQL to clean and prepare insurance data",
+            "SQL Queries for Reporting – Extracting policy, claims, and premium data for analysis",
+            "JSON & API Integration – Automating data exchange and integration with external systems",
+            "Python Scripting – Automating repetitive data tasks and report generation",
+            "Supporting Actuarial & Business Teams – Delivering data insights for pricing and coverage changes"
+        ],
+        toolsAndTechnologies: [
+            "Data Storage & Retrieval – SQL for querying insurance databases",
+            "Data Processing & Analysis – Python (Pandas, NumPy, ASTEC, JSON)",
+            "Insurance Raters – Excel-based and ASTEC-based models",
+            "Data Automation – Python scripts for ETL and task scheduling",
+            "APIs & Data Exchange – JSON, APIs (requests module)",
+            "Reporting & Visualization – Excel, Pandas, SQL for aggregated reports"
+        ],
+        keyStrengths: [
+            "Insurance – Managing raters and insurance data models for premium adjustments",
+            "Analytics – Cleaning, transforming, and analyzing large insurance datasets",
+            "Automation – Streamlining data workflows and reporting through Python scripting"
+        ],
+    },
+    {
+        id: "team-007",
+        name: "Accounts",
+        description:
+            "Specializing in financial operations in compliance with US accounting standards (GAAP), ensuring accurate reporting and transparency.",
+        leadership: {
+            leaderName: "Mr. Akshay Othayoth",
+            experience: "Senior Staff Accountant with over 4+ years’ experience in handling Finance and Accounts.",
+        },
+        teamSize: 10,
+        coreServices: [
+            "Bookkeeping and General Ledger Management",
+            "Managing client invoicing",
+            "Accounts Payable",
+            "Accounts Receivable",
+            "Financial reporting specific to US requirements",
+            "Reconciliation of Accounts"
+        ],
+        keyStrengths: [
+            "Ensures timely and accurate day-by-day closures",
+            "Supports clients as per their requirements",
+            "Collaborates with cross-functional teams to maintain financial transparency and efficiency across the project",
+            "Attention to detail and Accuracy",
+            "Confidentiality and Integrity"
+        ],
+    }
 ];
 
 const navItems = [

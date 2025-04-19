@@ -71,7 +71,6 @@ import {
   FaLaptopCode,
   FaChartLine,
   FaUserShield,
-  // FaShieldAlt, // Uncomment if needed later
 } from "react-icons/fa";
 
 const services = [
