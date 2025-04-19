@@ -1,20 +1,22 @@
-import React from 'react'
-import HeroSection from './component/HeroSection'
 import AboutSection from './component/AboutSection'
-import ServicesSection from './component/ServicesSection'
-import LocationsSection from './component/LocationsSection'
 import ContactSection from './component/ContactSection'
 import Footer from './component/FooterSection'
-import Header from './component/Header'
+import HeroSection from './component/HeroSection'
+import LocationsSection from './component/LocationsSection'
+import ServicesSection from './component/ServicesSection'
+import Testimonial from './component/Testimonial'
+
 
 const page = () => {
   return (
    <>
-    <Header />
+    {/* <Header navLinks={customNavLinks} /> */}
     <HeroSection />
     <AboutSection />
     <ServicesSection />
+    {/* <FeaturedInitiative /> */}
     <LocationsSection />
+    <Testimonial />
     <ContactSection />
     <Footer />
    </>

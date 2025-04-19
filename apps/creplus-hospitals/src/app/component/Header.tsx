@@ -1,73 +1,76 @@
-'use client'
-
-
 'use client';
-
 import { useState } from 'react';
-import { FaBars, FaTimes, FaHospital } from 'react-icons/fa';
+import { FaBars, FaTimes } from 'react-icons/fa';
+import Image from 'next/image';
+import Link from 'next/link';
 
-const Header = () => {
+interface NavLink {
+  name: string;
+  href: string;
+}
+
+interface HeaderProps {
+  navLinks: NavLink[];
+}
+
+const Header: React.FC<HeaderProps> = ({ navLinks }) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <header className="bg-purple-900/80 backdrop-blur-lg text-white shadow-lg fixed w-full z-50 transition-all">
+    <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md shadow-md transition-all duration-300">
       <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
-        {/* Logo Section */}
-        <div className="flex items-center gap-2 cursor-pointer">
-          <FaHospital size={32} className="text-purple-300" />
-          <h1 className="text-2xl font-bold tracking-wide">CurePlus Hospitals</h1>
-        </div>
+        
+        {/* Logo */}
+        <Link href="/" className="flex items-center gap-3">
+          <Image
+            src="/CUREPLUS HOSPITALS.png"
+            alt="CurePlus Hospitals Logo"
+            width={60}
+            height={60}
+            className="rounded-full object-cover"
+          />
+          <span className="text-xl font-semibold text-purple-800 hidden sm:block">
+            CurePlus Hospitals
+          </span>
+        </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-10 text-lg">
-          {['Home', 'About', 'Services', 'Locations', 'Contact'].map((link) => (
-            <a
-              key={link}
-              href={`#${link.toLowerCase()}`}
-              className="hover:text-purple-300 hover:underline underline-offset-8 transition-all duration-200"
-            >
-              {link}
-            </a>
+        <nav className="hidden md:flex space-x-8 text-gray-800 font-medium text-lg">
+          {navLinks.map((link) => (
+            <Link key={link.name} href={link.href}>
+              <p className="hover:text-purple-600 hover:underline underline-offset-4 transition-all duration-200">
+                {link.name}
+              </p>
+            </Link>
           ))}
-          <button className="bg-purple-600 hover:bg-purple-700 px-5 py-2 rounded-full font-semibold transition-all duration-300">
-            Book Now
-          </button>
         </nav>
 
-        {/* Mobile Hamburger Icon */}
+        {/* Hamburger Menu Icon */}
         <button
-          className="md:hidden focus:outline-none transition-transform"
+          className="md:hidden text-gray-800 focus:outline-none"
           onClick={toggleMenu}
-          aria-label="Toggle navigation menu"
+          aria-label="Toggle Menu"
         >
-          {isOpen ? <FaTimes size={28} /> : <FaBars size={28} />}
+          {isOpen ? <FaTimes size={26} /> : <FaBars size={26} />}
         </button>
       </div>
 
-      {/* Mobile Menu */}
-      <nav
-        className={`md:hidden bg-purple-800/95 backdrop-blur-lg text-white absolute w-full top-full left-0 py-8 px-6 space-y-6 text-center text-lg transition-transform duration-500 ${
-          isOpen ? 'translate-y-0' : '-translate-y-[100vh]'
-        }`}
-      >
-        {['Home', 'About', 'Services', 'Locations', 'Contact'].map((link) => (
-          <a
-            key={link}
-            href={`#${link.toLowerCase()}`}
-            className="block hover:text-purple-300 transition-all duration-300"
-            onClick={toggleMenu}
-          >
-            {link}
-          </a>
-        ))}
-        <button
-          onClick={toggleMenu}
-          className="bg-purple-600 hover:bg-purple-700 px-6 py-2 rounded-full font-semibold transition-all duration-300"
-        >
-          Book Now
-        </button>
-      </nav>
+      {/* Mobile Navigation */}
+      {isOpen && (
+        <div className="md:hidden bg-white/90 backdrop-blur-md z-40 w-full px-6 py-6 space-y-4 shadow-md">
+          {navLinks.map((link) => (
+            <Link key={link.name} href={link.href}>
+              <p
+                onClick={toggleMenu}
+                className="block text-gray-800 text-lg font-medium hover:text-purple-600 transition"
+              >
+                {link.name}
+              </p>
+            </Link>
+          ))}
+        </div>
+      )}
     </header>
   );
 };
