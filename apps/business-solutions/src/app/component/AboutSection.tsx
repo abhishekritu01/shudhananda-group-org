@@ -47,8 +47,7 @@
 // export default AboutSection;
 
 
-import React from 'react';
-import { FaBriefcase, FaHistory, FaUsers, FaIndustry, FaBuilding, FaLaptopCode } from 'react-icons/fa';
+import { FaBuilding, FaHistory, FaIndustry, FaLaptopCode, FaUsers } from 'react-icons/fa';
 
 const AboutSection = () => {
     return (

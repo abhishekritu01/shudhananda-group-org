@@ -46,7 +46,8 @@ const ContactUs = () => {
       } else {
         setStatusMessage('Failed to send. Please try again.');
       }
-    } catch (err) {
+    } catch (error) {
+      console.error('Error sending message:', error);
       setStatusMessage('Error occurred. Please try again later.');
     } finally {
       setLoading(false);
