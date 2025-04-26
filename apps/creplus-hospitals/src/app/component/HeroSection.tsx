@@ -386,6 +386,7 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { MdOutlineCurrencyRupee } from 'react-icons/md';
 import { HiOutlineUserGroup } from 'react-icons/hi';
+import { FaAddressCard } from "react-icons/fa";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -481,7 +482,7 @@ const HeroSection = () => {
             We deliver compassionate, technology-driven healthcare solutions that prioritize patients at every step.
             Your well-being is our mission — today and always.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+          <div className="flex text-sm  sm:flex-row gap-4 justify-center lg:justify-start">
             <Link href="/services">
               <motion.button
                 whileHover={{ scale: 1.03 }}
@@ -496,10 +497,9 @@ const HeroSection = () => {
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
                 className="bg-white text-purple-700 hover:bg-gray-100 font-semibold px-6 py-3 rounded-lg shadow-md transition flex items-center"
+                aria-label="Get Your Cure+ Arogya Card"
               >
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
-                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3.586L7.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 10.586V7z" clipRule="evenodd" />
-                </svg>
+                <FaAddressCard />
                 Get Your Card
               </motion.button>
             </Link>
