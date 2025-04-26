@@ -18,7 +18,7 @@ const LandingPage = () => {
       <AboutSection />
       <ServiceSection />
       <TeamSection /> {/* Our Teams */}
-      <ProjectsSection /> {/* Projects & Case Studies */}
+      <ProjectsSection /> 
       <TestimonialSection />
       <ContactSection />
       <FooterSection />

@@ -2,8 +2,8 @@ import React from 'react'
 
 const stats = [
     { label: 'Years of Excellence', value: '14+' },
-    { label: 'Members Served', value: '600,000+' },
-    { label: 'Industries Covered', value: '10+' },
+    // { label: 'Members Served', value: '600,000+' },
+    // { label: 'Industries Covered', value: '10+' },
     { label: 'Team Strength', value: '100+' },
 ];
 
@@ -29,7 +29,7 @@ const AboutMission = () => {
                             {stats.map((stat) => (
                                 <div key={stat.label} className="flex flex-col-reverse gap-y-4">
                                     <dt className="text-base/7 text-gray-600">{stat.label}</dt>
-                                    <dd className="text-5xl font-semibold tracking-tight text-gray-900">{stat.value}</dd>
+                                    <dd className="text-7xl font-semibold tracking-tight text-gray-900">{stat.value}</dd>
                                 </div>
                             ))}
                         </dl>

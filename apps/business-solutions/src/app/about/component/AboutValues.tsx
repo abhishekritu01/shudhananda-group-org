@@ -73,7 +73,7 @@ const values = [
 
 const AboutValues = () => {
     return (
-        <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
+        <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8 my-20">
             <div className="mx-auto max-w-2xl lg:mx-0">
                 <h2 className="text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">Our <span className="text-orange-600">Values</span></h2>
                 <p className="mt-6 text-lg/8 text-gray-600">

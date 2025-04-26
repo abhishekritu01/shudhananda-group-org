@@ -1,198 +1,114 @@
+// 'use client';
+// import FooterSection from "@/app/component/FooterSection";
+// import SecondNavBar from "@/app/component/SecondNavBar";
+// import Image from "next/image";
+// import { useParams } from "next/navigation";
+// import { FaCheckCircle, FaClipboardList } from 'react-icons/fa';
+// import { teams } from "@/app/data/teaminfo";
+
+
+// const navItems = [
+//     { name: "Home", link: "/" },
+//     { name: "Careers", link: "/careers" },
+//     { name: "About Us", link: "/about" },
+// ];
+
+// const Page = () => {
+//     const params = useParams();
+//     const team = teams.find((t) => t.id === params.id);
+//     if (!team) {
+//         return (
+//             <div className="text-center text-2xl font-bold mt-10 text-red-600">Team Not Found</div>
+//         );
+//     }
+//     return (
+//         <>
+//             <SecondNavBar navItems={navItems} />
+//             <div className="min-h-screen bg-gray-100 py-20 px-6 sm:px-8 lg:px-12">
+//                 <div className="max-w-6xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-200">
+//                     {/* Header Section */}
+//                     <div
+//                         className="p-10 bg-center bg-cover text-white text-center h-96 flex flex-col justify-center items-center"
+//                         style={{
+//                             backgroundImage: `url('/sbplteam/${team.groupphoto}')`,
+//                             backgroundSize: "cover",
+//                         }}
+//                     >
+//                         <h1 className="text-4xl font-extrabold tracking-tight mb-3">{team.name}</h1>
+//                         <p className="text-xl font-extrabold tracking-tight mb-3">{team.description}</p>
+//                     </div>
+
+
+//                     {/* Content Section */}
+//                     <div className="p-10 space-y-10">
+//                         {/* Core Services */}
+//                         <div className="bg-gray-50 p-6 rounded-xl border border-gray-200">
+//                             <div className="flex items-center mb-4">
+//                                 <FaClipboardList className="text-orange-600 text-3xl mr-3" />
+//                                 <h2 className="text-xl font-semibold text-gray-900">Core Services</h2>
+//                             </div>
+//                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pl-8">
+//                                 {team.coreServices.map((service, index) => (
+//                                     <div key={index} className="border-l-4 border-orange-600 pl-4 py-2">
+//                                         <p className="text-gray-700">{service}</p>
+//                                     </div>
+//                                 ))}
+//                             </div>
+//                         </div>
+//                         <div className="bg-gray-50 p-6 rounded-xl border border-gray-200">
+//                             <div className="flex items-center mb-4">
+//                                 <FaCheckCircle className="text-orange-600 text-3xl mr-3" />
+//                                 <h2 className="text-xl font-semibold text-gray-900">Key Strengths</h2>
+//                             </div>
+//                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pl-8">
+//                                 {team.keyStrengths.map((service, index) => (
+//                                     <div key={index} className="border-l-4 border-orange-600 pl-4 py-2">
+//                                         <p className="text-gray-700">{service}</p>
+//                                     </div>
+//                                 ))}
+//                             </div>
+//                         </div>
+//                         <div className="flex items-center space-x-6 bg-gray-50 p-6 rounded-xl border border-gray-200">
+//                             <div>
+//                                 <Image
+//                                     src={team.image || "/default-image.jpg"}
+//                                     alt="Team Leader"
+//                                     className="object-cover rounded-lg shadow-md"
+//                                     width={120}
+//                                     height={100}
+//                                     priority={true}
+//                                     loading="eager"
+//                                 />
+//                             </div>
+//                             <div>
+//                                 <h2 className="text-xl font-semibold text-gray-900">Leadership</h2>
+//                                 <p className="text-orange-600 font-medium">{team.leadership.leaderName}</p>
+//                                 <p className="text-gray-700 mt-1">{team.leadership.experience}</p>
+//                             </div>
+//                         </div>
+
+//                     </div>
+//                 </div>
+//             </div>
+//             <FooterSection />
+//         </>
+//     );
+// };
+
+// export default Page;
+
+
+
 
 'use client';
 import FooterSection from "@/app/component/FooterSection";
 import SecondNavBar from "@/app/component/SecondNavBar";
+import { teams } from "@/app/data/teaminfo";
+import { motion } from "framer-motion";
+import Image from "next/image";
 import { useParams } from "next/navigation";
-import { FaUserTie, FaUsers, FaClipboardList, FaCheckCircle } from 'react-icons/fa';
-
-const teams = [
-    {
-        id: "team-001",
-        name: "Policy Processing Team",
-        description:
-            "The backbone of insurance, banking, and healthcare policy management, ensuring accuracy, compliance, and efficiency at every stage.",
-        leadership: {
-            leaderName: "Ms. Ashwini A.",
-            experience: "Over 10 years of experience in digital marketing, sales, and policy management.",
-        },
-        teamSize: 50,
-        coreServices: [
-            "Pre-Underwriting – Risk assessment and document verification",
-            "New Business Review – Fast-tracking policy approvals",
-            "Policy Servicing – Managing policy changes and renewals",
-            "Quality Assurance – Ensuring compliance with industry standards",
-            "Voice & Chat Support – Handling customer queries and claims processing",
-        ],
-        keyStrengths: [
-            "Speed & Accuracy – Faster approvals and claim settlements",
-            "Multi-Sector Expertise – Insurance, healthcare, and banking",
-            "Tech-Driven Solutions – AI, automation, and analytics",
-        ],
-        impact: {
-            policyholdersServed: 600000,
-            partnerHospitalsOnboarded: 120,
-            fasterClaimProcessing: "30% reduction in claim processing time",
-        },
-    },
-    {
-        id: "team-002",
-        name: "Pre-Claims Team (Scout Team)",
-        description:
-            "Specializes in efficient claims management, ensuring accuracy, compliance, and timely resolution.",
-        leadership: {
-            leaderName: "Ms. Chandana",
-            experience: "Senior employee and founding member with expertise in claims processing.",
-        },
-        teamSize: 15,
-        coreServices: [
-            "Pre-Claims Email Management – Handling inquiries and escalations",
-            "Daily Claims Processing – Verifying policy forms and documents",
-            "ShareFile Management – Managing claim-related document links",
-            "Loss Assessment & Fee Bill Payments – Damage calculations and payments",
-            "Pre-Adjusting Claims – Reviewing claims for modifications",
-            "Adding Adjusters' Licenses & Additional Insured – Documentation compliance",
-            "Drafting & Managing Letters – Professional communication for claims",
-        ],
-        keyStrengths: [
-            "Accuracy & Compliance – Minimized errors",
-            "Faster Processing – Streamlined workflows",
-            "Fraud Protection – Advanced fraud detection",
-            "Global Expertise – Multi-sector and international handling",
-        ],
-    },
-    {
-        id: "team-003",
-        name: "Software Development Team",
-        description:
-            "Delivers cutting-edge, scalable, and secure software solutions to enhance business operations.",
-        leadership: {
-            leaderName: "TBD",
-            experience: "Over a decade in software development and academic research.",
-        },
-        teamSize: 30,
-        coreServices: [
-            "Programming: Java, HTML, CSS, JavaScript, Bootstrap, Ajax",
-            "Enterprise Solutions: Servlets, JSP, API Integration",
-            "Database Management: Oracle 19c, PostgreSQL, MS Access",
-            "Data Science & AI: NumPy, Pandas, Matplotlib",
-            "Cloud & Security: XAMPP, Encryption, Cybersecurity",
-        ],
-        keyStrengths: [
-            "Parallel Implementation – Ensuring smooth transitions",
-            "Phase-by-Phase Rollout – Reducing risk and optimizing performance",
-            "Modular Development – Independent feature testing",
-        ],
-    },
-    {
-        id: "team-004",
-        name: "Software Testing Team",
-        description:
-            "Dedicated to delivering high-quality results through manual and automated testing methodologies.",
-        leadership: {
-            leaderName: "Nagashree Nagaraj",
-            experience: "10 years in Java, Python, Selenium, SAP HANA, and API testing.",
-        },
-        teamSize: 20,
-        coreServices: [
-            "Test Planning – Functional, regression, performance testing",
-            "Test Case Development – Manual and automated tests",
-            "Defect & Automation Management – Tracking and optimizing testing",
-            "Collaboration & Continuous Improvement – Refining strategies",
-        ],
-        keyStrengths: [
-            "Web & Mobile Apps – Selenium, Cypress, Appium",
-            "API Testing – Postman, RestAssured",
-            "Performance Testing – JMeter, LoadRunner",
-            "Security Testing – OWASP ZAP, Burp Suite",
-        ],
-    },
-    {
-        id: "team-005",
-        name: "Data Engineering & Data Analysis Team",
-        description:
-            "Transforms raw data into actionable insights, supporting analytics, risk assessment, and business intelligence.",
-        leadership: {
-            leaderName: "Panduranga B P",
-            experience: "Expert in Python, SQL, and BI tools with over 2 years of experience.",
-        },
-        teamSize: 5,
-        coreServices: [
-            "Data Integration & ETL – Using Python, SQL, and Dimensional Insights",
-            "Data Pipeline & Orchestration – Managing workflows efficiently",
-            "Data Storage & Management – Amazon Redshift, columnar databases",
-            "Business Intelligence & Visualization – Power BI, Sisense",
-            "Cloud Platforms – AWS (EC2), experience with GCP",
-            "Raters & Insurance Data – Managing pricing models and rules",
-            "SQL Queries for Reporting – Extracting policy, claims, and fraud data",
-            "JSON & API Integration – Automating data fetching",
-            "Python Scripting – Automating repetitive tasks",
-            "Supporting Actuarial & Business Teams – Data insights for pricing",
-        ],
-        keyStrengths: [
-            "Insurance – Managing ETL and BI solutions for premium calculations",
-            "Banking – Enhancing fraud detection and compliance",
-            "Healthcare – Improving patient records and analytics",
-        ],
-    },
-    {
-        id: "team-006",
-        name: "Data Analyst (Product)",
-        description:
-            "Focused on transforming raw insurance data into actionable insights through advanced analytics, automation, and reporting tools.",
-        leadership: {
-            leaderName: "TBD",
-            experience: "Experienced in data analysis, scripting, and insurance product insights.",
-        },
-        teamSize: 4,
-        coreServices: [
-            "Raters & Insurance Data – Managing raters (Excel, ASTEC, Python) for premium calculations",
-            "Data Cleaning & Transformation – Using Pandas, NumPy, and SQL to clean and prepare insurance data",
-            "SQL Queries for Reporting – Extracting policy, claims, and premium data for analysis",
-            "JSON & API Integration – Automating data exchange and integration with external systems",
-            "Python Scripting – Automating repetitive data tasks and report generation",
-            "Supporting Actuarial & Business Teams – Delivering data insights for pricing and coverage changes"
-        ],
-        toolsAndTechnologies: [
-            "Data Storage & Retrieval – SQL for querying insurance databases",
-            "Data Processing & Analysis – Python (Pandas, NumPy, ASTEC, JSON)",
-            "Insurance Raters – Excel-based and ASTEC-based models",
-            "Data Automation – Python scripts for ETL and task scheduling",
-            "APIs & Data Exchange – JSON, APIs (requests module)",
-            "Reporting & Visualization – Excel, Pandas, SQL for aggregated reports"
-        ],
-        keyStrengths: [
-            "Insurance – Managing raters and insurance data models for premium adjustments",
-            "Analytics – Cleaning, transforming, and analyzing large insurance datasets",
-            "Automation – Streamlining data workflows and reporting through Python scripting"
-        ],
-    },
-    {
-        id: "team-007",
-        name: "Accounts",
-        description:
-            "Specializing in financial operations in compliance with US accounting standards (GAAP), ensuring accurate reporting and transparency.",
-        leadership: {
-            leaderName: "Mr. Akshay Othayoth",
-            experience: "Senior Staff Accountant with over 4+ years’ experience in handling Finance and Accounts.",
-        },
-        teamSize: 10,
-        coreServices: [
-            "Bookkeeping and General Ledger Management",
-            "Managing client invoicing",
-            "Accounts Payable",
-            "Accounts Receivable",
-            "Financial reporting specific to US requirements",
-            "Reconciliation of Accounts"
-        ],
-        keyStrengths: [
-            "Ensures timely and accurate day-by-day closures",
-            "Supports clients as per their requirements",
-            "Collaborates with cross-functional teams to maintain financial transparency and efficiency across the project",
-            "Attention to detail and Accuracy",
-            "Confidentiality and Integrity"
-        ],
-    }
-];
+import { FaCheckCircle, FaClipboardList, FaUserTie } from 'react-icons/fa';
+import { useInView } from "react-intersection-observer";
 
 const navItems = [
     { name: "Home", link: "/" },
@@ -200,81 +116,181 @@ const navItems = [
     { name: "About Us", link: "/about" },
 ];
 
+const fadeIn = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { 
+        opacity: 1, 
+        y: 0, 
+        transition: { 
+            duration: 0.6,
+            ease: "easeOut"
+        } 
+    }
+};
+
+const imageZoom = {
+    hidden: { scale: 1.05, opacity: 0 },
+    visible: { 
+        scale: 1,
+        opacity: 1,
+        transition: {
+            duration: 0.8,
+            ease: [0.25, 0.1, 0.25, 1]
+        }
+    }
+};
+
 const Page = () => {
     const params = useParams();
+    const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
     const team = teams.find((t) => t.id === params.id);
+
     if (!team) {
         return (
             <div className="text-center text-2xl font-bold mt-10 text-red-600">Team Not Found</div>
         );
     }
+
     return (
         <>
             <SecondNavBar navItems={navItems} />
-            <div className="min-h-screen bg-gray-100 py-20 px-6 sm:px-8 lg:px-12">
-                <div className="max-w-6xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-200">
-                    {/* Header Section */}
-                    <div className="p-10 bg-gradient-to-r from-orange-900 to-indigo-900 text-white text-center">
-                        <h1 className="text-4xl font-extrabold tracking-tight mb-3">{team.name}</h1>
-                        <p className="text-lg text-blue-100 opacity-90">{team.description}</p>
-                    </div>
+            <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8" ref={ref}>
+                <motion.div 
+                    initial="hidden"
+                    animate={inView ? "visible" : "hidden"}
+                    variants={{
+                        visible: {
+                            transition: {
+                                staggerChildren: 0.15
+                            }
+                        }
+                    }}
+                    className="max-w-6xl mx-auto"
+                >
+                    {/* Hero Section with Improved Image Display */}
+                    <motion.div 
+                        variants={imageZoom}
+                        className="relative rounded-t-2xl overflow-hidden h-80 md:h-[28rem] shadow-xl"
+                    >
+                        <div className="absolute inset-0 bg-gray-200">
+                            <Image
+                                src={`/sbplteam/${team.groupphoto}`}
+                                alt={team.name}
+                                fill
+                                className="object-cover object-center"
+                                priority
+                                quality={90}
+                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
+                                placeholder="blur"
+                                blurDataURL={`/sbplteam/${team.groupphoto}`}
+                            />
+                        </div>
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex flex-col justify-end p-8">
+                            <motion.h1 
+                                variants={fadeIn}
+                                className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-2"
+                            >
+                                {team.name}
+                            </motion.h1>
+                            <motion.p 
+                                variants={fadeIn}
+                                className="text-lg md:text-xl text-orange-300 font-medium max-w-2xl"
+                            >
+                                {team.description}
+                            </motion.p>
+                        </div>
+                    </motion.div>
 
                     {/* Content Section */}
-                    <div className="p-10 space-y-10">
-                        {/* Leadership Section */}
-                        <div className="flex items-center space-x-6 bg-gray-50 p-6 rounded-xl border border-gray-200">
-                            <div className="bg-orange-100 p-4 rounded-lg">
-                                <FaUserTie className="text-orange-600 text-3xl" />
-                            </div>
-                            <div>
-                                <h2 className="text-xl font-semibold text-gray-900">Leadership</h2>
-                                <p className="text-orange-600 font-medium">{team.leadership.leaderName}</p>
-                                <p className="text-gray-700 mt-1">{team.leadership.experience}</p>
-                            </div>
-                        </div>
-
-                        {/* Team Size */}
-                        <div className="flex items-center space-x-6 bg-gray-50 p-6 rounded-xl border border-gray-200">
-                            <div className="bg-orange-100 p-4 rounded-lg">
-                                <FaUsers className="text-orange-600 text-3xl" />
-                            </div>
-                            <div>
-                                <h2 className="text-xl font-semibold text-gray-900">Team Composition</h2>
-                                <p className="text-orange-600 font-medium">{team.teamSize} professionals</p>
-                            </div>
-                        </div>
-
+                    <div className="bg-white rounded-b-2xl shadow-lg divide-y divide-gray-200/70">
                         {/* Core Services */}
-                        <div className="bg-gray-50 p-6 rounded-xl border border-gray-200">
-                            <div className="flex items-center mb-4">
-                                <FaClipboardList className="text-orange-600 text-3xl mr-3" />
-                                <h2 className="text-xl font-semibold text-gray-900">Core Services</h2>
+                        <motion.div 
+                            variants={fadeIn}
+                            className="p-6 md:p-8 hover:bg-gray-50/50 transition-colors duration-300"
+                        >
+                            <div className="flex items-center mb-6">
+                                <div className="bg-orange-100 p-3 rounded-lg mr-4 shadow-sm">
+                                    <FaClipboardList className="text-orange-600 text-2xl" />
+                                </div>
+                                <h2 className="text-2xl font-bold text-gray-800">Core Services</h2>
                             </div>
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pl-8">
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pl-4 md:pl-12">
                                 {team.coreServices.map((service, index) => (
-                                    <div key={index} className="border-l-4 border-orange-600 pl-4 py-2">
-                                        <p className="text-gray-700">{service}</p>
-                                    </div>
+                                    <motion.div 
+                                        key={index}
+                                        variants={fadeIn}
+                                        whileHover={{ x: 5 }}
+                                        className="flex items-start border-l-4 border-orange-500 pl-4 py-2 group"
+                                    >
+                                        <div className="absolute -left-2 w-3 h-3 bg-orange-500 rounded-full mt-2 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                                        <p className="text-gray-700 transition-colors group-hover:text-gray-900">{service}</p>
+                                    </motion.div>
                                 ))}
                             </div>
-                        </div>
+                        </motion.div>
 
                         {/* Key Strengths */}
-                        <div className="bg-gray-50 p-6 rounded-xl border border-gray-200">
-                            <div className="flex items-center mb-4">
-                                <FaCheckCircle className="text-orange-600 text-3xl mr-3" />
-                                <h2 className="text-xl font-semibold text-gray-900">Key Strengths</h2>
+                        <motion.div 
+                            variants={fadeIn}
+                            className="p-6 md:p-8 hover:bg-gray-50/50 transition-colors duration-300"
+                        >
+                            <div className="flex items-center mb-6">
+                                <div className="bg-orange-100 p-3 rounded-lg mr-4 shadow-sm">
+                                    <FaCheckCircle className="text-orange-600 text-2xl" />
+                                </div>
+                                <h2 className="text-2xl font-bold text-gray-800">Key Strengths</h2>
                             </div>
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pl-8">
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pl-4 md:pl-12">
                                 {team.keyStrengths.map((strength, index) => (
-                                    <div key={index} className="bg-white p-4 rounded-lg border border-gray-300 shadow-sm">
-                                        <p className="text-gray-700">{strength}</p>
-                                    </div>
+                                    <motion.div 
+                                        key={index}
+                                        variants={fadeIn}
+                                        whileHover={{ x: 5 }}
+                                        className="flex items-start border-l-4 border-orange-500 pl-4 py-2 group"
+                                    >
+                                        <div className="absolute -left-2 w-3 h-3 bg-orange-500 rounded-full mt-2 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                                        <p className="text-gray-700 transition-colors group-hover:text-gray-900">{strength}</p>
+                                    </motion.div>
                                 ))}
                             </div>
-                        </div>
+                        </motion.div>
+
+                        {/* Leadership */}
+                        <motion.div 
+                            variants={fadeIn}
+                            className="p-6 md:p-8 bg-gray-50/30 rounded-b-2xl hover:bg-gray-50/70 transition-colors duration-300"
+                        >
+                            <div className="flex flex-col md:flex-row items-center md:items-start gap-6 md:gap-8">
+                                <motion.div 
+                                    whileHover={{ scale: 1.03 }}
+                                    className="relative w-32 h-32 md:w-40 md:h-40 rounded-lg overflow-hidden shadow-lg border-2 border-white"
+                                >
+                                    <Image
+                                        src={team.image || "/default-image.jpg"}
+                                        alt={team.leadership.leaderName}
+                                        fill
+                                        className="object-cover"
+                                        quality={85}
+                                        sizes="(max-width: 768px) 160px, 200px"
+                                    />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+                                </motion.div>
+                                <div className="flex-1">
+                                    <div className="flex items-center mb-4">
+                                        <div className="bg-orange-100 p-3 rounded-lg mr-4 shadow-sm">
+                                            <FaUserTie className="text-orange-600 text-2xl" />
+                                        </div>
+                                        <h2 className="text-2xl font-bold text-gray-800">Leadership</h2>
+                                    </div>
+                                    <div className="space-y-3">
+                                        <h3 className="text-xl font-semibold text-orange-600">{team.leadership.leaderName}</h3>
+                                        <p className="text-gray-700 leading-relaxed">{team.leadership.experience}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </motion.div>
                     </div>
-                </div>
+                </motion.div>
             </div>
             <FooterSection />
         </>

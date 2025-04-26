@@ -1,15 +1,42 @@
+'use client'
+
 import React from 'react'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Navigation, Pagination, Autoplay } from 'swiper/modules'
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
+
+const images = [
+  { id: 1, src: "/sbplteam/ppa.jpeg", alt: "PPA" },
+  { id: 2, src: "/sbplteam/sbpl1.JPG", alt: "SBPL1" },
+  { id: 3, src: "/sbplteam/sbpl.JPG", alt: "SBPL" }
+]
 
 const AboutImageSection = () => {
-    return (
-        <div className="mt-32 sm:mt-40 xl:mx-auto xl:max-w-7xl xl:px-8">
+  return (
+    <div className="mt-32 sm:mt-40 xl:mx-auto xl:max-w-7xl xl:px-8">
+      <Swiper
+        modules={[Navigation, Pagination, Autoplay]}
+        spaceBetween={30}
+        slidesPerView={1}
+        navigation
+        pagination={{ clickable: true }}
+        autoplay={{ delay: 3000 }}
+        loop
+      >
+        {images.map(image => (
+          <SwiperSlide key={image.id}>
             <img
-                alt=""
-                src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80"
-                className="aspect-5/2 w-full object-cover xl:rounded-3xl"
+              src={image.src}
+              alt={image.alt}
+              className="aspect-5/2 w-full object-cover xl:rounded-3xl"
             />
-        </div>
-    )
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
+  )
 }
 
 export default AboutImageSection

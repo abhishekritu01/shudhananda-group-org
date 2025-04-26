@@ -66,18 +66,17 @@
 // export default ServiceSection;
 
 
+
+'use client';
 import React from "react";
-import {
-  FaLaptopCode,
-  FaChartLine,
-  FaUserShield,
-} from "react-icons/fa";
+import { FaLaptopCode, FaChartLine, FaUserShield } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const services = [
   {
     title: "IT & ITES Solutions",
     description:
-      "Empowering businesses through cutting-edge IT services including software development, data analytics, and BPO operations.",
+      "Empowering businesses through cutting-edge IT services including Software Development, Testing, Data Science/Analytics, and BPO/KPO operations.",
     icon: <FaLaptopCode className="text-4xl text-orange-600" />,
   },
   {
@@ -87,53 +86,77 @@ const services = [
     icon: <FaChartLine className="text-4xl text-orange-600" />,
   },
   {
-    title: "Home Insurance",
+    title: "US Home Insurance",
     description:
       "Safeguarding homes and valuable assets with comprehensive solutions for policy issuance, claims processing, and fraud prevention.",
     icon: <FaUserShield className="text-4xl text-orange-600" />,
   },
-  // {
-  //   title: "Cybersecurity & Ethical Hacking",
-  //   description:
-  //     "Defending organizations with robust cybersecurity strategies, ethical hacking, and blockchain-based fraud prevention.",
-  //   icon: <FaShieldAlt className="text-4xl text-orange-600" />,
-  // },
 ];
 
 const ServiceSection = () => {
   return (
     <section id="services" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6 text-center">
-        {/* Heading */}
-        <h2 className="text-4xl font-extrabold text-gray-900">
-          Our <span className="text-orange-600">Services</span>
-        </h2>
-        <p className="mt-4 text-lg text-gray-700">
-          Driving growth through tailored, technology-driven business solutions.
-        </p>
+        {/* Animated Heading */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          <h2 className="text-4xl font-extrabold text-gray-900">
+            Our <span className="text-orange-600">Services</span>
+          </h2>
+          <p className="mt-4 text-lg text-gray-700">
+            Driving growth through tailored, technology-driven business solutions.
+          </p>
+        </motion.div>
 
-        {/* Services Grid */}
+        {/* Services Grid with Enhanced Interaction */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-14">
           {services.map((service, index) => (
-            <div
+            <motion.div
               key={index}
-              className="relative bg-white p-8 rounded-xl shadow-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-2xl border border-orange-300"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              viewport={{ once: true }}
+              whileHover={{ y: -5 }}
             >
-              {/* Icon */}
-              <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 w-16 h-16 bg-orange-100 flex items-center justify-center rounded-full shadow-md border border-orange-300">
-                {service.icon}
-              </div>
+              <div className="relative bg-white p-8 rounded-xl shadow-lg transition-all duration-300 hover:shadow-xl border-b-4 border-orange-500 h-full">
+                {/* Animated Icon */}
+                <motion.div 
+                  whileHover={{ scale: 1.1 }}
+                  className="absolute -top-8 left-1/2 transform -translate-x-1/2 w-16 h-16 bg-orange-100 flex items-center justify-center rounded-full shadow-md border-2 border-orange-300"
+                >
+                  {service.icon}
+                </motion.div>
 
-              {/* Content */}
-              <div className="mt-10 text-center">
-                <h3 className="text-2xl font-semibold text-orange-800">
-                  {service.title}
-                </h3>
-                <p className="mt-3 text-gray-700">{service.description}</p>
+                {/* Content */}
+                <div className="mt-10 text-center">
+                  <h3 className="text-2xl font-semibold text-orange-800 mb-4">
+                    {service.title}
+                  </h3>
+                  <p className="text-gray-700 leading-relaxed">
+                    {service.description}
+                  </p>
+                </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
+
+        {/* Enhanced Footer Element */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.4 }}
+          className="mt-16 inline-block bg-orange-50 px-6 py-3 rounded-full border border-orange-200"
+        >
+          <p className="text-gray-700 font-medium">
+            Each service designed to solve real business challenges
+          </p>
+        </motion.div>
       </div>
     </section>
   );

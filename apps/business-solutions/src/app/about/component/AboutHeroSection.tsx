@@ -10,11 +10,7 @@ const AboutHeroSection = () => {
                             Empowering Innovation Across <span className="text-orange-600">Industries</span>
                         </h1>
                         <p className="mt-8 text-lg font-medium text-pretty text-gray-500 sm:max-w-md sm:text-xl/8 lg:max-w-none">
-                            Founded in 2010 as SAS Poorna Arogya Healthcare, SBPL has evolved into a multi-sector enterprise spanning
-                            healthcare, IT, insurance, banking, and more. With a strong foundation in affordable healthcare, we expanded
-                            into IT & ITES in 2019 and continue driving innovation from our Mysore headquarters. Today, our ventures include
-                            hospitals, pharmaceuticals, hospitality, organic farming, and cutting-edge IT solutions, with a growing team
-                            dedicated to excellence.
+                        Founded in 2010 as SAS Poorna Arogya Healthcare, SBPL has evolved into a multi-sector enterprise spanning  IT, ITES, US Home Insurance, accounts, data science and more. Today, our ventures include hospitals, pharmaceuticals, hospitality, organic farming, SportZone and cutting-edge IT solutions, with a growing team dedicated to excellence.
                         </p>
                     </div>
                     <div className="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
@@ -22,7 +18,7 @@ const AboutHeroSection = () => {
                             <div className="relative">
                                 <img
                                     alt=""
-                                    src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
+                                    src="/sbplteam/ppa.jpeg"
                                     className="aspect-2/3 w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                                 />
                                 <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-gray-900/10 ring-inset" />
@@ -32,7 +28,7 @@ const AboutHeroSection = () => {
                             <div className="relative">
                                 <img
                                     alt=""
-                                    src="https://images.unsplash.com/photo-1485217988980-11786ced9454?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
+                                     src="/sbplteam/sbpl.JPG"
                                     className="aspect-2/3 w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                                 />
                                 <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-gray-900/10 ring-inset" />
@@ -40,8 +36,8 @@ const AboutHeroSection = () => {
                             <div className="relative">
                                 <img
                                     alt=""
-                                    src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-x=.4&w=396&h=528&q=80"
-                                    className="aspect-2/3 w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                                     src="/sbplteam/claims_bookrolls.JPG"
+                                    className="aspect-2/3 w-full rounded-xl bg-gray-900/5 object-cover shadow-lg h-44"
                                 />
                                 <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-gray-900/10 ring-inset" />
                             </div>
@@ -50,16 +46,16 @@ const AboutHeroSection = () => {
                             <div className="relative">
                                 <img
                                     alt=""
-                                    src="https://images.unsplash.com/photo-1670272504528-790c24957dda?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=left&w=400&h=528&q=80"
-                                    className="aspect-2/3 w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                                     src="/sbplteam/sbpl.JPG"
+                                    className="aspect-2/3 w-full rounded-xl bg-gray-900/5 object-cover shadow-lg h-44"
                                 />
                                 <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-gray-900/10 ring-inset" />
                             </div>
                             <div className="relative">
                                 <img
                                     alt=""
-                                    src="https://images.unsplash.com/photo-1670272505284-8faba1c31f7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
-                                    className="aspect-2/3 w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                                    src ="/sbplteam/Testing.JPG"
+                                    className="aspect-2/3 w-full rounded-xl bg-gray-900/5 object-cover shadow-lg h-44"
                                 />
                                 <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-gray-900/10 ring-inset" />
                             </div>

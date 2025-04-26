@@ -57,9 +57,9 @@ const page = () => {
           <AboutHeroSection />
         </div>
         <AboutMission />
-        < AboutImageSection />
-        <AboutValues />
+        <AboutImageSection />
         <AboutTeam />
+        <AboutValues />
         <FooterSection />
       </main>
     </div>

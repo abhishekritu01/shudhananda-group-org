@@ -114,7 +114,7 @@ const ApplyPage = () => {
                             Explore Open <span className="text-orange-600">Positions</span> at SBPL
                         </h1>
                         <p className="mt-6 text-lg font-medium text-gray-600 sm:text-xl animate-fade-in">
-                            Join us in transforming healthcare with innovation and technology. Browse our current job openings and apply today.
+                            Join us in transforming the IT industry with innovative solutions and a commitment to excellence.
                         </p>
                     </div>
 
