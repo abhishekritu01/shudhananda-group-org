@@ -1,34 +1,35 @@
 'use client';
 
-import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaHospitalAlt, FaMapMarkerAlt } from 'react-icons/fa';
-import Image from 'next/image';
 import Link from 'next/link';
+import { useState } from 'react';
+import { FaHospitalAlt, FaMapMarkerAlt } from 'react-icons/fa';
 
 const hospitals = [
-  { id: 1, name: 'Cure Plus Disha Hospital', location: 'Mysore', tags: ['24x7', 'Emergency'] },
-  { id: 2, name: 'Cure Plus Dharani Hospital', location: 'Bangalore', tags: ['ICU', 'Cardiology'] },
-  { id: 3, name: 'Cure Plus Kaveri Hospital', location: 'Hassan', tags: ['Radiology'] },
-  { id: 4, name: 'Cure Plus Krishna Hospital', location: 'Mandya', tags: ['24x7'] },
-  { id: 5, name: 'Cure Plus Narasegowda Memorial Hospital', location: 'Tumkur', tags: ['Emergency'] },
-  { id: 6, name: 'Cure Plus Bherya Hospital', location: 'Kodagu', tags: [] },
-  { id: 7, name: 'Cure Plus Terakanambi Hospital', location: 'Chamarajanagar', tags: ['Outpatient'] },
-  { id: 8, name: 'Cure Plus Shanivarasanthe Hospital', location: 'Madikeri', tags: ['Pediatrics'] },
-  { id: 9, name: 'Cure Plus Ramapura Hospital', location: 'Shimoga', tags: ['Cardiology'] },
-  { id: 10, name: 'Cure Plus T. Narasipura Hospital', location: 'Mysore', tags: [] },
+  { id: 1, name: 'Cure Plus Disha Hospital', location: 'Mysore', tags: ['24x7', 'General Surgery', 'Orthopedics', 'Gynecology', 'Pediatrics'] },
+  { id: 2, name: 'Cure Plus Dharani Hospital', location: 'Yelandur Taluk,Chamarajanagara', tags: ['24x7', 'General Surgery', 'Orthopedics', 'Gynecology', 'Pediatrics'] },
+  { id: 3, name: 'Cure Plus Kaveri Hospital', location: 'Somwarpet Taluk ,Kodagu', tags: ['General Surgery', 'ENT & Audiometry', 'Critical Care', 'Inpatient Care'] },
+  { id: 4, name: 'Cure Plus Krishna Hospital', location: 'Piriyapatna Taluk,Mysore', tags: ['Multi-Specialty Care', 'Outpatient & Inpatient Services', 'Preventive Health Checkups', 'Emergency Services'] },
+  { id: 5, name: 'Cure Plus Narasegowda Memorial Hospital', location: 'Chinakurali, Pandavapura Taluk ,Mandya', tags: ['Emergency Medicine', 'General Medicine', 'Orthopedics'] },
+  { id: 6, name: 'Cure Plus Shanivarasanthe Hospital', location: 'Kodagu', tags: ['Pediatrics', 'Orthopedics', 'Gynecology', 'General Medicine'] },
+  { id: 7, name: 'Cure Plus Ramapura Hospital', location: 'Chamarajanagar', tags: ['Orthopedics', 'General Medicine'] },
+  { id: 8, name: 'Cure Plus Terakanambi Hospital', location: 'Terakanambi, Chamarajanagar', tags: ['Outpatient', 'General Medicine'] },
+  { id: 9, name: 'Cure Plus Bherya Hospital', location: 'Saligrama Taluk, Mysore', tags: ['Orthopedics', 'General Medicine'] },
+  { id: 10, name: 'Cure Plus T. Narasipura Hospital', location: 'T Narasipura,Mysore', tags: ['Orthopedics', 'General Medicine'] },
+  { id: 11, name: 'Cure Plus Handpost Hospital', location: 'H.D. Kote, Mysore', tags: ['24x7', ' orthopedic', 'General Medicine'] },
+  { id: 12, name: 'Cure Plus Hosur Hospital', location: 'Saligrama Taluk, Mysore', tags: ['24x7', 'Emergency', 'Orthopedics', 'General Medicine'] },
+  { id: 13, name: 'CurePlus Halli Mysuru Hospital', location: 'Halli Mysuru', tags: ['Orthopedics', 'General Medicine'] },
 ];
 
 const HospitalsWithMap = () => {
   const [search, setSearch] = useState('');
-
   const filteredHospitals = hospitals.filter((h) =>
     h.name.toLowerCase().includes(search.toLowerCase()) ||
     h.location.toLowerCase().includes(search.toLowerCase())
   );
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 ">
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-start">
         {/* Map Container */}
         <motion.div
@@ -36,17 +37,22 @@ const HospitalsWithMap = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="rounded-2xl shadow-xl overflow-hidden border border-gray-100"
+          className="rounded-xl overflow-hidden  md:mt-32"
         >
-          <Image
-            src="/images/map-placeholder.png"
-            alt="Map"
-            width={700}
-            height={500}
-            className="object-cover w-full h-full"
+          <video
+            src='/final.mp4'
+            width="100%"
+            height="300"
+            style={{ border: 0 }}
+            className="bg-gray-200"
+            autoPlay
+            loop
+            muted
+            // controls
           />
-          <div className="bg-purple-800 text-white p-4 text-center text-sm font-medium">
-            SHPL Hospital Coverage Map
+
+          <div className=" text-purple-800 p-4 text-center text-xl font-bold">
+            Our Network of Hospitals
           </div>
         </motion.div>
 

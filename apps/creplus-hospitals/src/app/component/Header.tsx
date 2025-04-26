@@ -30,9 +30,9 @@ const Header: React.FC<HeaderProps> = ({ navLinks }) => {
             height={60}
             className="rounded-full object-cover"
           />
-          <span className="text-xl font-semibold text-purple-800 hidden sm:block">
+          {/* <span className="text-xl font-semibold text-purple-800 hidden sm:block">
             CurePlus Hospitals
-          </span>
+          </span> */}
         </Link>
 
         {/* Desktop Navigation */}

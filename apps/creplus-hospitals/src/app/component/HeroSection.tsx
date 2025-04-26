@@ -1,200 +1,78 @@
-// "use client";
-// import { FaHospitalAlt, FaStethoscope, FaPhoneAlt, FaMapMarkerAlt, FaHeartbeat } from "react-icons/fa";
-// import { motion } from "framer-motion";
-
-// const HeroSection = () => {
-//   return (
-//     <div className="h-screen flex flex-col bg-gray-50">
-//       <section
-//         className="relative w-full bg-cover bg-center text-white py-24 px-8 md:px-20 lg:px-32 flex-grow"
-//         style={{
-//           backgroundImage:
-//             "url('https://source.unsplash.com/1600x900/?premium-hospital,healthcare')",
-//         }}
-//       >
-//         <div className="absolute inset-0 bg-gradient-to-r from-blue-950 via-blue-900 to-blue-800 opacity-90"></div>
-//         <div className="relative max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-20">
-//           {/* Left Content */}
-//           <motion.div
-//             initial={{ opacity: 0, y: -40 }}
-//             animate={{ opacity: 1, y: 0 }}
-//             transition={{ duration: 1 }}
-//             className="text-center lg:text-left max-w-3xl"
-//           >
-//             <h1 className="text-5xl md:text-6xl font-extrabold leading-tight mb-8 tracking-tight text-gray-100">
-//               Leading <span className="text-blue-400">Healthcare Excellence</span>,<br />
-//               Tailored for <span className="text-green-400">Your Well-being</span>
-//             </h1>
-//             <p className="mt-6 text-lg text-gray-300 leading-relaxed">
-//               <strong className="text-white">CurePlus Hospitals & Pharmas</strong> delivers world-class healthcare solutions, 24/7 emergency services, and affordable medication at 15+ premium facilities across Karnataka.
-//             </p>
-//             <div className="mt-12 flex flex-col sm:flex-row gap-6 justify-center lg:justify-start">
-//               <motion.button
-//                 whileHover={{ scale: 1.05 }}
-//                 className="bg-gradient-to-r from-green-400 to-blue-500 text-white px-10 py-4 font-semibold rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300"
-//               >
-//                 Explore Services
-//               </motion.button>
-//               <motion.button
-//                 whileHover={{ scale: 1.05 }}
-//                 className="bg-transparent border-2 border-white px-10 py-4 font-semibold rounded-3xl hover:bg-white hover:text-blue-950 flex items-center gap-3 transition-all duration-300 shadow-xl"
-//               >
-//                 <FaPhoneAlt /> Contact Us
-//               </motion.button>
-//             </div>
-//           </motion.div>
-
-//           {/* Right Content - Icons & Visuals */}
-//           <motion.div
-//             initial={{ opacity: 0, x: 40 }}
-//             animate={{ opacity: 1, x: 0 }}
-//             transition={{ duration: 1 }}
-//             className="grid grid-cols-2 gap-10 lg:gap-16"
-//           >
-//             {[
-//               {
-//                 icon: <FaHospitalAlt size={60} className="text-blue-500" />, 
-//                 title: "15+ Hospitals",
-//                 desc: "State-of-the-art Facilities in Karnataka",
-//               },
-//               {
-//                 icon: <FaStethoscope size={60} className="text-green-500" />, 
-//                 title: "24/7 Expert Care",
-//                 desc: "Specialized & Emergency Services Anytime",
-//               },
-//               {
-//                 icon: <FaMapMarkerAlt size={60} className="text-yellow-500" />, 
-//                 title: "Expanding Horizons",
-//                 desc: "Upcoming Locations: Goa & Maharashtra",
-//               },
-//               {
-//                 icon: <FaHeartbeat size={60} className="text-red-500" />, 
-//                 title: "Cure+ Pharmas",
-//                 desc: "Affordable, In-House Medicines",
-//               },
-//             ].map((item, idx) => (
-//               <motion.div
-//                 whileHover={{ scale: 1.1 }}
-//                 key={idx}
-//                 className="flex items-start gap-5 bg-white text-blue-950 p-8 rounded-3xl shadow-2xl hover:shadow-3xl transition-transform duration-300"
-//               >
-//                 {item.icon}
-//                 <div>
-//                   <h3 className="font-semibold text-2xl mb-2">{item.title}</h3>
-//                   <p className="text-sm text-gray-600 leading-relaxed">{item.desc}</p>
-//                 </div>
-//               </motion.div>
-//             ))}
-//           </motion.div>
-//         </div>
-//       </section>
-//     </div>
-//   );
-// };
-
-// export default HeroSection;
-
-
 // 'use client';
 
+// import { useState, useEffect } from 'react';
 // import { motion } from 'framer-motion';
+// import Link from 'next/link';
 
-// const HeroSection = () => {
-//   return (
-//     <section
-//       className="relative w-full min-h-screen bg-cover bg-center text-white flex items-center justify-center px-6 md:px-16 lg:px-24"
-//       style={{
-//         backgroundImage:
-//           "url('https://s3-alpha-sig.figma.com/img/5883/70b2/d9fa2192c64402e1758d345ef8262e74?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=UH0n4pl7fLm0VXJQzXoOqj59sUjmohyogam7SWJWx4FaRZ0JoM9uNzLuRfUOCTpjCqPiLA8XjWzCpM-MeXo4Amu2H~x0DA5gSdUm7UvjNo6KcVROc9apK5CzXdKKJwi3g1ApLmnB~tvHfVfGjCkMk3BI-6Yr8EUV0J70yqmdYENiKreM2ZDEzftx68u3TB5VNMNuj37tyDo4SotuxYPl-SZWed-oY8xIdVpo1OHRmbqadTvAZLCDB6ZkhEysD2gx0E1gs9wECFMG3qtHa8zqzlKEAN6SNXFk5NI1XYPCwLSZulfV80s-a59xc6BGE7df5lfDhysz0zAh8~1NQTDmWw__')"
-//       }}
-//     >
-//       {/* Overlay for better text visibility */}
-//       <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
-
-//       {/* Text Content */}
-//       <motion.div
-//         initial={{ opacity: 0, y: -40 }}
-//         animate={{ opacity: 1, y: 0 }}
-//         transition={{ duration: 0.9 }}
-//         className="relative z-10 text-center max-w-4xl"
-//       >
-//         <h1 className="text-4xl md:text-6xl font-extrabold leading-tight tracking-tight mb-6 text-balance">
-//           Excellence in Healthcare <br className="hidden md:inline-block" />
-//           Accessible for Everyone
-//         </h1>
-
-//         <p className="mt-4 text-lg md:text-xl text-gray-100 max-w-2xl mx-auto">
-//           Delivering compassionate, technology-driven healthcare that puts patients first —
-//           because your well-being is our purpose, every step of the way.
-//         </p>
-
-//         <motion.div
-//           initial={{ opacity: 0, y: 20 }}
-//           animate={{ opacity: 1, y: 0 }}
-//           transition={{ delay: 0.3, duration: 0.8 }}
-//           className="mt-10"
-//         >
-//           <button className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-4 font-semibold rounded-xl shadow-xl transition-all duration-300">
-//             Explore Services
-//           </button>
-//         </motion.div>
-//       </motion.div>
-//     </section>
-//   );
+// const fadeUp = {
+//   hidden: { opacity: 0, y: 30 },
+//   visible: (i: number) => ({
+//     opacity: 1,
+//     y: 0,
+//     transition: { delay: i * 0.15 },
+//   }),
 // };
 
-// export default HeroSection;
+// const images = [
+//   '/Hospital-image/hero1.jpeg',
+//   '/Hospital-image/Hero3.jpeg',
 
-
-
-// 'use client';
-
-// import { motion } from 'framer-motion';
+// ];
 
 // const HeroSection = () => {
+//   const [currentIndex, setCurrentIndex] = useState(0);
+
+//   useEffect(() => {
+//     const interval = setInterval(() => {
+//       setCurrentIndex((prev) => (prev + 1) % images.length);
+//     }, 4000);
+//     return () => clearInterval(interval);
+//   }, []);
+
 //   return (
-//     <section className="min-h-screen w-full bg-white flex items-center px-6 md:px-16 lg:px-24">
-//       <div className="flex flex-col-reverse lg:flex-row items-center justify-between w-full gap-12">
-//         {/* Left Content */}
-//         <motion.div
-//           initial={{ opacity: 0, x: -50 }}
-//           animate={{ opacity: 1, x: 0 }}
-//           transition={{ duration: 0.9 }}
-//           className="w-full lg:w-1/2 text-center lg:text-left"
-//         >
-//           <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight mb-6">
-//             Excellence in Healthcare <br />
-//             <span className="text-purple-600">Accessible for Everyone</span>
-//           </h1>
-
-//           <p className="text-lg md:text-xl text-gray-600 mb-8">
-//             Delivering compassionate, technology-driven healthcare that puts patients first — 
-//             because your well-being is our purpose, every step of the way.
-//           </p>
-
-//           <motion.div
-//             initial={{ opacity: 0, y: 20 }}
-//             animate={{ opacity: 1, y: 0 }}
-//             transition={{ delay: 0.3, duration: 0.8 }}
-//           >
-//             <button className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-4 font-semibold rounded-xl shadow-xl transition-all duration-300">
-//               Explore Services
-//             </button>
-//           </motion.div>
-//         </motion.div>
-
-//         {/* Right Image */}
-//         <motion.div
-//           initial={{ opacity: 0, x: 50 }}
-//           animate={{ opacity: 1, x: 0 }}
-//           transition={{ duration: 0.9 }}
-//           className="w-full lg:w-1/2"
-//         >
-//           <img
-//             src="https://s3-alpha-sig.figma.com/img/5883/70b2/d9fa2192c64402e1758d345ef8262e74?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=UH0n4pl7fLm0VXJQzXoOqj59sUjmohyogam7SWJWx4FaRZ0JoM9uNzLuRfUOCTpjCqPiLA8XjWzCpM-MeXo4Amu2H~x0DA5gSdUm7UvjNo6KcVROc9apK5CzXdKKJwi3g1ApLmnB~tvHfVfGjCkMk3BI-6Yr8EUV0J70yqmdYENiKreM2ZDEzftx68u3TB5VNMNuj37tyDo4SotuxYPl-SZWed-oY8xIdVpo1OHRmbqadTvAZLCDB6ZkhEysD2gx0E1gs9wECFMG3qtHa8zqzlKEAN6SNXFk5NI1XYPCwLSZulfV80s-a59xc6BGE7df5lfDhysz0zAh8~1NQTDmWw__"
-//             alt="Healthcare Illustration"
-//             className="w-full h-auto object-cover rounded-2xl shadow-lg"
+//     <section className="relative w-full min-h-screen flex items-center px-6 md:px-16 lg:px-24 py-16 overflow-hidden text-white">
+//       {/* Background Slideshow */}
+//       <div className="absolute inset-0 z-0">
+//         {images.map((src, index) => (
+//           <motion.img
+//             key={index}
+//             src={src}
+//             alt={`Background Slide ${index + 1}`}
+//             initial={{ opacity: 0 }}
+//             animate={{ opacity: currentIndex === index ? 1 : 0 }}
+//             transition={{ duration: 1 }}
+//             className="absolute inset-0 w-full h-full object-cover transition-opacity"
 //           />
+//         ))}
+//         <div className="absolute inset-0 bg-black/50 z-10" /> {/* Dark overlay for readability */}
+//       </div>
+
+//       {/* Foreground Content */}
+//       <div className="relative z-20 max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+//         <motion.div
+//           initial="hidden"
+//           animate="visible"
+//           variants={fadeUp}
+//           custom={0}
+//           className="text-center lg:text-left"
+//         >
+//           <h1 className="text-5xl font-extrabold text-white leading-tight mb-6">
+//             Excellence in Healthcare, <br />
+//             Accessible to Everyone
+//           </h1>
+//           <p className="text-xl text-gray-200 max-w-xl mx-auto lg:mx-0 mb-8">
+//             We deliver compassionate, technology-driven healthcare solutions that prioritize patients at every step.
+//             Your well-being is our mission — today and always.
+//           </p>
+//           <Link href="/services">
+//             <motion.button
+//               whileHover={{ scale: 1.03 }}
+//               whileTap={{ scale: 0.97 }}
+//               className="bg-purple-700 hover:bg-purple-800 text-white font-semibold px-6 py-3 rounded-lg shadow-md transition"
+//             >
+//               Explore Services
+//             </motion.button>
+//           </Link>
 //         </motion.div>
 //       </div>
 //     </section>
@@ -204,10 +82,310 @@
 // export default HeroSection;
 
 
+
+
+
+
+// 'use client';
+
+// import { useState, useEffect } from 'react';
+// import { motion } from 'framer-motion';
+// import Link from 'next/link';
+
+// const fadeUp = {
+//   hidden: { opacity: 0, y: 30 },
+//   visible: (i: number) => ({
+//     opacity: 1,
+//     y: 0,
+//     transition: { delay: i * 0.15 },
+//   }),
+// };
+
+// const images = [
+//   '/Hospital-image/hero1.jpeg',
+//   '/Hospital-image/Hero3.jpeg',
+// ];
+
+// const HeroSection = () => {
+//   const [currentIndex, setCurrentIndex] = useState(0);
+
+//   useEffect(() => {
+//     const interval = setInterval(() => {
+//       setCurrentIndex((prev) => (prev + 1) % images.length);
+//     }, 4000);
+//     return () => clearInterval(interval);
+//   }, []);
+
+//   return (
+//     <section className="relative w-full min-h-screen flex items-center px-6 md:px-16 lg:px-24 py-16 overflow-hidden text-white">
+//       {/* Background Slideshow */}
+//       <div className="absolute inset-0 z-0">
+//         {images.map((src, index) => (
+//           <motion.img
+//             key={index}
+//             src={src}
+//             alt={`Background Slide ${index + 1}`}
+//             initial={{ opacity: 0 }}
+//             animate={{ opacity: currentIndex === index ? 1 : 0 }}
+//             transition={{ duration: 1 }}
+//             className="absolute inset-0 w-full h-full object-cover transition-opacity"
+//           />
+//         ))}
+//         <div className="absolute inset-0 bg-black/50 z-10" />
+//       </div>
+
+//       {/* Foreground Content */}
+//       <div className="relative z-20 max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+//         <motion.div
+//           initial="hidden"
+//           animate="visible"
+//           variants={fadeUp}
+//           custom={0}
+//           className="text-center lg:text-left"
+//         >
+//           {/* Launch Badge - Added here */}
+//           <motion.div 
+//             initial={{ scale: 0.9, opacity: 0 }}
+//             animate={{ scale: 1, opacity: 1 }}
+//             transition={{ delay: 0.3 }}
+//             className="mb-6 inline-flex items-center bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 border border-white/30"
+//           >
+//             <img 
+//               src="/path-to-cure-arogya-logo.png" // Replace with your actual image path
+//               alt="Cure+ Arogya"
+//               className="h-8 mr-3"
+//             />
+//             <span className="font-medium text-white">
+//               We're launching <span className="font-bold">Cure+ Arogya</span>!
+//             </span>
+//           </motion.div>
+
+//           <h1 className="text-5xl font-extrabold text-white leading-tight mb-6">
+//             Excellence in Healthcare, <br />
+//             Accessible to Everyone
+//           </h1>
+//           <p className="text-xl text-gray-200 max-w-xl mx-auto lg:mx-0 mb-8">
+//             We deliver compassionate, technology-driven healthcare solutions that prioritize patients at every step.
+//             Your well-being is our mission — today and always.
+//           </p>
+//           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+//             <Link href="/services">
+//               <motion.button
+//                 whileHover={{ scale: 1.03 }}
+//                 whileTap={{ scale: 0.97 }}
+//                 className="bg-purple-700 hover:bg-purple-800 text-white font-semibold px-6 py-3 rounded-lg shadow-md transition"
+//               >
+//                 Explore Services
+//               </motion.button>
+//             </Link>
+//             <Link href="/cure-arogya"> {/* Add your actual route */}
+//               <motion.button
+//                 whileHover={{ scale: 1.03 }}
+//                 whileTap={{ scale: 0.97 }}
+//                 className="bg-transparent border-2 border-white hover:bg-white/10 text-white font-semibold px-6 py-3 rounded-lg shadow-md transition"
+//               >
+//                 Learn About Cure+
+//               </motion.button>
+//             </Link>
+//           </div>
+//         </motion.div>
+
+//         {/* Optional: You could also place the launch announcement here as an alternative */}
+//         <div className="relative hidden lg:block">
+//           <div className="absolute -right-10 -top-10 bg-white/10 backdrop-blur p-6 rounded-xl border border-white/20 max-w-xs">
+//             <img 
+//               src="/path-to-cure-arogya-logo.png" 
+//               alt="Cure+ Arogya"
+//               className="h-12 mb-3"
+//             />
+//             <p className="text-white font-medium">
+//               Introducing our new initiative <span className="font-bold">Cure+ Arogya</span> - Revolutionizing healthcare accessibility
+//             </p>
+//           </div>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default HeroSection;
+
+
+
+// 'use client';
+
+// import { useState, useEffect } from 'react';
+// import { motion } from 'framer-motion';
+// import Link from 'next/link';
+// import { MdOutlineCurrencyRupee } from 'react-icons/md';
+// import { HiOutlineUserGroup } from 'react-icons/hi';
+
+
+// const fadeUp = {
+//   hidden: { opacity: 0, y: 30 },
+//   visible: (i: number) => ({
+//     opacity: 1,
+//     y: 0,
+//     transition: { delay: i * 0.15 },
+//   }),
+// };
+
+// const images = [
+//   '/Hospital-image/hero1.jpeg',
+//   '/Hospital-image/Hero3.jpeg',
+// ];
+
+// const HeroSection = () => {
+//   const [currentIndex, setCurrentIndex] = useState(0);
+
+//   useEffect(() => {
+//     const interval = setInterval(() => {
+//       setCurrentIndex((prev) => (prev + 1) % images.length);
+//     }, 4000);
+//     return () => clearInterval(interval);
+//   }, []);
+
+//   return (
+//     <section className="relative w-full min-h-screen flex items-center px-6 md:px-16 lg:px-24 py-16 overflow-hidden text-white">
+//       {/* Background Slideshow */}
+//       <div className="absolute inset-0 z-0">
+//         {images.map((src, index) => (
+//           <motion.img
+//             key={index}
+//             src={src}
+//             alt={`Background Slide ${index + 1}`}
+//             initial={{ opacity: 0 }}
+//             animate={{ opacity: currentIndex === index ? 1 : 0 }}
+//             transition={{ duration: 1 }}
+//             className="absolute inset-0 w-full h-full object-cover transition-opacity"
+//           />
+//         ))}
+//         <div className="absolute inset-0 bg-black/50 z-10" />
+//       </div>
+
+//       {/* Foreground Content */}
+//       <div className="relative z-20 max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+//         <motion.div
+//           initial="hidden"
+//           animate="visible"
+//           variants={fadeUp}
+//           custom={0}
+//           className="text-center lg:text-left"
+//         >
+//           {/* Launch Announcement - More Prominent */}
+//           <motion.div 
+//             initial={{ scale: 0.9, opacity: 0 }}
+//             animate={{ scale: 1, opacity: 1 }}
+//             transition={{ delay: 0.3 }}
+//             className="mb-8 bg-gradient-to-r from-purple-600 to-blue-600 rounded-xl p-4 shadow-lg border border-white/20"
+//           >
+//             <div className="flex items-center justify-center lg:justify-start">
+//               <img 
+//                 src="/card.jpeg" 
+//                 alt="Cure+ Arogya"
+//                 className="h-10 mr-3"
+//               />
+//               <div>
+//                 <h3 className="font-bold text-white text-lg">Now Launched: Cure+ Arogya Card</h3>
+//                 <div className="flex flex-wrap justify-center lg:justify-start gap-2 mt-1">
+//                   <span className="bg-white/20 px-2 py-1 rounded-md text-sm">Kutumba (Family Plan)</span>
+//                   <span className="bg-white/20 px-2 py-1 rounded-md text-sm">Hiriya Nagarika (Seniors Plan)</span>
+//                   <span className="bg-green-500 px-2 py-1 rounded-md text-sm font-bold">25% Discount</span>
+//                 </div>
+//               </div>
+//             </div>
+//           </motion.div>
+
+//           <h1 className="text-5xl font-extrabold text-white leading-tight mb-6">
+//             Excellence in Healthcare, <br />
+//             Accessible to Everyone
+//           </h1>
+//           <p className="text-xl text-gray-200 max-w-xl mx-auto lg:mx-0 mb-8">
+//             We deliver compassionate, technology-driven healthcare solutions that prioritize patients at every step.
+//             Your well-being is our mission — today and always.
+//           </p>
+//           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+//             <Link href="/services">
+//               <motion.button
+//                 whileHover={{ scale: 1.03 }}
+//                 whileTap={{ scale: 0.97 }}
+//                 className="bg-purple-700 hover:bg-purple-800 text-white font-semibold px-6 py-3 rounded-lg shadow-md transition"
+//               >
+//                 Explore Services
+//               </motion.button>
+//             </Link>
+//             <Link href="/cure-arogya">
+//               <motion.button
+//                 whileHover={{ scale: 1.03 }}
+//                 whileTap={{ scale: 0.97 }}
+//                 className="bg-white text-purple-700 hover:bg-gray-100 font-semibold px-6 py-3 rounded-lg shadow-md transition flex items-center"
+//               >
+//                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+//                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3.586L7.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 10.586V7z" clipRule="evenodd" />
+//                 </svg>
+//                 Get Your Card
+//               </motion.button>
+//             </Link>
+//           </div>
+//         </motion.div>
+
+//         {/* Value Proposition Cards - Visible on desktop */}
+//         <div className="hidden lg:block space-y-4">
+//           <motion.div 
+//             initial={{ opacity: 0, x: 50 }}
+//             animate={{ opacity: 1, x: 0 }}
+//             transition={{ delay: 0.5 }}
+//             className="bg-white/10 backdrop-blur p-6 rounded-xl border border-white/20"
+//           >
+//             <div className="flex items-start">
+//               <div className="bg-purple-100/20 p-3 rounded-lg mr-4">
+//               <HiOutlineUserGroup />
+//               </div>
+//               <div>
+//                 <h3 className="font-bold text-white text-xl mb-1">Kutumba Plan</h3>
+//                 <p className="text-gray-200">Comprehensive healthcare coverage for your entire family with exclusive 25% discount</p>
+//               </div>
+//             </div>
+//           </motion.div>
+
+//           <motion.div 
+//             initial={{ opacity: 0, x: 50 }}
+//             animate={{ opacity: 1, x: 0 }}
+//             transition={{ delay: 0.7 }}
+//             className="bg-white/10 backdrop-blur p-6 rounded-xl border border-white/20"
+//           >
+//             <div className="flex items-start">
+//               <div className="bg-blue-100/20 p-3 rounded-lg mr-4">
+//               <MdOutlineCurrencyRupee />
+//               </div>
+//               <div>
+//                 <h3 className="font-bold text-white text-xl mb-1">Hiriya Nagarika Plan</h3>
+//                 <p className="text-gray-200">Specialized healthcare benefits for seniors with additional 25% savings on all services</p>
+//               </div>
+//             </div>
+//           </motion.div>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default HeroSection;
+
+
+
+
+
+
+
+
 'use client';
 
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import { MdOutlineCurrencyRupee } from 'react-icons/md';
+import { HiOutlineUserGroup } from 'react-icons/hi';
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -218,23 +396,41 @@ const fadeUp = {
   }),
 };
 
+const images = [
+  '/Hospital-image/hero1.jpeg',
+  '/Hospital-image/Hero3.jpeg',
+];
+
 const HeroSection = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % images.length);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    <section className="relative bg-[#f9fafb] w-full min-h-screen flex items-center px-6 md:px-16 lg:px-24 py-16 overflow-hidden">
-      {/* Background Circles */}
-      <motion.div
-        animate={{ scale: [1, 1.5, 1] }}
-        transition={{ duration: 8, repeat: Infinity }}
-        className="absolute top-0 left-0 w-96 h-96 bg-blue-100 rounded-full mix-blend-multiply filter blur-3xl opacity-40 animate-pulse"
-      />
-      <motion.div
-        animate={{ scale: [1, 1.3, 1] }}
-        transition={{ duration: 10, repeat: Infinity }}
-        className="absolute bottom-0 right-0 w-96 h-96 bg-green-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse"
-      />
-      
-      <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-        {/* Left Content */}
+    <section className="relative w-full min-h-screen flex items-center px-6 md:px-16 lg:px-24 py-16 overflow-hidden text-white">
+      {/* Background Slideshow */}
+      <div className="absolute inset-0 z-0">
+        {images.map((src, index) => (
+          <motion.img
+            key={index}
+            src={src}
+            alt={`Background Slide ${index + 1}`}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: currentIndex === index ? 1 : 0 }}
+            transition={{ duration: 1 }}
+            className="absolute inset-0 w-full h-full object-cover transition-opacity"
+          />
+        ))}
+        <div className="absolute inset-0 bg-black/50 z-10" />
+      </div>
+
+      {/* Foreground Content */}
+      <div className="relative z-20 max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         <motion.div
           initial="hidden"
           animate="visible"
@@ -242,40 +438,110 @@ const HeroSection = () => {
           custom={0}
           className="text-center lg:text-left"
         >
-          <h1 className="text-5xl font-extrabold text-blue-900 leading-tight mb-6">
+          {/* Enhanced Launch Announcement */}
+          <motion.div 
+            initial={{ scale: 0.9, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ delay: 0.3 }}
+            className="mb-8 bg-gradient-to-r from-purple-600/90 to-blue-600/90 rounded-xl p-4 shadow-2xl border-2 border-white/20 backdrop-blur-sm"
+          >
+            <div className="flex flex-col md:flex-row items-center">
+              <div className="relative mb-4 md:mb-0 md:mr-6">
+                <img 
+                  src="/card.jpeg" 
+                  alt="Cure+ Arogya Card"
+                  className="h-24 w-auto rounded-lg border-4 border-white shadow-xl transform hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute -bottom-2 -right-2 bg-yellow-400 text-purple-900 font-bold px-3 py-1 rounded-full text-xs shadow-md">
+                  25% OFF
+                </div>
+              </div>
+              <div className="text-center md:text-left">
+                <h3 className="font-bold text-white text-2xl mb-2">Introducing Cure+ Arogya Card</h3>
+                <p className="text-gray-100 mb-3 max-w-md">
+                  Exclusive healthcare plans offering comprehensive coverage with special 25% discount on all services.
+                </p>
+                <div className="flex flex-wrap justify-center md:justify-start gap-2">
+                  <span className="bg-white/20 px-3 py-1 rounded-full text-sm flex items-center">
+                    <HiOutlineUserGroup className="mr-1" /> Kutumba (Family Plan)
+                  </span>
+                  <span className="bg-white/20 px-3 py-1 rounded-full text-sm flex items-center">
+                    <MdOutlineCurrencyRupee className="mr-1" /> Hiriya Nagarika (Seniors)
+                  </span>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+
+          <h1 className="text-5xl font-extrabold text-white leading-tight mb-6">
             Excellence in Healthcare, <br />
             Accessible to Everyone
           </h1>
-          <p className="text-xl text-gray-600 max-w-xl mx-auto lg:mx-0 mb-8">
+          <p className="text-xl text-gray-200 max-w-xl mx-auto lg:mx-0 mb-8">
             We deliver compassionate, technology-driven healthcare solutions that prioritize patients at every step.
             Your well-being is our mission — today and always.
           </p>
-          <Link href="/services">
-            <motion.button
-              whileHover={{ scale: 1.03 }}
-              whileTap={{ scale: 0.97 }}
-              className="bg-purple-700 hover:bg-purple-800 text-white font-semibold px-6 py-3 rounded-lg shadow-md transition"
-            >
-              Explore Services
-            </motion.button>
-          </Link>
-        </motion.div>
-
-        {/* Right Image */}
-        <motion.div
-          initial={{ opacity: 0, x: 50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-          className="w-full flex justify-center lg:justify-end"
-        >
-          <div className="w-full h-full max-w-xl lg:max-w-full lg:h-[500px] rounded-2xl overflow-hidden shadow-xl">
-            <img
-              src="https://s3-alpha-sig.figma.com/img/5883/70b2/d9fa2192c64402e1758d345ef8262e74?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=UH0n4pl7fLm0VXJQzXoOqj59sUjmohyogam7SWJWx4FaRZ0JoM9uNzLuRfUOCTpjCqPiLA8XjWzCpM-MeXo4Amu2H~x0DA5gSdUm7UvjNo6KcVROc9apK5CzXdKKJwi3g1ApLmnB~tvHfVfGjCkMk3BI-6Yr8EUV0J70yqmdYENiKreM2ZDEzftx68u3TB5VNMNuj37tyDo4SotuxYPl-SZWed-oY8xIdVpo1OHRmbqadTvAZLCDB6ZkhEysD2gx0E1gs9wECFMG3qtHa8zqzlKEAN6SNXFk5NI1XYPCwLSZulfV80s-a59xc6BGE7df5lfDhysz0zAh8~1NQTDmWw__"
-              alt="Healthcare Professionals"
-              className="object-cover w-full h-full"
-            />
+          <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <Link href="/services">
+              <motion.button
+                whileHover={{ scale: 1.03 }}
+                whileTap={{ scale: 0.97 }}
+                className="bg-purple-700 hover:bg-purple-800 text-white font-semibold px-6 py-3 rounded-lg shadow-md transition"
+              >
+                Explore Services
+              </motion.button>
+            </Link>
+            <Link href="/cure-arogya">
+              <motion.button
+                whileHover={{ scale: 1.03 }}
+                whileTap={{ scale: 0.97 }}
+                className="bg-white text-purple-700 hover:bg-gray-100 font-semibold px-6 py-3 rounded-lg shadow-md transition flex items-center"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3.586L7.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 10.586V7z" clipRule="evenodd" />
+                </svg>
+                Get Your Card
+              </motion.button>
+            </Link>
           </div>
         </motion.div>
+
+        {/* Value Proposition Cards - Visible on desktop */}
+        <div className="hidden lg:block space-y-4">
+          <motion.div 
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.5 }}
+            className="bg-white/10 backdrop-blur p-6 rounded-xl border border-white/20"
+          >
+            <div className="flex items-start">
+              <div className="bg-purple-100/20 p-3 rounded-lg mr-4">
+                <HiOutlineUserGroup className="text-2xl text-purple-300" />
+              </div>
+              <div>
+                <h3 className="font-bold text-white text-xl mb-1">Kutumba Plan</h3>
+                <p className="text-gray-200">Comprehensive healthcare coverage for your entire family with exclusive 25% discount on consultations, diagnostics, and treatments.</p>
+              </div>
+            </div>
+          </motion.div>
+
+          <motion.div 
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.7 }}
+            className="bg-white/10 backdrop-blur p-6 rounded-xl border border-white/20"
+          >
+            <div className="flex items-start">
+              <div className="bg-blue-100/20 p-3 rounded-lg mr-4">
+                <MdOutlineCurrencyRupee className="text-2xl text-blue-300" />
+              </div>
+              <div>
+                <h3 className="font-bold text-white text-xl mb-1">Hiriya Nagarika Plan</h3>
+                <p className="text-gray-200">Specialized healthcare benefits for seniors including priority appointments, additional diagnostics coverage, and 25% savings on all services.</p>
+              </div>
+            </div>
+          </motion.div>
+        </div>
       </div>
     </section>
   );
