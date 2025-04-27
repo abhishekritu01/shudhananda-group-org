@@ -297,7 +297,7 @@ const ContactUsSection = () => {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="p-3 w-full bg-white border border-gray-300 rounded-lg focus:ring-orange-500 focus:border-orange-500 transition"
+                      className="p-3 text-zinc-900 w-full bg-white border border-gray-300 rounded-lg focus:ring-orange-500 focus:border-orange-500 transition"
                       placeholder="John Doe"
                     />
                   </div>
@@ -312,7 +312,7 @@ const ContactUsSection = () => {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="p-3 w-full bg-white border border-gray-300 rounded-lg focus:ring-orange-500 focus:border-orange-500 transition"
+                      className="p-3 text-zinc-900 w-full bg-white border border-gray-300 rounded-lg focus:ring-orange-500 focus:border-orange-500 transition"
                       placeholder="john.doe@example.com"
                     />
                   </div>
@@ -327,7 +327,7 @@ const ContactUsSection = () => {
                     value={formData.message}
                     onChange={handleChange}
                     required
-                    className="p-3 w-full bg-white border border-gray-300 rounded-lg focus:ring-orange-500 focus:border-orange-500 transition"
+                    className="p-3 text-zinc-900 w-full bg-white border border-gray-300 rounded-lg focus:ring-orange-500 focus:border-orange-500 transition"
                     rows={5}
                     placeholder="Type your message here"
                   />
