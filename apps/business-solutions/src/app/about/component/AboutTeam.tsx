@@ -12,7 +12,7 @@ const team = [
         imageUrl: '/ArjunSachidanand.jpeg',
     },
     {
-        name: 'Dr. Sini ',
+        name: 'Dr. Sini Arjun',
         role: 'Director',
         imageUrl: '/SBS/DR. SINI.jpeg',
     },

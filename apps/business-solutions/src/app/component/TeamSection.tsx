@@ -277,7 +277,7 @@ const teams = [
   {
     id: 'team-009',
     icon: <RiEarthquakeLine className="text-purple-600" />,
-    title: "CAT",
+    title: "CAT Modeling",
     description: "Delivering advanced catastrophe risk solutions through simulation-based modeling, strategic risk planning, and proactive disaster readiness.",
     highlights: [
       "Led by Bharti Kaushik, CAT modeling specialist with 3+ years of experience",
