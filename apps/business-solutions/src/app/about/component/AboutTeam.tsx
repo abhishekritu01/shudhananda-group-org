@@ -1,3 +1,4 @@
+
 'use client'
 
 import React from 'react'
@@ -6,23 +7,23 @@ import { motion } from 'framer-motion'
 
 const team = [
     {
-        name: 'Dr, Arjun Sachidanand',
+        name: 'Dr. Arjun Sachidanand',
         role: 'Managing Director',
         imageUrl: '/ArjunSachidanand.jpeg',
     },
     {
         name: 'Dr. Sini ',
-        role: 'Medical Director',
+        role: 'Director',
         imageUrl: '/SBS/DR. SINI.jpeg',
     },
     {
-        name: 'Abhinandan ',
-        role: 'VP -New Initiatives & Investments',
-        imageUrl:  '/SBS/Abhinandan S-Photoroom.png',
+        name: 'Abhinandan S. Rao',
+        role: 'VP - New Initiatives & Investments',
+        imageUrl: '/SBS/Abhinandan S-Photoroom.png',
     },
     {
-        name: 'CAPT. RAGHU M DAS',
-        role: 'COO',
+        name: 'Capt. Raghu M. Das',
+        role: 'Chief Operations Officer',
         imageUrl: '/SBS/CAPT. RAGHU M DAS-Photoroom.png',
     },
     {
@@ -32,7 +33,7 @@ const team = [
     },
     {
         name: 'Vijay Asrani',
-        role: ' Internal Finance',
+        role: ' VP - Internal Finance',
         imageUrl: '/SBS/vijay.png',
     },
     {
@@ -85,13 +86,14 @@ const AboutTeam = () => {
                         whileHover={{ y: -5 }}
                         className="group"
                     >
-                        <div className="relative mx-auto h-32 w-32 rounded-full bg-gradient-to-br from-orange-100 to-white p-1 shadow-md">
+                        <div className="relative mx-auto h-40 w-40 rounded-full bg-gradient-to-br from-orange-100 to-white p-1 shadow-md">
                             <Image
                                 src={person.imageUrl}
                                 alt={person.name}
-                                width={128}
-                                height={128}
-                                className="rounded-full object-cover h-full w-full"
+                                layout="fill"  // Ensures the image fills the container
+                                objectFit="cover" // Ensures the image covers the entire container without distortion
+                                objectPosition="top" // Focuses the top part of the image
+                                className="rounded-full"
                             />
                             <div className="absolute inset-0 rounded-full bg-gradient-to-b from-transparent to-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                         </div>
