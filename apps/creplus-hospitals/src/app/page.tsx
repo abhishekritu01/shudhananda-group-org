@@ -1,4 +1,5 @@
 import AboutSection from './component/AboutSection'
+import Banner from './component/Banner'
 import ContactSection from './component/ContactSection'
 import Footer from './component/FooterSection'
 import HeroSection from './component/HeroSection'
@@ -16,6 +17,7 @@ const page = () => {
     <ServicesSection />
     {/* <FeaturedInitiative /> */}
     <LocationsSection />
+    <Banner />
     <Testimonial />
     <ContactSection />
     <Footer />

@@ -534,42 +534,39 @@ const HeroSection = () => {
           </div>
         </div> */}
 
-<div className="lg:hidden flex flex-col space-y-4 p-4">
-  <div className="flex flex-col bg-white/10 backdrop-blur-lg rounded-2xl p-4 border border-white/20 shadow-xl">
-    <div className="relative flex justify-center mb-4">
-      <img
-        src="/card.jpeg"
-        alt="Cure+ Arogya Card"
-        className="h-24 w-40 object-cover rounded-xl border-4 border-white shadow-md hover:scale-105 transition-transform duration-300"
-      />
-      <div className="absolute -top-2 -right-2 bg-yellow-400 text-purple-900 font-bold text-[10px] px-2 py-0.5 rounded-full shadow-md">
-        25% OFF
-      </div>
-    </div>
-    <div className="text-center">
-      <h3 className="text-lg font-bold text-white mb-2 leading-snug">
-        Introducing Cure+ Arogya Card
-      </h3>
-      <p className="text-gray-100 text-sm mb-4">
-        Exclusive healthcare plans offering comprehensive coverage with a special 25% discount on all services.
-      </p>
-      <Link href="/cure-arogya" className="flex justify-center">
-        <motion.button
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          className="mt-2 bg-white text-purple-700 hover:bg-gray-100 font-semibold px-4 py-2 rounded-lg shadow-md transition flex items-center gap-2 text-sm"
-          aria-label="Get Your Cure+ Arogya Card"
-        >
-          <FaAddressCard className="text-base" />
-          Get Your Card
-        </motion.button>
-      </Link>
-    </div>
-  </div>
-</div>
-
-
-
+        <div className="lg:hidden flex flex-col space-y-4 p-4">
+          <div className="flex flex-col bg-white/10 backdrop-blur-lg rounded-2xl p-4 border border-white/20 shadow-xl">
+            <div className="relative flex justify-center mb-4">
+              <img
+                src="/card.jpeg"
+                alt="Cure+ Arogya Card"
+                className="h-24 w-40 object-cover rounded-xl border-4 border-white shadow-md hover:scale-105 transition-transform duration-300"
+              />
+              <div className="absolute -top-2 -right-2 bg-yellow-400 text-purple-900 font-bold text-[10px] px-2 py-0.5 rounded-full shadow-md">
+                25% OFF
+              </div>
+            </div>
+            <div className="text-center">
+              <h3 className="text-lg font-bold text-white mb-2 leading-snug">
+                Introducing Cure+ Arogya Card
+              </h3>
+              <p className="text-gray-100 text-sm mb-4">
+                Exclusive healthcare plans offering comprehensive coverage with a special 25% discount on all services.
+              </p>
+              <Link href="/cure-arogya" className="flex justify-center">
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="mt-2 bg-white text-purple-700 hover:bg-gray-100 font-semibold px-4 py-2 rounded-lg shadow-md transition flex items-center gap-2 text-sm"
+                  aria-label="Get Your Cure+ Arogya Card"
+                >
+                  <FaAddressCard className="text-base" />
+                  Get Your Card
+                </motion.button>
+              </Link>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
