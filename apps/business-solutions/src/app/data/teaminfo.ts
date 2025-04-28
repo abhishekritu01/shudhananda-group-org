@@ -8,7 +8,7 @@ export const teams = [
             "The backbone of insurance, banking, and healthcare policy management, ensuring accuracy, compliance, and efficiency at every stage.",
         leadership: {
             leaderName: "Ms. Ashwini A.",
-            experience: "Over 10 years of experience in digital marketing, sales, and policy management.",
+            experience: "Dynamic and results-driven professional with over 10 years of experience in digital marketing, sales strategy, and policy management. Proven expertise in driving brand growth through data-driven marketing campaigns, optimizing sales funnels, and crafting clear, compliant content for policy communication. Adept at cross-functional collaboration, market analysis, and delivering impactful messaging that aligns with organizational goals. Passionate about using digital tools and insights to enhance customer engagement, increase revenue, and ensure policy clarity across stakeholder groups.",
         },
         teamSize: 50,
         coreServices: [
@@ -38,7 +38,7 @@ export const teams = [
             "Specializes in efficient claims management, ensuring accuracy, compliance, and timely resolution.",
         leadership: {
             leaderName: "Ms. Chandana",
-            experience: "Senior employee and founding member with expertise in claims processing.",
+            experience: "Chandana has 6 years of experience running her own business in the hospitality industry. She then started her career in house insurance as a Claims Process Associate at Cabrillo Coastal General Insurance, where she has worked for 3 years. For the past year, she has been leading the team.",
         },
         teamSize: 15,
         coreServices: [
@@ -64,7 +64,7 @@ export const teams = [
             "Dedicated to delivering high-quality results through manual and automated testing methodologies.",
         leadership: {
             leaderName: "Nagashree Nagaraj",
-            experience: "10 years in Java, Python, Selenium, SAP HANA, and API testing.",
+            experience: "10+ years of QA-driven development in Agile/DevOps environments. Advanced proficiency in Java & Python for scalable automation solutions. Expert in designing and implementing end-to-end test suites using Selenium WebDriver, TestNG, PyTest, and BDD frameworks (Cucumber/Behave). Skilled in REST/SOAP testing using Postman, REST Assured, and integration validations with Swagger/OpenAPI specs. In-depth knowledge of SAP HANA data models, SQLScript, and performance optimization in enterprise environments. Seamless test integration with Jenkins, GitLab CI, and Dockerized test environments.",
         },
         teamSize: 20,
         coreServices: [
@@ -89,7 +89,7 @@ export const teams = [
             "Transforming raw data into valuable insights with smart integration and automation.",
         leadership: {
             leaderName: "Panduranga B P",
-            experience: "Expert in Python, SQL, and BI tools with over 2 years of experience.",
+            experience: "A highly competent Data Engineering and Analysis professional with experience in utilizing tools like SQL, Matillion, Apache Airflow, and Sisense to facilitate data-driven decision-making. Possesses a track record of moving data extraction processes to make them more efficient and scalable. Demonstrates great flexibility to new technologies, with successful project integration with Dimensional Insight.",
         },
         teamSize: 5,
         coreServices: [
@@ -119,7 +119,7 @@ export const teams = [
             "Driving insurance analytics and automation through advanced data tools and insights.",
         leadership: {
             leaderName: "Sourav Singh",
-            experience: "Experienced in data analysis, scripting, and insurance product insights.",
+            experience: "A results-driven data professional with deep expertise in data management, premium modeling, and data engineering solutions. Skilled in utilizing tools such as Excel, ASTEC, Python, and SQL to streamline data workflows and support strategic pricing initiatives. Experienced in cleaning, transforming, and analyzing large-scale insurance datasets to drive actionable insights. Proficient in automating processes through Python scripting and API integrations, and delivering robust reporting and visualization to actuarial and business teams.",
         },
         teamSize: 4,
         coreServices: [
@@ -147,13 +147,13 @@ export const teams = [
     {
         id: "team-007",
         name: "Accounts",
-        image: "/teamlead/WhatsApp Image 2025-04-25 at 11.34.34.jpeg",
+        image: "/teamlead/WhatsApp Image 2025-04-25 at 11.39.53.jpeg",
         groupphoto: "account.JPG",
         description:
             "Specializing in all financial operations in compliance with US GAAP and regulations.",
         leadership: {
             leaderName: "Mr. Akshay Othayoth",
-            experience: "Senior Staff Accountant with over 4+ years’ experience in handling Finance and Accounts.",
+            experience: "I have 3 years of hands-on experience in Accounts Payable, where I managed the end-to-end invoice processing cycle, including verifying vendor invoices, matching with purchase orders, resolving discrepancies, and ensuring timely payments.",
         },
         teamSize: 10,
         coreServices: [
@@ -181,7 +181,7 @@ export const teams = [
             "Delivering personalized insurance solutions through expert risk assessment, transparent communication, and client-focused coverage.",
         leadership: {
             leaderName: "Ms. Chandana",
-            experience: "Experienced team lead with 4+ years of expertise in insurance.",
+            experience: "Chandana has 6 years of experience running her own business in the hospitality industry. She then started her career in house insurance as a Claims Process Associate at Cabrillo Coastal General Insurance, where she has worked for 3 years. For the past year, she has been leading the team.",
         },
         teamSize: 6,
         coreServices: [
@@ -209,7 +209,7 @@ export const teams = [
             "Delivering advanced catastrophe risk solutions through simulation-based modeling, strategic risk planning, and proactive disaster readiness.",
         leadership: {
             leaderName: "Bharti",
-            experience: "CAT modeling specialist with 2+ years of experience in high-impact peril modeling.",
+            experience: "Have experience of more than 3 years in Data Science, Business analytics along with Catastrophic Modeling in the Insurance domain. Currently, leading CAT modeling team and working as Risk Analyst at Sudhanand Business Solutions Private Limited. Have an expertise of SQL, Python, Tableau, Power BI, Machine Learning, AIR and software like AIR cloud use for NAT-CAT modeling. Other than this, have an interest of singing. playing guitar, cricket, badminton and love to watching anime.",
         },
         teamSize: 5,
         coreServices: [
