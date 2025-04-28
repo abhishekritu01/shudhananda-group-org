@@ -19,16 +19,16 @@ const navigation = [
 
 const teamMembers = [
   {
-    name: 'Dr. Arjun Sachidanand',
-    role: 'Managing Trustee',
-    image: '/ArjunSachidanand.jpeg',
-    bio: 'Dr. Arjun Sachidanand is a visionary leader and the driving force behind CurePlus Blood Bank. With a deep commitment to healthcare and community service, he has dedicated his career to improving access to life-saving resources in rural Karnataka.',
-  },
-  {
     name: 'Dr. Sini Arjun',
     role: 'Medical Officer',
     image: '/DrSiniArjun.jpeg',
     bio: 'Dr. Sini Arjun is a compassionate medical officer at CurePlus Blood Bank, dedicated to ensuring the safety and quality of blood donations. Her expertise and commitment to patient care are invaluable to our mission.',
+  },
+  {
+    name: 'Dr. Arjun Sachidanand',
+    role: 'Managing Trustee',
+    image: '/ArjunSachidanand.jpeg',
+    bio: 'Dr. Arjun Sachidanand is a visionary leader and the driving force behind CurePlus Blood Bank. With a deep commitment to healthcare and community service, he has dedicated his career to improving access to life-saving resources in rural Karnataka.',
   },
   {
     name: 'Capt. Raghu Das',
@@ -78,8 +78,11 @@ const page = () => {
               <span className='mx-2'> Dr. M. D. Sachidananda Murthy Memorial Educational Trust</span>
               <PiTrademarkRegistered className="-mt-4 inline-block ml-2 mx-1" />
             </strong>
-            and <strong> <br /> Dr. Arjun Sachidanand</strong>, a renowned medical professional with over
-            <strong> 20 years of experience</strong> in the field. We are a <strong> <br /> not-for-profit blood bank</strong> dedicated to providing safe and quality blood products to those in need.
+            and
+            <strong> <br />
+              Dr. Sini Arjun </strong>, a renowned medical professional with over
+            <strong> 10 + years of experience</strong> in the field.
+            We are a <strong> <br /> not-for-profit blood bank</strong> dedicated to providing safe and quality blood products to those in need.
             <br /><br />
 
             Based in Mysuru, Karnataka, with a storage capacity of over <strong>2,000 units</strong>, we provide life-saving support to hospitals and communities across rural Karnataka.
