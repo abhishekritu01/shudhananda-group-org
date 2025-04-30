@@ -238,16 +238,15 @@
 
 'use client';
 
-import React from 'react';
-import { useParams } from 'next/navigation';
-import { hospitals } from '@/app/data/Hospital';
 import Footer from '@/app/component/FooterSection';
+import { hospitals } from '@/app/data/Hospital';
+import { useParams } from 'next/navigation';
 
-import { HiOutlineLocationMarker, HiOutlinePhone, HiOutlineClock, HiOutlineStar } from 'react-icons/hi';
-import { MdLocalHospital, MdOutlineLocalHotel, MdOutlineEmergency, MdOutlineVerified } from 'react-icons/md';
-import { FaWifi, FaParking, FaProcedures, FaUserMd } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import { FaParking, FaProcedures, FaUserMd, FaWifi } from 'react-icons/fa';
+import { HiOutlineClock, HiOutlineLocationMarker, HiOutlinePhone, HiOutlineStar } from 'react-icons/hi';
+import { MdLocalHospital, MdOutlineEmergency, MdOutlineLocalHotel } from 'react-icons/md';
 
 const hospitalsList = [
   { id: 1, name: 'Cure Plus Disha Hospital', image: '/cureplus/cureplus.png', status: 'popular' },
@@ -265,12 +264,12 @@ const hospitalsList = [
   { id: 13, name: 'Cure Plus Halli Mysore Hospital', image: '/halli/halli.png', status: 'popular' },
 ];
 
-const statusColors = {
-  normal: 'bg-gray-100 text-gray-800',
-  popular: 'bg-yellow-100 text-yellow-800',
-  featured: 'bg-blue-100 text-blue-800',
-  emergency: 'bg-red-100 text-red-800'
-};
+// const statusColors = {
+//   normal: 'bg-gray-100 text-gray-800',
+//   popular: 'bg-yellow-100 text-yellow-800',
+//   featured: 'bg-blue-100 text-blue-800',
+//   emergency: 'bg-red-100 text-red-800'
+// };
 
 const fadeIn = {
   hidden: { opacity: 0, y: 30 },
@@ -295,7 +294,7 @@ const Page = () => {
   }
 
   // Determine hospital status (you can add this to your hospital data)
-  const hospitalStatus: keyof typeof statusColors = hospitalsList.find(h => h.id === hospitalId)?.status as keyof typeof statusColors || 'normal';
+  // const hospitalStatus: keyof typeof statusColors = hospitalsList.find(h => h.id === hospitalId)?.status as keyof typeof statusColors || 'normal';
 
   return (
     <>
@@ -315,7 +314,7 @@ const Page = () => {
                 alt={hospital.name}
                 className="w-full h-72 object-cover rounded-xl shadow-lg"
               />
-              <div className={`absolute top-4 right-4 px-3 py-1 rounded-full text-sm font-medium ${statusColors[hospitalStatus]}`}>
+              {/* <div className={`absolute top-4 right-4 px-3 py-1 rounded-full text-sm font-medium ${statusColors[hospitalStatus]}`}>
                 {hospitalStatus === 'popular' && (
                   <span className="flex items-center gap-1">
                     <HiOutlineStar className="w-4 h-4" /> Popular
@@ -327,7 +326,7 @@ const Page = () => {
                   </span>
                 )}
                 {hospitalStatus === 'normal' && 'Standard'}
-              </div>
+              </div> */}
             </div>
 
             <div className="mt-6 flex justify-between items-start">
@@ -363,31 +362,31 @@ const Page = () => {
             className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12"
           >
             <div className="bg-blue-50 p-4 rounded-xl flex items-center gap-3">
-              <FaUserMd className="text-blue-600 w-6 h-6" />
+              <FaUserMd className="text-purple-600 w-6 h-6" />
               <div>
-                <p className="text-sm text-gray-500">Specialists</p>
-                <p className="font-bold">{hospital.specialists || '10+'}</p>
+                <p className="text-sm text-purple-600 ">Specialists</p>
+                <p className="font-bold text-purple-600 ">{hospital.specialists || '10+'}</p>
               </div>
             </div>
             <div className="bg-purple-50 p-4 rounded-xl flex items-center gap-3">
               <FaProcedures className="text-purple-600 w-6 h-6" />
               <div>
-                <p className="text-sm text-gray-500">Beds</p>
-                <p className="font-bold">{hospital.beds || '20+'}</p>
+                <p className="text-sm text-purple-600 ">Beds</p>
+                <p className="font-bold text-purple-600 ">{hospital.beds || '20+'}</p>
               </div>
             </div>
             <div className="bg-green-50 p-4 rounded-xl flex items-center gap-3">
-              <MdOutlineEmergency className="text-green-600 w-6 h-6" />
+              <MdOutlineEmergency className="text-purple-600 w-6 h-6" />
               <div>
-                <p className="text-sm text-gray-500">Emergency</p>
-                <p className="font-bold">24/7</p>
+                <p className="text-sm text-purple-600 ">Emergency</p>
+                <p className="font-bold text-purple-600 ">24/7</p>
               </div>
             </div>
             <div className="bg-orange-50 p-4 rounded-xl flex items-center gap-3">
-              <HiOutlineStar className="text-orange-600 w-6 h-6" />
+              <HiOutlineStar className="text-purple-600  w-6 h-6" />
               <div>
-                <p className="text-sm text-gray-500">Rating</p>
-                <p className="font-bold">4.8/5</p>
+                <p className="text-sm text-purple-600 ">Rating</p>
+                <p className="font-bold text-purple-600 ">4.8/5</p>
               </div>
             </div>
           </motion.section>
@@ -479,7 +478,7 @@ const Page = () => {
           >
             <h2 className="text-2xl font-semibold mb-3 border-b pb-2">Infrastructure</h2>
             <p className="text-base leading-relaxed">{hospital.infrastructure}</p>
-            
+
             {hospital.departments && (
               <div className="mt-6">
                 <h3 className="text-xl font-semibold mb-3">Departments</h3>
@@ -519,11 +518,11 @@ const Page = () => {
                     className="w-full h-40 object-cover transition-transform duration-300 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <button className="bg-white bg-opacity-90 p-2 rounded-full">
+                    {/* <button className="bg-white bg-opacity-90 p-2 rounded-full">
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                       </svg>
-                    </button>
+                    </button> */}
                   </div>
                 </motion.div>
               ))}
@@ -543,17 +542,20 @@ const Page = () => {
               <h2 className="text-2xl font-semibold mb-4 border-b pb-2">Contact Information</h2>
               <div className="space-y-4 text-gray-700">
                 <div className="flex items-start gap-3">
-                  <HiOutlineLocationMarker className="text-blue-500 w-5 h-5 mt-1" />
+                  <HiOutlineLocationMarker className="text-purple-600 w-5 h-5 mt-1" />
                   <div>
-                    <p className="font-medium">Address</p>
-                    <p>{hospital.contact.address}</p>
+                    {/* <p className="font-medium">Address</p> */}
+                    <p className='text-purple-600 '>{hospital.contact.address}</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
-                  <HiOutlinePhone className="text-green-500 w-5 h-5" />
+                  <HiOutlinePhone className="text-purple-600 w-5 h-5" />
                   <div>
-                    <p className="font-medium">Phone</p>
-                    <p>{hospital.contact.phone}</p>
+
+                    <a href={`tel:${hospital.contact.phone}`} className="text-purple-600 underline">
+                      {hospital.contact.phone}
+                    </a>
+
                   </div>
                 </div>
                 {hospital.contact.email && (
@@ -570,6 +572,7 @@ const Page = () => {
               </div>
             </div>
 
+
             <div className="bg-gray-50 p-6 rounded-xl shadow-md">
               <h2 className="text-2xl font-semibold mb-4 border-b pb-2 flex items-center gap-2">
                 <HiOutlineClock className="text-orange-500" />
@@ -578,15 +581,15 @@ const Page = () => {
               <div className="space-y-3">
                 <div className="flex justify-between">
                   <span className="text-gray-600">Monday - Friday</span>
-                  <span className="font-medium">8:00 AM - 8:00 PM</span>
+                  <span className="font-medium">24 Hours</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-gray-600">Saturday</span>
-                  <span className="font-medium">9:00 AM - 6:00 PM</span>
+                  <span className="font-medium">24 Hours</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-gray-600">Sunday</span>
-                  <span className="font-medium">Emergency Only</span>
+                  <span className="font-medium">24 Hours</span>
                 </div>
                 <div className="pt-3 mt-3 border-t">
                   <div className="flex justify-between items-center">
@@ -608,9 +611,8 @@ const Page = () => {
                 <Link
                   key={hosp.id}
                   href={`/hospital/${hosp.id}`}
-                  className={`block rounded-lg transition-colors duration-200 ${
-                    hospitalId === hosp.id ? 'bg-gray-200' : 'hover:bg-gray-100'
-                  }`}
+                  className={`block rounded-lg transition-colors duration-200 ${hospitalId === hosp.id ? 'bg-gray-200' : 'hover:bg-gray-100'
+                    }`}
                 >
                   <li className="flex items-center gap-3 p-3">
                     <div className="relative">
@@ -619,17 +621,16 @@ const Page = () => {
                         alt={hosp.name}
                         className="w-12 h-12 object-cover rounded-md shadow"
                       />
-                      {hosp.status !== 'normal' && (
+                      {/* {hosp.status !== 'normal' && (
                         <span className={`absolute -top-2 -right-2 text-xs px-1.5 py-0.5 rounded-full ${statusColors[hosp.status as keyof typeof statusColors]}`}>
                           {hosp.status === 'popular' && '★'}
                           {hosp.status === 'featured' && '✓'}
                         </span>
-                      )}
+                      )} */}
                     </div>
                     <div>
-                      <span className={`text-sm font-medium ${
-                        hospitalId === hosp.id ? 'text-blue-800' : 'text-gray-800'
-                      }`}>
+                      <span className={`text-sm font-medium ${hospitalId === hosp.id ? 'text-blue-800' : 'text-gray-800'
+                        }`}>
                         {hosp.name}
                       </span>
                       <div className="flex items-center gap-1 mt-1">

@@ -26,9 +26,9 @@ const Header: React.FC<HeaderProps> = ({ navLinks }) => {
           <Image
             src="/CUREPLUS HOSPITALS.png"
             alt="CurePlus Hospitals Logo"
-            width={60}
-            height={60}
-            className="rounded-full object-cover"
+            width={90}
+            height={100}
+            className="rounded-full object-cover scale-120"
           />
           {/* <span className="text-xl font-semibold text-purple-800 hidden sm:block">
             CurePlus Hospitals
