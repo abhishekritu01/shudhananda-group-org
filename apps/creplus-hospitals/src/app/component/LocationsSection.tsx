@@ -51,7 +51,7 @@ const HospitalsWithMap = () => {
             // controls
           />
 
-          <div className=" text-purple-800 p-4 text-center text-xl font-bold">
+          <div className=" text-purple-600 p-4 text-center text-xl font-bold">
             Our Network of Hospitals
           </div>
         </motion.div>
@@ -65,7 +65,7 @@ const HospitalsWithMap = () => {
           className="flex flex-col gap-6"
         >
           <motion.h2
-            className="text-4xl font-bold text-gray-800"
+            className="text-4xl font-bold text-purple-600"
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -94,8 +94,8 @@ const HospitalsWithMap = () => {
                 <Link href={`/hospital/${hospital.id}`}>
                   <div className="flex flex-col gap-2">
                     <div className="flex items-center gap-3">
-                      <FaHospitalAlt className="text-purple-700 text-xl" />
-                      <h3 className="text-lg font-semibold text-purple-900">{hospital.name}</h3>
+                      <FaHospitalAlt className="text-purple-600 text-xl" />
+                      <h3 className="text-lg font-semibold text-purple-600">{hospital.name}</h3>
                     </div>
                     <div className="flex items-center text-sm text-gray-600 gap-2">
                       <FaMapMarkerAlt className="text-gray-400" />

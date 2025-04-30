@@ -92,7 +92,7 @@ const TeamPage = () => {
     <>
       <div className="max-w-7xl mx-auto px-6 py-20 text-gray-800">
         <div className="text-center mb-16">
-          <h1 className="text-5xl font-extrabold mb-4 text-purple-800">Meet Our Team</h1>
+          <h1 className="text-5xl font-extrabold mb-4 text-purple-600">Meet Our Team</h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Passionate professionals dedicated to building a healthier India, one community at a time.
           </p>
@@ -106,8 +106,8 @@ const TeamPage = () => {
                 alt={member.name}
                 className="w-24 h-24 rounded-full mx-auto mb-4 object-cover border"
               />
-              <h2 className="text-xl text-purple-800 font-bold mb-1">{member.name}</h2>
-              <p className="text-purple-800  font-bold mb-2">{member.role}</p>
+              <h2 className="text-xl text-purple-600 font-bold mb-1">{member.name}</h2>
+              <p className="text-purple-600  font-bold mb-2">{member.role}</p>
               <p className="text-sm text-zinc-900 mb-4">{member.bio}</p>
               {/* <div className="flex justify-center gap-4">
                 <a href={member.linkedin} aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">

@@ -66,7 +66,7 @@ const ContactUs = () => {
             variants={fadeVariant}
             custom={0}
           >
-            <h2 className="text-4xl font-bold text-purple-800">Let’s Connect</h2>
+            <h2 className="text-4xl font-bold text-purple-600">Let’s Connect</h2>
             <p className="text-gray-600">
               Whether you have a question, need support, or just want to say hello — we&apos;re here to help.
             </p>
@@ -74,21 +74,21 @@ const ContactUs = () => {
               <div className="flex items-start gap-4">
                 <FiPhone className="text-blue-600 w-6 h-6 mt-1" />
                 <div>
-                  <h4 className="text-lg font-semibold text-gray-700">Phone</h4>
+                  {/* <h4 className="text-lg font-semibold text-gray-700">Phone</h4> */}
                   <p className="text-gray-700">+91 98765 43210</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
                 <FiMail className="text-green-600 w-6 h-6 mt-1" />
                 <div>
-                  <h4 className="text-lg font-semibold text-gray-700">Email</h4>
+                  {/* <h4 className="text-lg font-semibold text-gray-700">Email</h4> */}
                   <p className="text-gray-700">support@cureplushospitals.com</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
                 <FiMapPin className="text-red-600 w-6 h-6 mt-1" />
                 <div>
-                  <h4 className="text-lg font-semibold text-gray-700">Address</h4>
+                  {/* <h4 className="text-lg font-semibold text-gray-700">Address</h4> */}
                   <p className="text-gray-700">123, Main Road, Mysuru, Karnataka, India</p>
                 </div>
               </div>
@@ -103,7 +103,7 @@ const ContactUs = () => {
             variants={fadeVariant}
             custom={1}
           >
-            <h3 className="text-2xl font-bold mb-6 text-purple-800">Send a Message</h3>
+            <h3 className="text-2xl font-bold mb-6 text-purple-600">Send a Message</h3>
             <form className="space-y-6" onSubmit={handleSubmit}>
               <div className="grid sm:grid-cols-2 gap-6">
                 <input
@@ -145,7 +145,7 @@ const ContactUs = () => {
               <button
                 type="submit"
                 disabled={loading}
-                className="inline-flex items-center gap-2 px-6 py-3 bg-purple-800 text-white font-semibold rounded-md hover:bg-purple-900 transition"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-purple-600 text-white font-semibold rounded-md hover:bg-purple-900 transition"
               >
                 <FiSend className="w-5 h-5" />
                 {loading ? 'Sending...' : 'Submit'}

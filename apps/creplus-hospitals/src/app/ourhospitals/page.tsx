@@ -346,7 +346,7 @@ const HospitalsPage = () => {
               whileHover={{ y: -5 }}
             >
               <h3 className="text-xl font-semibold text-purple-600 mb-4 flex items-center gap-2">
-                <FaClinicMedical className="text-purple-500" />
+                <FaClinicMedical className="text-purple-600" />
                 Key Features
               </h3>
               <ul className="space-y-3">

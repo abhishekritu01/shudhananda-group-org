@@ -450,7 +450,7 @@ const HeroSection = () => {
               <motion.button
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
-                className="bg-purple-700 hover:bg-purple-800 text-white font-semibold px-6 py-3 rounded-lg shadow-md transition"
+                className="bg-purple-600 hover:bg-purple-800 text-white font-semibold px-6 py-3 rounded-lg shadow-md transition"
               >
                 Explore Services
               </motion.button>

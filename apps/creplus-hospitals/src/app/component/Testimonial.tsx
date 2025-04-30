@@ -37,7 +37,7 @@ const Testimonial = () => {
     <section className="bg-gray-50 py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto text-center">
         <motion.h2
-          className="text-3xl sm:text-4xl font-bold text-gray-800 mb-14"
+          className="text-3xl sm:text-4xl font-bold text-purple-600 mb-14"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -57,7 +57,7 @@ const Testimonial = () => {
               className="bg-gradient-to-br from-purple-50 to-white p-6 rounded-2xl border border-purple-100 shadow-md hover:shadow-xl transition duration-300"
             >
               <div className="flex items-center mb-4">
-                <div className="w-12 h-12 rounded-full bg-purple-700 text-white flex items-center justify-center font-semibold text-md shadow">
+                <div className="w-12 h-12 rounded-full bg-purple-600 text-white flex items-center justify-center font-semibold text-md shadow">
                   {t.name.charAt(0)}
                 </div>
                 <div className="ml-4 text-left">

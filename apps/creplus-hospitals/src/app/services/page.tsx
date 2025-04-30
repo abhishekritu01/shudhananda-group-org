@@ -67,7 +67,7 @@ const Page = () => {
           custom={0}
           className="text-center mb-12"
         >
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-purple-800">Our Healthcare Services</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-purple-600">Our Healthcare Services</h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Offering accessible, high-quality healthcare solutions across rural and urban regions.
           </p>
@@ -103,7 +103,7 @@ const Page = () => {
         >
           <h3 className="text-xl font-semibold mb-4">Looking for a specific treatment?</h3>
           <Link href="/contact">
-            <button className="inline-flex items-center gap-2 px-5 py-2.5 bg-purple-800 text-white rounded-full hover:bg-purple-900 transition">
+            <button className="inline-flex items-center gap-2 px-5 py-2.5 bg-purple-600 text-white rounded-full hover:bg-purple-700 transition">
               Contact Us <FiArrowRight className="w-4 h-4" />
             </button>
           </Link>

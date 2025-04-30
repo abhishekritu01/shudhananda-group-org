@@ -279,10 +279,10 @@ const ServicesSection = () => (
     <div className="relative max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
       {/* Left side: Content */}
       <div>
-        <h2 className="text-4xl font-extrabold text-purple-800 mb-6">
+        <h2 className="text-4xl font-extrabold text-purple-600 mb-6">
           Why Choose CurePlus?
         </h2>
-        <p className="text-lg text-gray-700 leading-relaxed">
+        <p className="text-lg text-zinc-600 leading-relaxed">
           At CurePlus Hospitals, we are committed to transforming healthcare
           with compassion, innovation, and accessibility. Our core services
           reflect our mission to serve communities with comprehensive medical
@@ -298,10 +298,10 @@ const ServicesSection = () => (
             key={index}
             className="bg-white p-5 rounded-2xl border border-purple-100 shadow hover:shadow-md transition-all duration-300"
           >
-            <div className="text-purple-700 text-3xl mb-3 flex justify-center">
+            <div className="text-purple-600 text-3xl mb-3 flex justify-center">
               {service.icon}
             </div>
-            <h3 className="text-lg font-semibold text-center text-purple-900 mb-1">
+            <h3 className="text-lg font-semibold text-center text-purple-600 mb-1">
               {service.title}
             </h3>
             <p className="text-sm text-gray-600 text-center">

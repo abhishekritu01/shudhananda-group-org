@@ -50,7 +50,7 @@ const AboutPage = () => {
 
         {/* Header */}
         <motion.div initial="hidden" animate="visible" variants={fadeUp} custom={0} className="text-center mb-16">
-          <h1 className="text-5xl font-extrabold mb-4 text-purple-800 leading-tight">Building Healthier Communities</h1>
+          <h1 className="text-5xl font-extrabold mb-4 text-purple-600 leading-tight">Building Healthier Communities</h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             CurePlus Hospitals is committed to transforming rural healthcare across India.
           </p>
@@ -79,19 +79,19 @@ const AboutPage = () => {
               title: 'Vision',
               desc: 'To provide affordable, accessible, inclusive & quality healthcare services to five million rural and urban poor by 2025.',
               color: 'blue-100',
-              icon: <FaEye className="text-blue-500 w-8 h-8" />,
+              icon: <FaEye className="text-purple-600 w-8 h-8" />,
             },
             {
               title: 'Mission',
               desc: 'To serve the underserved in restoration and maintenance of their health through implementation of suitable healthcare schemes & development of integrated healthcare infrastructure always keeping the focus on the beneficiary.',
               color: 'green-100',
-              icon: <FiTarget className="text-green-500 w-8 h-8" />,
+              icon: <FiTarget className="text-purple-600 w-8 h-8" />,
             },
             {
               title: 'Goal',
               desc: '200+ hospitals across India by 2028 with a focus on rural and underserved areas to ensure equitable healthcare access.',
               color: 'yellow-100',
-              icon: <FaBullseye className="text-yellow-500 w-8 h-8" />,
+              icon: <FaBullseye className="text-purple-600 w-8 h-8" />,
             },
           ].map((item, i) => (
             <motion.div
@@ -105,7 +105,7 @@ const AboutPage = () => {
             >
               <div className="flex items-center gap-4 mb-3">
                 {item.icon}
-                <h2 className="text-2xl font-bold text-purple-800">{item.title}</h2>
+                <h2 className="text-2xl font-bold text-purple-600">{item.title}</h2>
               </div>
               <p className="text-gray-700">{item.desc}</p>
             </motion.div>
@@ -116,17 +116,17 @@ const AboutPage = () => {
         <div className="grid md:grid-cols-3 gap-8 mb-20">
           {[
             {
-              icon: <FaAmbulance className="text-red-500 w-8 h-8" />,
+              icon: <FaAmbulance className="text-purple-600 w-8 h-8" />,
               title: '24/7 Medical Services',
               desc: 'Round-the-clock emergency and primary healthcare access.',
             },
             {
-              icon: <FaHeartbeat className="text-blue-500 w-8 h-8" />,
+              icon: <FaHeartbeat className="text-purple-600 w-8 h-8" />,
               title: 'Advanced Diagnostics',
               desc: 'High-tech tools and accurate diagnostic support.',
             },
             {
-              icon: <MdOutlineLocalPharmacy className="text-green-500 w-8 h-8" />,
+              icon: <MdOutlineLocalPharmacy className="text-purple-600 w-8 h-8" />,
               title: 'In-house CurePlus Pharma',
               desc: 'Affordable, quality medicines for every patient.',
             },
@@ -142,7 +142,7 @@ const AboutPage = () => {
             >
               <div className="flex items-center gap-4 mb-3">
                 {item.icon}
-                <h3 className="text-xl font-semibold text-purple-800 ">{item.title}</h3>
+                <h3 className="text-xl font-semibold text-purple-600 ">{item.title}</h3>
               </div>
               <p className="text-gray-600 text-sm leading-relaxed">{item.desc}</p>
             </motion.div>
@@ -158,7 +158,7 @@ const AboutPage = () => {
           variants={fadeUp}
           custom={5}
         >
-          <h2 className="text-3xl font-bold mb-4 text-purple-800">Our Hub-and-Spoke Model</h2>
+          <h2 className="text-3xl font-bold mb-4 text-purple-600">Our Hub-and-Spoke Model</h2>
           <p className="text-lg text-gray-700 mb-2">
             Hubs: <strong>Mysuru</strong>, <strong>Kushalnagar</strong> <br />
             Spokes: <strong>Chamarajanagar, Mandya, Hassan</strong> and more — empowering healthcare delivery in remote regions.
@@ -174,7 +174,7 @@ const AboutPage = () => {
           variants={fadeUp}
           custom={6}
         >
-          <h2 className="text-3xl font-bold mb-6 text-purple-800">Hospitals Under SHPL</h2>
+          <h2 className="text-3xl font-bold mb-6 text-purple-600">Hospitals Under SHPL</h2>
           <ul className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 text-gray-800">
             {hospitalsList.map((hospital, index) => (
                 <Link 
@@ -194,9 +194,9 @@ const AboutPage = () => {
                   />
                 </div>
                 <div className="flex items-center gap-2 p-4">
-                  <FaHospital className="text-purple-800" />
+                  <FaHospital className="text-purple-600" />
                   {/* <Link href={`/hospital/${hospital.id}`}> */}
-                    <p className="text-purple-800 hover:underline">{hospital.name}</p>
+                    <p className="text-purple-600 hover:underline">{hospital.name}</p>
                   {/* </Link> */}
                 </div>
               </motion.li>

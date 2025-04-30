@@ -129,10 +129,10 @@ const AboutSection = () => (
         viewport={{ once: true }}
         className="mb-14 text-center"
       >
-        <h2 className="text-4xl md:text-5xl font-extrabold text-purple-800 mb-4">
+        <h2 className="text-4xl md:text-5xl font-extrabold text-purple-600 mb-4">
           About CurePlus Hospitals
         </h2>
-        <p className="text-lg md:text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
+        <p className="text-lg md:text-xl text-zinc-600 max-w-4xl mx-auto leading-relaxed">
           CurePlus Hospitals, a part of Sudhanand Health Care Solutions, is transforming rural healthcare with a growing network across Karnataka.
           <br /><br />
           Our 24/7 medical care, advanced diagnostics, and Cure+ Pharma make quality treatment accessible and affordable to everyone.
@@ -151,10 +151,10 @@ const AboutSection = () => (
             viewport={{ once: true, amount: 0.2 }}
             variants={fadeInVariants}
           >
-            <div className="bg-white text-purple-700 p-3 rounded-full shadow mb-4 text-3xl">
+            <div className="bg-white text-purple-600 p-3 rounded-full shadow mb-4 text-3xl">
               {stat.icon}
             </div>
-            <p className="text-base md:text-lg font-semibold text-blue-900">
+            <p className="text-base md:text-lg font-semibold text-purple-600">
               {stat.label}
             </p>
           </motion.div>
