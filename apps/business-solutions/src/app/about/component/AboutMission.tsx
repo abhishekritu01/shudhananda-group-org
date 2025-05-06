@@ -15,10 +15,10 @@ const AboutMission = () => {
                 <div className="mt-6 flex flex-col gap-x-8 gap-y-20 lg:flex-row">
                     <div className="lg:w-full lg:max-w-2xl lg:flex-auto">
                         <p className="text-xl/8 text-gray-600">
-                            At SBPL, our mission is to drive innovation across multiple industries, from healthcare and IT to finance and hospitality.
+                        At SBPL, our mission is to drive innovation across multiple industries-from healthcare and IT to finance and hospitality. We also aspire to become leaders in the IT/ITES sector globally by 2030, with operations spanning across international markets.
                             We are committed to delivering cutting-edge solutions that improve lives, foster sustainable growth, and create lasting impact.
                         </p>
-                        <p className="mt-10 max-w-xl text-base/7 text-gray-700">
+                        <p className="mt-10 max-w-xl text-base/7 text-gray-600">
                             Our journey began in 2010 with a vision to provide affordable healthcare. Over the years, we expanded into IT & ITES,
                             insurance, and various other sectors, continuously evolving to meet the changing needs of our clients. Today, with a
                             dedicated team operating from Mysore, we strive to push boundaries and set new industry standards.

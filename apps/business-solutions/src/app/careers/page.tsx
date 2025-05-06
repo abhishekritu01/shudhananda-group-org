@@ -78,7 +78,7 @@ const CareerSection = () => {
               variants={fadeInUp}
               className="mt-8 text-lg font-medium text-gray-600 sm:text-xl/8"
             >
-              We are looking for passionate individuals to join our team and help us make a difference in the IT industry. Whether you are a developer, test engineer, designer, or data science professional, we have a place for you.
+              We are looking for passionate individuals to join our team and help us make a difference in the KPO/BPO and in IT / ITES industry. Whether you are a developer, test engineer, designer, or data science professional, we have a place for you.
             </motion.p>
             
             <motion.div 
@@ -107,7 +107,7 @@ const CareerSection = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
                 <div className="flex items-start gap-3">
                   <FaLightbulb className="text-orange-500 mt-1 flex-shrink-0" />
-                  <p className="text-gray-600">Make an impact in the IT industry.</p>
+                  <p className="text-gray-600">Make an impact in the IT / ITES industry.</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <FaLaptopCode className="text-orange-500 mt-1 flex-shrink-0" />

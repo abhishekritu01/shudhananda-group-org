@@ -8,37 +8,37 @@ import { motion } from 'framer-motion'
 const team = [
     {
         name: 'Dr. Arjun Sachidanand',
-        role: 'Managing Director',
+        role: 'Managing Director – Sudhanand Group',
         imageUrl: '/ArjunSachidanand.jpeg',
     },
     {
         name: 'Dr. Sini Arjun',
-        role: 'Director',
+        role: 'Director – Sudhanand Group',
         imageUrl: '/SBS/DR. SINI.jpeg',
     },
     {
         name: 'Abhinandan S. Rao',
-        role: 'VP - New Initiatives & Investments',
+        role: 'VP – New Initiatives & Investments – Sudhanand Group',
         imageUrl: '/SBS/Abhinandan S-Photoroom.png',
     },
     {
         name: 'Capt. Raghu M. Das',
-        role: 'Chief Operations Officer',
+        role: 'Chief Operations Officer – Sudhanand Group',
         imageUrl: '/SBS/CAPT. RAGHU M DAS-Photoroom.png',
     },
     {
         name: 'Keshav Murthy',
-        role: 'VP - Internal Audit & Finance  ',
+        role: 'VP - Internal Audit & Finance – Sudhanand Group ',
         imageUrl: '/SBS/Keshav murthy.png',
     },
     {
         name: 'Vijay Asrani',
-        role: ' VP - Internal Finance',
+        role: ' VP - Internal Finance – Sudhanand Group',
         imageUrl: '/SBS/vijay.png',
     },
     {
         name: 'Syed Abdul Wahab ',
-        role: 'Project Manager',
+        role: 'Facility & Project Manager – SBPL',
         imageUrl: '/SBS/abdul.jpeg',
     }
 ]
@@ -59,7 +59,7 @@ const AboutTeam = () => {
                 className="mx-auto max-w-2xl lg:mx-0"
             >
                 <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-                    Our <span className="text-orange-600">Team</span>
+                Our <span className="text-orange-600">Leadership</span>
                 </h2>
                 <p className="mt-6 text-lg leading-8 text-gray-600">
                     Our team is a diverse group of professionals with expertise in various fields, including healthcare, IT, finance, and hospitality.

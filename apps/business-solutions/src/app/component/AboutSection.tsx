@@ -171,17 +171,18 @@ const aboutItems = [
     color: 'from-orange-500 to-orange-600'
   },
   {
-    icon: FaBuilding,
-    title: 'Our Other Ventures',
-    text: 'CurePlus Hospitals, Sudhanand Pharmacies, TiaMed Technologies, Sudhanand Business Solutions, ARC SportZone, Sachidananda Murthy Memorial Educational Trust, Sudhanand Hospitalities',
-    color: 'from-purple-500 to-purple-600'
-  },
-  {
     icon: FaLaptopCode,
     title: 'Tech & Innovation',
-    text: 'With expertise in Software Development and Testing, Data Science/Analytics, UI/UX, Digital Marketing, Accounting. We are shaping the future of IT solutions with cutting-edge technology.',
+    text: 'With expertise in Software Development and Testing, Data Science/Analytics, UI/UX , Digital Marketing, Accounting, we are shaping the future of IT solutions with cutting-edge technology.',
     color: 'from-teal-500 to-teal-600'
   },
+  {
+    icon: FaBuilding,
+    title: 'Our Other Ventures',
+    text: 'CurePlus Hospitals, Sudhanand Pharmacies, TiaMed Technologies, ARC SportZone, Dr. M. D. Sachidananda Murthy Memorial Educational Trust ®, Sudhanand Hospitalities, and more.',
+    color: 'from-purple-500 to-purple-600'
+  },
+ 
 ];
 
 const AboutSection = () => {
@@ -189,24 +190,20 @@ const AboutSection = () => {
     <section id="about" className="py-20 px-4 bg-gradient-to-br from-gray-50 to-gray-100">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <motion.h3 
-            initial={{ opacity: 0, y: -20 }}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-orange-600 to-orange-800 mb-4"
           >
-            About Us
-          </motion.h3>
-          <motion.p
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            viewport={{ once: true }}
-            className="text-gray-600 text-lg max-w-3xl mx-auto"
-          >
-            Sudhanand Business Solutions offer end-to-end support, from policy implementation and claims processing to software quality assurance and data-driven insights.
-          </motion.p>
+            <h2 className="text-4xl font-extrabold text-gray-900">
+              About <span className="text-orange-600">Us</span>
+            </h2>
+            <p className="mt-4 text-lg text-gray-700">
+              Sudhanand Business Solutions offers end-to-end support, from policy implementation and  <br/>claims processing to software quality assurance and data-driven insights.
+            </p>
+          </motion.div>
+
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -235,7 +232,7 @@ const AboutSection = () => {
           ))}
         </div>
 
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.4 }}

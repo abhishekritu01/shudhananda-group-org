@@ -31,9 +31,9 @@ const SecondNavBar: React.FC<Props> = ({ navItems }) => {
                             priority={true}
                         />
                     </Link>
-                    <h1 className="text-sm md:text-sm font-semibold text-orange-600 tracking-wide">
+                    <Link href={'/'} className="text-sm md:text-sm font-semibold text-orange-600 tracking-wide">
                         Sudhanand Business Solutions
-                    </h1>
+                    </Link>
                 </div>
 
                 {/* Desktop Navigation */}

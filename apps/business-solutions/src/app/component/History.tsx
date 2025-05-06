@@ -496,7 +496,7 @@ const ProfessionalTimeline = () => {
             viewport={{ once: true }}
             className="text-4xl font-bold text-gray-900 mb-4"
           >    
-            Our Strategic Growth Journey
+            Our Journey So Far
           </motion.h2>
           <motion.p 
             initial={{ opacity: 0 }}
@@ -566,7 +566,7 @@ const ProfessionalTimeline = () => {
         >
           <div className="inline-block bg-white px-6 py-3 rounded-full shadow-sm border border-gray-100">
             <p className="text-gray-600 text-sm font-medium">
-              From 4 members in 2020 to 100+ today, with 200 expected by 2025
+              From 4 members in 2020 to 100+ today, with 200 expected by 2025 Period.
             </p>
           </div>
         </motion.div>

@@ -1,10 +1,17 @@
 'use client'
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
 
 const Footer = () => {
+  const [subscribed, setSubscribed] = useState(false);
+
+  const handleSubscribe = () => {
+    setSubscribed(true);
+    setTimeout(() => setSubscribed(false), 3000); // Hide message after 3 seconds
+  };
+
   return (
     <footer className="py-10 bg-gray-900 text-center text-white">
       <motion.div
@@ -66,7 +73,7 @@ const Footer = () => {
               <div className="mt-8 text-center">
                 <h3 className="text-xl font-semibold mb-2">Contact Us</h3>
                 <p className="text-gray-400">Email: support@blooddonation.org</p>
-                <p className="text-gray-400">Phone: +1 234 567 890</p>
+                <p className="text-gray-400">Phone:+91 9008123101</p>
               </div>
             </div>
 
@@ -76,6 +83,8 @@ const Footer = () => {
                 <li><Link href="/" className="hover:text-red-600 transition">Home</Link></li>
                 <li><Link href="#how-it-works" className="hover:text-red-600 transition">How It Works</Link></li>
                 <li><Link href="/story" className="hover:text-red-600 transition">About</Link></li>
+                <li><Link href="/join" className="hover:text-red-600 transition">Join Us</Link></li>
+                <li><Link href="/faq" className="hover:text-red-600 transition">faq</Link></li>
               </ul>
             </div>
 
@@ -89,14 +98,20 @@ const Footer = () => {
               <motion.button
                 className="bg-gradient-to-r from-red-600 to-red-900 hover:bg-red-900 text-white py-2 px-4 rounded-lg"
                 whileHover={{ scale: 1.1 }}
+                onClick={handleSubscribe}
               >
                 Subscribe
               </motion.button>
+              {subscribed && (
+                <div className="mt-2 text-yellow-500">
+                  <p>This feature is under development. Stay tuned!</p>
+                </div>
+              )}
             </div>
           </div>
         </div>
         <div className="py-4 bg-gray-800">
-          <p className="text-gray-400">&copy; 2025 Blood Donation. All Rights Reserved.</p>
+          <p className="text-gray-400">&copy;2025 CurePlus Blood Bank - All Rights Reserved.</p>
         </div>
       </motion.div>
     </footer>

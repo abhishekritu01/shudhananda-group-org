@@ -163,7 +163,7 @@ const PartnerSection = () => {
             Our <span className="text-orange-600">Trusted Partner</span>
           </h2>
           <p className="mt-4 text-lg text-gray-700">
-            Cabrillo Coastal is dedicated to providing reliable Home Insurance services in high-risk coastal regions.
+          Cabrillo Coastal General Insurance Agency is dedicated to providing reliable Home Insurance services in high-risk coastal regions.
           </p>
         </motion.div>
 
@@ -183,7 +183,7 @@ const PartnerSection = () => {
               <Image
                 src={cabrilloContent.logo}
                 alt={`${cabrilloContent.name} logo`}
-                width={180}
+                width={280}
                 height={120}
                 className="mx-auto"
               />

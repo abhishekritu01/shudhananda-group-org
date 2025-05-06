@@ -193,12 +193,13 @@ import {
   FaMoneyCheckAlt,
   FaBook,
 } from "react-icons/fa";
+import { MdPolicy } from "react-icons/md";
 import { RiEarthquakeLine } from "react-icons/ri";
 
 const teams = [
   {
     id: 'team-001',
-    icon: <FaShieldAlt className="text-blue-600" />,
+    icon: <MdPolicy className="text-blue-600" />,
     title: "Policy Processing",
     description: "Ensuring seamless policy handling with precision, speed, and compliance.",
     highlights: [
@@ -211,10 +212,10 @@ const teams = [
     id: 'team-002',
     icon: <FaUsers className="text-green-600" />,
     title: "Pre-Claims",
-    description: "Efficient, compliant, and client-focused claims support — when it matters most",
+    description: "Efficient, compliant, and client-focused claims support — always.",
     highlights: [
       "Led by Ms. Chandana, senior claims expert",
-      "15+ professionals handling claims across industries",
+      "15+ professionals handling all kinds of claims tasks.",
       "Expertise in fraud prevention and regulatory adherence",
     ],
   },
@@ -224,8 +225,8 @@ const teams = [
     title: "Software Testing",
     description: "Ensuring software excellence through rigorous testing, automation, and continuous improvement.",
     highlights: [
-      "Led by Nagashree Nagaraj, 10+ years experience",
-      "20+ experts in manual & automated testing",
+      "Led by Nagashree Nagaraj, 5+ years experience",
+      "15+ experts in manual & automated testing",
       "Specialized in Selenium, API testing, and performance analysis",
     ],
   },
@@ -247,7 +248,7 @@ const teams = [
     description: "Driving insurance analytics and automation through advanced data tools and insights.",
     highlights: [
       "Led by Sourav Singh, expert in Python & SQL",
-      "Team of 4+ skilled data analysts",
+      "Team of 4+ Highly skilled team of data analysts.",
       "Expertise in Pandas, NumPy, SQL, and ASTEC",
       "Specialization in raters, data transformation, and report generation",
     ],
@@ -258,7 +259,7 @@ const teams = [
     title: "Accounts",
     description: "Specializing in all financial operations in compliance with US GAAP and regulations.",
     highlights: [
-      "Led by Mr. Akshay Othayoth - 4+ years' experience",
+      "Led by Mr. Akshay Othayoth - 5+ years experience",
       "10+ professionals handling client finance",
       "Expertise in invoicing, bookkeeping, AR/AP, and reconciliation",
     ],
@@ -269,7 +270,7 @@ const teams = [
     title: "Bookrolls",
     description: "Delivering personalized insurance solutions through expert risk assessment, transparent communication, and client-focused coverage.",
     highlights: [
-      "Led by Ms. Chandana, experienced team lead with 4+ years of expertise",
+      "Led by Ms. Chandana, experienced team lead with 5+ years of expertise",
       "6+ dedicated professionals working collaboratively on client-specific insurance needs",
       "Specialized in coverage recommendations, risk evaluation, and precise policy application drafting",
     ],
@@ -301,7 +302,7 @@ const TeamSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl font-extrabold text-gray-900 mb-4">
-            Our <span className="bg-gradient-to-r from-orange-600 to-orange-800 bg-clip-text text-transparent">Expert Teams</span>
+            Our <span className="text-orange-600"> Teams</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Meet the specialized teams driving our success with innovation and precision
@@ -406,7 +407,7 @@ const TeamSection = () => {
                 className="w-3 h-3 rounded-full bg-orange-500 mr-3"
               ></motion.span>
               <p className="text-gray-700 font-medium text-lg">
-                Each team specialized to deliver excellence in their domain
+                Each team is specialized to deliver excellence in their domain
               </p>
             </div>
           </div>

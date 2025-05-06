@@ -1,74 +1,4 @@
 
-// 'use client'
-// import { useEffect, useState } from "react";
-// import { MdBusiness, MdHealthAndSafety, MdSecurity } from "react-icons/md";
-// import { GrCloudComputer } from "react-icons/gr";
-
-// const HeroSection = () => {
-//   const words = ["Technology", "Innovation", "Excellence"];
-//   const [index, setIndex] = useState(0);
-
-//   useEffect(() => {
-//     const interval = setInterval(() => {
-//       setIndex((prevIndex) => (prevIndex + 1) % words.length);
-//     }, 2500);
-//     return () => clearInterval(interval);
-//   }, []);
-
-//   return (
-//     <div className="bg-white py-20 px-6 lg:mt-8 lg:py-32 lg:px-8">
-//       <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-12">
-
-//         {/* Left Content */}
-//         <div className="w-full lg:w-1/2 space-y-6">
-//           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-snug">
-//             Transforming Industries with{" "}
-//             <span className="text-orange-600">{words[index]}</span>
-//           </h1>
-//           <p className="text-gray-700 text-lg">
-//           Sudhanand Business Solutions PVT Ltd (SBPL) is revolutionizing industries with IT, ITES and US Home Insurance. Our mission is to drive innovation and efficiency through AI, automation, and data-driven strategies.
-//           </p>
-
-//           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
-//             <div className="flex items-start gap-4 bg-gray-100 p-4 rounded-lg shadow">
-//               <MdBusiness className="text-indigo-600 text-3xl mt-1" />
-//               <div>
-//                 <h3 className="text-xl font-semibold text-gray-900">IT</h3>
-//                 <p className="text-gray-700 text-sm">Innovative software and AI solutions for businesses.</p>
-//               </div>
-//             </div>
-//             <div className="flex items-start gap-4 bg-gray-100 p-4 rounded-lg shadow">
-//               <GrCloudComputer className="text-green-600 text-3xl mt-1" />
-//               <div>
-//                 <h3 className="text-xl font-semibold text-gray-900">ITES </h3>
-//                 <p className="text-gray-700 text-sm">Transforming business performance through digitization and deep analytics. </p>
-//               </div>
-//             </div>
-//             <div className="flex items-start gap-4 bg-gray-100 p-4 rounded-lg shadow col-span-1 sm:col-span-2">
-//               <MdSecurity className="text-red-600 text-3xl mt-1" />
-//               <div>
-//                 <h3 className="text-xl font-semibold text-gray-900">US Home Insurance </h3>
-//                 <p className="text-gray-700 text-sm">Safeguarding homes and valuable assets with comprehensive solutions for policy issuance, claims processing, and fraud prevention.</p>
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-
-//         {/* Right Image */}
-//         <div className="w-full lg:w-1/2">
-//           <img
-//             src="1.jpeg"
-//             alt="SBPL Hero"
-//             className="rounded-3xl shadow-lg w-full h-auto object-cover"
-//           />
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default HeroSection;
-
 
 'use client'
 import { AnimatePresence, motion, useInView } from "framer-motion";
@@ -129,7 +59,7 @@ const HeroSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-gray-700 text-base lg:text-lg leading-relaxed"
           >
-            Sudhanand Business Solutions PVT Ltd (SBPL) is revolutionizing industries with IT, ITES and US Home Insurance. Our mission is to drive innovation and efficiency through AI, automation, and data-driven strategies.
+            Sudhanand Business Solutions Pvt. Ltd. (SBPL) is revolutionizing industries with IT, ITES and US Home Insurance. Our mission is to drive innovation and efficiency through AI, automation, and data-driven strategies.
           </motion.p>
 
           <motion.div 

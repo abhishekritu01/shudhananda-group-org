@@ -16,7 +16,7 @@ export const teams = [
             "New Business Review – Fast-tracking policy approvals",
             "Policy Servicing – Managing policy changes and renewals",
             "Quality Assurance – Ensuring compliance with industry standards",
-            "Voice & Chat Support – Handling customer queries and claims processing",
+            // "Voice & Chat Support – Handling customer queries and claims processing",
         ],
         keyStrengths: [
             "Speed & Accuracy – Quick approvals & settlements",
@@ -38,7 +38,7 @@ export const teams = [
             "Specializes in efficient claims management, ensuring accuracy, compliance, and timely resolution.",
         leadership: {
             leaderName: "Ms. Chandana",
-            experience: "Chandana has 6 years of experience running her own business in the hospitality industry. She then started her career in house insurance as a Claims Process Associate at Cabrillo Coastal General Insurance, where she has worked for 3 years. For the past year, she has been leading the team.",
+            experience: "Chandana has 5+ years of experience running her own business in the hospitality industry. She then started her career in house insurance as a Claims Process Associate at Cabrillo Coastal General Insurance, where she has worked for 3 years. For the past year, she has been leading the team.",
         },
         teamSize: 15,
         coreServices: [
@@ -64,7 +64,7 @@ export const teams = [
             "Dedicated to delivering high-quality results through manual and automated testing methodologies.",
         leadership: {
             leaderName: "Nagashree Nagaraj",
-            experience: "10+ years of QA-driven development in Agile/DevOps environments. Advanced proficiency in Java & Python for scalable automation solutions. Expert in designing and implementing end-to-end test suites using Selenium WebDriver, TestNG, PyTest, and BDD frameworks (Cucumber/Behave). Skilled in REST/SOAP testing using Postman, REST Assured, and integration validations with Swagger/OpenAPI specs. In-depth knowledge of SAP HANA data models, SQLScript, and performance optimization in enterprise environments. Seamless test integration with Jenkins, GitLab CI, and Dockerized test environments.",
+            experience: "5+ years of QA-driven development in Agile/DevOps environments. Advanced proficiency in Java & Python for scalable automation solutions. Expert in designing and implementing end-to-end test suites using Selenium WebDriver, TestNG, PyTest, and BDD frameworks (Cucumber/Behave). Skilled in REST/SOAP testing using Postman, REST Assured, and integration validations with Swagger/OpenAPI specs. In-depth knowledge of SAP HANA data models, SQLScript, and performance optimization in enterprise environments. Seamless test integration with Jenkins, GitLab CI, and Dockerized test environments.",
         },
         teamSize: 20,
         coreServices: [
@@ -112,7 +112,7 @@ export const teams = [
     },
     {
         id: "team-006",
-        name: "Data Analyst",
+        name: "Data Analysis",
         image: "/teamlead/WhatsApp Image 2025-04-25 at 11.45.52.jpeg",
         groupphoto: "data.jPG",
         description:
@@ -153,7 +153,7 @@ export const teams = [
             "Specializing in all financial operations in compliance with US GAAP and regulations.",
         leadership: {
             leaderName: "Mr. Akshay Othayoth",
-            experience: "I have 3 years of hands-on experience in Accounts Payable, where I managed the end-to-end invoice processing cycle, including verifying vendor invoices, matching with purchase orders, resolving discrepancies, and ensuring timely payments.",
+            experience: "I have 5+ years of hands-on experience in Accounts Payable, where I managed the end-to-end invoice processing cycle, including verifying vendor invoices, matching with purchase orders, resolving discrepancies, and ensuring timely payments.",
         },
         teamSize: 10,
         coreServices: [
@@ -181,7 +181,7 @@ export const teams = [
             "Delivering personalized insurance solutions through expert risk assessment, transparent communication, and client-focused coverage.",
         leadership: {
             leaderName: "Ms. Chandana",
-            experience: "Chandana has 6 years of experience running her own business in the hospitality industry. She then started her career in house insurance as a Claims Process Associate at Cabrillo Coastal General Insurance, where she has worked for 3 years. For the past year, she has been leading the team.",
+            experience: "Chandana has  5+ years of experience running her own business in the hospitality industry. She then started her career in house insurance as a Claims Process Associate at Cabrillo Coastal General Insurance, where she has worked for 3 years. For the past year, she has been leading the team.",
         },
         teamSize: 6,
         coreServices: [

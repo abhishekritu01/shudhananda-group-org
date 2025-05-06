@@ -1,4 +1,4 @@
-"use client";
+'use client'
 import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -47,7 +47,7 @@ const NavBar = () => {
 
     if (isOpen) {
       document.addEventListener("mousedown", handleClickOutside);
-      document.body.style.overflow = "hidden"; // Prevent scrolling when menu is open
+      document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "auto";
     }
@@ -59,30 +59,35 @@ const NavBar = () => {
   }, [isOpen]);
 
   return (
-    <header className="bg-white text-orange-600 fixed w-full top-0 z-50 shadow-lg">
-      <div className="container mx-auto flex justify-between items-center px-6 py-2">
+    <header className="bg-white text-orange-600 sticky top-0 w-full z-50 shadow-lg">
+      <div className="max-w-7xl mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8 py-2">
         {/* Logo Section */}
         <div className="flex items-center space-x-3">
-          <Image
-            src="/SBPL.png"
-            alt="SBPL Logo"
-            width={60}
-            height={50}
-            className="rounded-full z-10"
-            priority={true}
-          />
-          <h1 className="text-sm md:text-sm font-semibold text-orange-600 tracking-wide">
+          <Link href={"/"}>
+            <Image
+              src="/SBPL.png"
+              alt="SBPL Logo"
+              width={60}
+              height={50}
+              className="rounded-full z-10"
+              priority={true}
+            />
+          </Link>
+          <Link
+            href={"/"}
+            className="text-sm sm:text-base font-semibold text-orange-600 tracking-wide"
+          >
             Sudhanand Business Solutions
-          </h1>
+          </Link>
         </div>
 
         {/* Desktop Navigation */}
-        <nav className="hidden lg:flex space-x-8">
+        <nav className="hidden md:flex space-x-4 lg:space-x-6 xl:space-x-8">
           {navLinks.map((link) => (
             <Link
               key={link.id}
               href={`#${link.id}`}
-              className={`text-sm font-medium transition-colors duration-300 ${
+              className={`text-sm lg:text-base font-medium transition-colors duration-300 ${
                 activeSection === link.id
                   ? "text-orange-800 border-b-2 border-orange-800"
                   : "text-orange-600 hover:text-orange-800"
@@ -92,22 +97,23 @@ const NavBar = () => {
             </Link>
           ))}
           <Link href="/careers" passHref>
-            <p className="text-sm font-medium text-orange-600 hover:text-orange-800 transition-colors duration-300">
+            <p className="text-sm lg:text-base font-medium text-orange-600 hover:text-orange-800 transition-colors duration-300">
               Careers
             </p>
           </Link>
           <Link href="/about" passHref>
-            <p className="text-sm font-medium text-orange-600 hover:text-orange-800 transition-colors duration-300">
-            Who We Are
+            <p className="text-sm lg:text-base font-medium text-orange-600 hover:text-orange-800 transition-colors duration-300">
+              Who We Are
             </p>
           </Link>
         </nav>
 
         {/* Mobile Menu Button */}
-        <div className="lg:hidden">
+        <div className="md:hidden">
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="text-orange-600 focus:outline-none hover:text-orange-800"
+            aria-label="Toggle menu"
           >
             {isOpen ? <FaTimes size={26} /> : <FaBars size={26} />}
           </button>
@@ -117,16 +123,17 @@ const NavBar = () => {
       {/* Mobile Navigation */}
       <div
         ref={menuRef}
-        className={`absolute top-16 left-0 w-full bg-white shadow-md p-6 transition-all duration-300 ease-in-out z-50 lg:hidden ${
-          isOpen ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"
+        className={`fixed md:hidden top-16 left-0 w-full bg-white shadow-md p-6 transition-all duration-300 ease-in-out z-50 ${
+          isOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-full pointer-events-none"
         }`}
+        style={{ maxHeight: "calc(100vh - 64px)", overflowY: "auto" }}
       >
         <nav className="flex flex-col space-y-4 text-center">
           {navLinks.map((link) => (
             <Link
               key={link.id}
               href={`#${link.id}`}
-              className="text-lg font-medium text-orange-600 hover:text-orange-800 transition-colors duration-300"
+              className="text-base sm:text-lg font-medium text-orange-600 hover:text-orange-800 transition-colors duration-300 py-2"
               onClick={() => setIsOpen(false)}
             >
               {link.label}
@@ -134,17 +141,17 @@ const NavBar = () => {
           ))}
         </nav>
         <div className="flex flex-col space-y-4 text-center mt-4">
-        <Link href="/careers" passHref>
-          <p className="text-lg font-medium text-orange-600 hover:text-orange-800 transition-colors duration-300">
-            Careers
-          </p>
-        </Link>
+          <Link href="/careers" passHref>
+            <p className="text-base sm:text-lg font-medium text-orange-600 hover:text-orange-800 transition-colors duration-300 py-2">
+              Careers
+            </p>
+          </Link>
 
-        <Link href="/about" passHref>
-          <p className="text-lg font-medium text-orange-600 hover:text-orange-800 transition-colors duration-300">
-          Who We Are
-          </p>
-        </Link>
+          <Link href="/about" passHref>
+            <p className="text-base sm:text-lg font-medium text-orange-600 hover:text-orange-800 transition-colors duration-300 py-2">
+              Who We Are
+            </p>
+          </Link>
         </div>
       </div>
     </header>
