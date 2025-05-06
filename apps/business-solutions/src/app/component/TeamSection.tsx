@@ -183,18 +183,8 @@
 // =========================================================
 'use client';
 import { motion } from "framer-motion";
-import Link from "next/link";
-import React from "react";
-import {
-  FaBook,
-  FaBug,
-  FaDatabase,
-  FaMoneyCheckAlt,
-  FaUsers
-} from "react-icons/fa";
-import { MdPolicy } from "react-icons/md";
-import { RiEarthquakeLine } from "react-icons/ri";
 import Image from "next/image";
+import Link from "next/link";
 
 const teams = [
   {
@@ -435,17 +425,17 @@ const getBorderGradient = (index: number): string => {
   return gradients[index % gradients.length];
 };
 
-const getIconColor = (index: number): string => {
-  const colors: string[] = [
-    "text-blue-600",
-    "text-green-600",
-    "text-red-600",
-    "text-orange-600",
-    "text-emerald-600",
-    "text-purple-600"
-  ];
-  return colors[index % colors.length];
-};
+// const getIconColor = (index: number): string => {
+//   const colors: string[] = [
+//     "text-blue-600",
+//     "text-green-600",
+//     "text-red-600",
+//     "text-orange-600",
+//     "text-emerald-600",
+//     "text-purple-600"
+//   ];
+//   return colors[index % colors.length];
+// };
 
 const getTitleHoverColor = (index: number): string => {
   const colors: string[] = [
