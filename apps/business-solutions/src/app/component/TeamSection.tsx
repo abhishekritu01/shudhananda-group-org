@@ -182,16 +182,15 @@
 
 // =========================================================
 'use client';
-import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import React from "react";
 import {
-  FaShieldAlt,
-  FaUsers,
+  FaBook,
   FaBug,
   FaDatabase,
   FaMoneyCheckAlt,
-  FaBook,
+  FaUsers
 } from "react-icons/fa";
 import { MdPolicy } from "react-icons/md";
 import { RiEarthquakeLine } from "react-icons/ri";

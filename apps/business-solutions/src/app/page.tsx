@@ -4,7 +4,7 @@ import FooterSection from "./component/FooterSection";
 import HeroSection from "./component/HeroSection";
 import NavBar from "./component/NavBar";
 import ServiceSection from "./component/ServiceSection";
-import TestimonialSection from "./component/TestimonialSection";
+// import TestimonialSection from "./component/TestimonialSection";
 import ProjectsSection from "./component/ProjectsSection";
 import TeamSection from "./component/TeamSection";
 import HistoryTimeline from "./component/History";
