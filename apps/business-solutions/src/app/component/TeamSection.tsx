@@ -194,11 +194,12 @@ import {
 } from "react-icons/fa";
 import { MdPolicy } from "react-icons/md";
 import { RiEarthquakeLine } from "react-icons/ri";
+import Image from "next/image";
 
 const teams = [
   {
     id: 'team-001',
-    icon: <MdPolicy className="text-blue-600" />,
+    icon: "/icons/1.png",
     title: "Policy Processing",
     description: "Ensuring seamless policy handling with precision, speed, and compliance.",
     highlights: [
@@ -209,7 +210,7 @@ const teams = [
   },
   {
     id: 'team-002',
-    icon: <FaUsers className="text-green-600" />,
+    icon: "/icons/2.png",
     title: "Pre-Claims",
     description: "Efficient, compliant, and client-focused claims support — always.",
     highlights: [
@@ -220,7 +221,7 @@ const teams = [
   },
   {
     id: 'team-004',
-    icon: <FaBug className="text-red-600" />,
+    icon: '/icons/3.png',
     title: "Software Testing",
     description: "Ensuring software excellence through rigorous testing, automation, and continuous improvement.",
     highlights: [
@@ -231,7 +232,7 @@ const teams = [
   },
   {
     id: 'team-005',
-    icon: <FaDatabase className="text-orange-600" />,
+    icon: '/icons/4.png',
     title: "Data Engineering",
     description: "Transforming raw data into valuable insights with smart integration and automation.",
     highlights: [
@@ -242,7 +243,7 @@ const teams = [
   },
   {
     id: 'team-006',
-    icon: <FaDatabase className="text-orange-600" />,
+    icon: '/icons/5.png',
     title: "Data Analysis",
     description: "Driving insurance analytics and automation through advanced data tools and insights.",
     highlights: [
@@ -254,7 +255,7 @@ const teams = [
   },
   {
     id: 'team-007',
-    icon: <FaMoneyCheckAlt className="text-emerald-600" />,
+    icon: '/icons/6.png',
     title: "Accounts",
     description: "Specializing in all financial operations in compliance with US GAAP and regulations.",
     highlights: [
@@ -265,7 +266,7 @@ const teams = [
   },
   {
     id: 'team-008',
-    icon: <FaBook className="text-purple-600" />,
+    icon: '/icons/7.png',
     title: "Bookrolls",
     description: "Delivering personalized insurance solutions through expert risk assessment, transparent communication, and client-focused coverage.",
     highlights: [
@@ -276,7 +277,7 @@ const teams = [
   },
   {
     id: 'team-009',
-    icon: <RiEarthquakeLine className="text-purple-600" />,
+    icon: '/icons/8.png',
     title: "CAT Modeling",
     description: "Delivering advanced catastrophe risk solutions through simulation-based modeling, strategic risk planning, and proactive disaster readiness.",
     highlights: [
@@ -342,14 +343,19 @@ const TeamSection = () => {
                         rotate: 5,
                         backgroundColor: "rgba(255,255,255,0.9)"
                       }}
-                      className="w-28 h-28 flex items-center justify-center rounded-2xl shadow-lg border-4 border-white bg-gradient-to-br from-white to-gray-50 backdrop-blur-sm"
+                      className="w-auto h-auto flex items-center justify-center rounded-2xl shadow-lg border-4 border-white bg-gradient-to-br from-white to-gray-50 backdrop-blur-sm"
                       style={{
                         boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)"
                       }}
                     >
-                      {React.cloneElement(team.icon, { 
-                        className: `text-4xl ${getIconColor(index)}`,
-                      })}
+                    
+                      <Image
+                        src={team.icon}
+                        alt={team.title}
+                        width={200}
+                        height={200}
+                        // className={`w-16 h-16 ${getIconColor(index)}`}
+                      />
                     </motion.div>
                   </div>
 

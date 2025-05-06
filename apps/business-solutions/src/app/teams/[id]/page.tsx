@@ -1,105 +1,3 @@
-// 'use client';
-// import FooterSection from "@/app/component/FooterSection";
-// import SecondNavBar from "@/app/component/SecondNavBar";
-// import Image from "next/image";
-// import { useParams } from "next/navigation";
-// import { FaCheckCircle, FaClipboardList } from 'react-icons/fa';
-// import { teams } from "@/app/data/teaminfo";
-
-
-// const navItems = [
-//     { name: "Home", link: "/" },
-//     { name: "Careers", link: "/careers" },
-//     { name: "About Us", link: "/about" },
-// ];
-
-// const Page = () => {
-//     const params = useParams();
-//     const team = teams.find((t) => t.id === params.id);
-//     if (!team) {
-//         return (
-//             <div className="text-center text-2xl font-bold mt-10 text-red-600">Team Not Found</div>
-//         );
-//     }
-//     return (
-//         <>
-//             <SecondNavBar navItems={navItems} />
-//             <div className="min-h-screen bg-gray-100 py-20 px-6 sm:px-8 lg:px-12">
-//                 <div className="max-w-6xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-200">
-//                     {/* Header Section */}
-//                     <div
-//                         className="p-10 bg-center bg-cover text-white text-center h-96 flex flex-col justify-center items-center"
-//                         style={{
-//                             backgroundImage: `url('/sbplteam/${team.groupphoto}')`,
-//                             backgroundSize: "cover",
-//                         }}
-//                     >
-//                         <h1 className="text-4xl font-extrabold tracking-tight mb-3">{team.name}</h1>
-//                         <p className="text-xl font-extrabold tracking-tight mb-3">{team.description}</p>
-//                     </div>
-
-
-//                     {/* Content Section */}
-//                     <div className="p-10 space-y-10">
-//                         {/* Core Services */}
-//                         <div className="bg-gray-50 p-6 rounded-xl border border-gray-200">
-//                             <div className="flex items-center mb-4">
-//                                 <FaClipboardList className="text-orange-600 text-3xl mr-3" />
-//                                 <h2 className="text-xl font-semibold text-gray-900">Core Services</h2>
-//                             </div>
-//                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pl-8">
-//                                 {team.coreServices.map((service, index) => (
-//                                     <div key={index} className="border-l-4 border-orange-600 pl-4 py-2">
-//                                         <p className="text-gray-700">{service}</p>
-//                                     </div>
-//                                 ))}
-//                             </div>
-//                         </div>
-//                         <div className="bg-gray-50 p-6 rounded-xl border border-gray-200">
-//                             <div className="flex items-center mb-4">
-//                                 <FaCheckCircle className="text-orange-600 text-3xl mr-3" />
-//                                 <h2 className="text-xl font-semibold text-gray-900">Key Strengths</h2>
-//                             </div>
-//                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pl-8">
-//                                 {team.keyStrengths.map((service, index) => (
-//                                     <div key={index} className="border-l-4 border-orange-600 pl-4 py-2">
-//                                         <p className="text-gray-700">{service}</p>
-//                                     </div>
-//                                 ))}
-//                             </div>
-//                         </div>
-//                         <div className="flex items-center space-x-6 bg-gray-50 p-6 rounded-xl border border-gray-200">
-//                             <div>
-//                                 <Image
-//                                     src={team.image || "/default-image.jpg"}
-//                                     alt="Team Leader"
-//                                     className="object-cover rounded-lg shadow-md"
-//                                     width={120}
-//                                     height={100}
-//                                     priority={true}
-//                                     loading="eager"
-//                                 />
-//                             </div>
-//                             <div>
-//                                 <h2 className="text-xl font-semibold text-gray-900">Leadership</h2>
-//                                 <p className="text-orange-600 font-medium">{team.leadership.leaderName}</p>
-//                                 <p className="text-gray-700 mt-1">{team.leadership.experience}</p>
-//                             </div>
-//                         </div>
-
-//                     </div>
-//                 </div>
-//             </div>
-//             <FooterSection />
-//         </>
-//     );
-// };
-
-// export default Page;
-
-
-
-
 'use client';
 import FooterSection from "@/app/component/FooterSection";
 import SecondNavBar from "@/app/component/SecondNavBar";
@@ -177,7 +75,8 @@ const Page = () => {
                                 src={`/sbplteam/${team.groupphoto}`}
                                 alt={team.name}
                                 fill
-                                className="object-cover object-center"
+                                className="object-scale-down object-center"
+                                
                                 priority
                                 quality={90}
                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
@@ -269,7 +168,7 @@ const Page = () => {
                                         src={team.image || "/default-image.jpg"}
                                         alt={team.leadership.leaderName}
                                         fill
-                                        className="object-cover"
+                                        className="object-fit"
                                         quality={85}
                                         sizes="(max-width: 768px) 160px, 200px"
                                     />
