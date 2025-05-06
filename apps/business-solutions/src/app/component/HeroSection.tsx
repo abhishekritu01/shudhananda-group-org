@@ -127,7 +127,7 @@ const HeroSection = () => {
         >
           <div className="relative rounded-2xl overflow-hidden shadow-xl transform hover:scale-[1.01] transition-transform duration-500 group">
             <img
-              src="1.jpeg"
+              src="busi.jpg"
               alt="SBPL Hero"
               className="w-full h-auto object-cover aspect-video lg:aspect-auto"
             />
