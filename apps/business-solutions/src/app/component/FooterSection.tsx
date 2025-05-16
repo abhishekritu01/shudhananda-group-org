@@ -10,7 +10,7 @@ const footerNavigation = {
   ],
   contact: [
     { name: 'info@sudhanandgroup.com', href: 'info@sudhanandgroup.com' },
-    { name: '+1 234 567 890', href: 'tel:+1234567890' },
+    { name: '', href: 'tel:+1234567890' },
   ],
 };
 
@@ -41,6 +41,7 @@ const FooterSection = () => {
         </div>
 
         {/* Contact Section */}
+
         <div className="text-center md:text-left">
           <h3 className="text-lg font-semibold text-white mb-4">Contact</h3>
           <ul className="space-y-2 text-white ">
