@@ -21,7 +21,7 @@ const teamMembers = [
   {
     name: 'Dr. Sini Arjun',
     role: 'Medical Officer',
-    image: '/DrSiniArjun.jpeg',
+    image: '/sinimam.jpg',
     bio: 'Dr. Sini Arjun is a compassionate medical officer at CurePlus Blood Bank, dedicated to ensuring the safety and quality of blood donations. Her expertise and commitment to patient care are invaluable to our mission.',
   },
   {
