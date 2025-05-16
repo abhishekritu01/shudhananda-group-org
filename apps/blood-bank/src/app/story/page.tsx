@@ -7,6 +7,7 @@ import { GiWaterDrop } from 'react-icons/gi'
 import Footer from '../component/Footer'
 import HeaderNavigation from '../component/HeaderNavigation'
 import { PiTrademarkRegistered } from 'react-icons/pi'
+import Link from 'next/link'
 
 const navigation = [
   { name: 'Home', href: '/', current: false },
@@ -198,9 +199,10 @@ const page = () => {
           <p className="text-lg mb-8">
             Join us in creating a future where every patient has access to the blood they need - on time, every time.
           </p>
-          <button className="bg-white text-red-700 font-bold py-3 px-6 rounded-full hover:bg-red-100 transition">
+          <Link href="/join"
+           className="bg-white text-red-700 font-bold py-3 px-6 rounded-full hover:bg-red-100 transition">
             Become a Donor
-          </button>
+          </Link>
         </motion.div>
       </section>
 
