@@ -19,8 +19,8 @@ const questions: Question[] = [
     id: 1,
     text: "What do you want to know about?",
     answers: [
-      { text: "Departments", nextId: 2 },
-      { text: "Doctors", nextId: 3 },
+      // { text: "Departments", nextId: 2 },
+      // { text: "Doctors", nextId: 3 },
       { text: "Appointments", nextId: 4 },
     ],
   },

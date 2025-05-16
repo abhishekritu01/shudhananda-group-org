@@ -68,8 +68,8 @@ const ContactSection = () => {
     {
       icon: <FaPhoneAlt className="text-white text-lg" />,
       title: "Phone",
-      value: "+91 8904338604",
-      href: "tel:+8904338604"
+      value: "+91 90351 93777",
+      href: "tel:+91 90351 93777"
     },
     {
       icon: <FaEnvelope className="text-white text-lg" />,
@@ -80,8 +80,8 @@ const ContactSection = () => {
     {
       icon: <FaMapMarkerAlt className="text-white text-lg" />,
       title: "Address",
-      value: "Bengaluru, Karnataka, India",
-      href: "https://maps.google.com/?q=Bengaluru,Karnataka,India"
+      value: "Mysore, Karnataka, India",
+      href: "https://maps.google.com/?q=Mysore,Karnataka,India"
     }
   ];
 
@@ -206,7 +206,7 @@ const ContactSection = () => {
               <div>
                 <button
                   type="submit"
-                  className={`w-full bg-purple-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-purple-800 transition-colors duration-300 flex justify-center items-center ${
+                  className={`w-full bg-footerbackground text-white py-3 px-6 rounded-lg font-semibold hover:bg-purple-800 transition-colors duration-300 flex justify-center items-center ${
                     loading ? 'opacity-80 cursor-not-allowed' : ''
                   }`}
                   disabled={loading}

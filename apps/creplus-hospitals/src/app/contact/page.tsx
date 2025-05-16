@@ -75,7 +75,7 @@ const ContactUs = () => {
                 <FiPhone className="text-blue-600 w-6 h-6 mt-1" />
                 <div>
                   {/* <h4 className="text-lg font-semibold text-gray-700">Phone</h4> */}
-                  <p className="text-gray-700">+91 98765 43210</p>
+                  <p className="text-gray-700">+91 90351 93777</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -89,7 +89,7 @@ const ContactUs = () => {
                 <FiMapPin className="text-red-600 w-6 h-6 mt-1" />
                 <div>
                   {/* <h4 className="text-lg font-semibold text-gray-700">Address</h4> */}
-                  <p className="text-gray-700">123, Main Road, Mysuru, Karnataka, India</p>
+                  <p className="text-gray-700">Mysuru, Karnataka, India</p>
                 </div>
               </div>
             </div>

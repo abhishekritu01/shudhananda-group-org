@@ -286,7 +286,7 @@ const ServicesSection = () => (
           At CurePlus Hospitals, we are committed to transforming healthcare
           with compassion, innovation, and accessibility. Our core services
           reflect our mission to serve communities with comprehensive medical
-          solutions tailored to every need — from emergency response to
+          solutions tailored to every need - from emergency response to
           diagnostics and pharmaceutical care.
         </p>
       </div>

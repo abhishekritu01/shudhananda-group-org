@@ -419,13 +419,13 @@ const HeroSection = () => {
             key={index}
             src={src}
             alt={`Background Slide ${index + 1}`}
-            initial={{ opacity: 0 }}
+            initial={{ opacity: 0}}
             animate={{ opacity: currentIndex === index ? 1 : 0 }}
             transition={{ duration: 1 }}
-            className="absolute inset-0 w-full h-full object-cover transition-opacity"
+            className="absolute inset-0 w-full h-full object-cover opacity-100 "
           />
         ))}
-        <div className="absolute inset-0 bg-black/50 z-10" />
+        <div className="absolute inset-0 bg-black/30 z-10" />
       </div>
 
       {/* Foreground Content */}
@@ -441,9 +441,9 @@ const HeroSection = () => {
             Excellence in Healthcare, <br />
             Accessible to Everyone
           </h1>
-          <p className="text-xl text-gray-200 max-w-xl mx-auto lg:mx-0 mb-8">
+          <p className="text-xl text-white max-w-xl mx-auto lg:mx-0 mb-8">
             We deliver compassionate, technology-driven healthcare solutions that prioritize patients at every step.
-            Your well-being is our mission — today and always.
+            Your well-being is our mission - today and always.
           </p>
           <div className="flex text-sm  sm:flex-row gap-4 justify-center lg:justify-start">
             <Link href="/services">
@@ -460,7 +460,7 @@ const HeroSection = () => {
         </motion.div>
 
         {/* Value Proposition Card - Improved Professional Alignment */}
-        <div className="hidden lg:flex flex-col space-y-6">
+        {/* <div className="hidden lg:flex flex-col space-y-6">
           <div className="flex items-center bg-white/10 backdrop-blur-lg rounded-xl p-6 border border-white/20 shadow-lg">
             <div className="relative flex-shrink-0">
               <img
@@ -499,7 +499,7 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
-
+ */}
 
         {/* for mobile view */}
         {/* <div className="lg:hidden flex flex-col space-y-6">
@@ -534,7 +534,7 @@ const HeroSection = () => {
           </div>
         </div> */}
 
-        <div className="lg:hidden flex flex-col space-y-4 p-4">
+        {/* <div className="lg:hidden flex flex-col space-y-4 p-4">
           <div className="flex flex-col bg-white/10 backdrop-blur-lg rounded-2xl p-4 border border-white/20 shadow-xl">
             <div className="relative flex justify-center mb-4">
               <img
@@ -566,7 +566,7 @@ const HeroSection = () => {
               </Link>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

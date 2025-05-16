@@ -35,7 +35,7 @@ export interface Hospital {
 export const hospitals: Hospital[] = [
   {
     id: 1,
-    name: 'Cure Plus Disha Hospital',
+    name: 'CurePlus Disha Hospital',
     location: 'Mysuru',
     icon: FaHospitalAlt,
     description: `Established in 2014, CurePlus Disha Hospital is a leading NABH-accredited multi-specialty hospital in Mysuru. As the flagship of the Dr. M. D. Sachidananda Murthy Memorial Hospitals chain, it offers affordable, accessible, and world-class healthcare. With 40 beds and two advanced operation theatres, the hospital performs 80 to 100 surgeries monthly, serving diverse medical needs with expertise and care.
