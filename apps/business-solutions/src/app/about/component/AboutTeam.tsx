@@ -14,7 +14,7 @@ const team = [
     {
         name: 'Dr. Sini Arjun',
         role: 'Managing Director\nSudhanand Group',
-        imageUrl: '/SBS/DR. SINI.jpeg',
+        imageUrl: '/SBS/sinimam.jpg',
         description: 'Dr. Sini Arjun is a dynamic leader with a passion for innovation and excellence. As the Managing Director of Sudhanand Group, she is committed to driving growth and delivering exceptional value to clients.',
     },
     {
