@@ -46,7 +46,7 @@ const CareersPage = () => {
               Exciting Opportunities Coming Soon!
             </h2>
             <p className="text-lg md:text-xl text-gray-600 mb-6 max-w-2xl mx-auto">
-              We're actively working on creating meaningful career opportunities. Our team is building something special, and we can't wait to share it with you!
+              We&apos;re actively working on creating meaningful career opportunities. Our team is building something special, and we can&apos;t wait to share it with you!
             </p>
             <div className="inline-flex px-4 py-2 bg-blue-50 text-blue-700 rounded-full text-sm font-medium">
               Check back in the coming weeks
@@ -109,7 +109,7 @@ const CareersPage = () => {
         <div className="text-center max-w-2xl mx-auto mb-16">
           <h3 className="text-2xl font-bold text-gray-900 mb-4">Want to be the first to know?</h3>
           <p className="text-lg text-gray-600 mb-6">
-            We'll notify you when new positions become available.
+            We&apos;ll notify you when new positions become available.
           </p>
           <button className="inline-flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-medium rounded-full hover:shadow-lg transition-all">
             Get Notified <FiArrowRight className="w-5 h-5" />

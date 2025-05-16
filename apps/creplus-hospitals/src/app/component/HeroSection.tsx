@@ -379,12 +379,9 @@
 
 'use client';
 
-import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { MdOutlineCurrencyRupee } from 'react-icons/md';
-import { HiOutlineUserGroup } from 'react-icons/hi';
-import { FaAddressCard } from "react-icons/fa";
+import { useEffect, useState } from 'react';
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },

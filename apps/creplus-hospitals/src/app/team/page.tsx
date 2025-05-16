@@ -1,11 +1,8 @@
 
 'use client';
-import React from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Footer from '../component/FooterSection';
-import { FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa';
-import { FiArrowRight } from 'react-icons/fi';
 
 const teamMembers = [
   {

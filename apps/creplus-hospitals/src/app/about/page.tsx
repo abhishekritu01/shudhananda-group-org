@@ -667,7 +667,7 @@ const AboutPage = () => {
           className="mb-16 md:mb-20 max-w-5xl mx-auto"
         >
           <p className="text-lg leading-relaxed text-gray-700">
-            Founded in August 2013 by Dr. Arjun Sachidanand and Dr. Sini Arjun, Sudhanand Healthcare Solutions Pvt. Ltd. is dedicated to delivering high-quality healthcare services at subsidized rates in India and globally. Central to its mission are the esteemed Cure Plus Hospitals, exemplifying the company's commitment to healthcare excellence.
+            Founded in August 2013 by Dr. Arjun Sachidanand and Dr. Sini Arjun, Sudhanand Healthcare Solutions Pvt. Ltd. is dedicated to delivering high-quality healthcare services at subsidized rates in India and globally. Central to its mission are the esteemed Cure Plus Hospitals, exemplifying the company&apos;s commitment to healthcare excellence.
             <br /><br />
             The organization aims to establish, manage, and promote healthcare facilities that offer comprehensive services including preventive care, diagnostics, telemedicine, and educational initiatives. This holistic approach underscores its dedication to enhancing healthcare accessibility and quality.
             <br /><br />
