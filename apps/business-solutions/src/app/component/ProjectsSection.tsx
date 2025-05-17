@@ -118,7 +118,12 @@ const cabrilloContent = {
   logo: "/Cabrillo-Coastal1.png",
   about: `Any insurance company can offer residential property insurance to people living in coastal areas, but it's tougher to find one that's committed to excellent service and specializes in hurricane-exposed property. That's what sets us apart from other insurance providers.
 
-Through sophisticated pricing techniques, quality and timely claims handling, careful reinsurance pricing, experienced underwriting and a friendly staff, Cabrillo Coastal provides the quality service and competitive pricing our customers deserve.`,
+Through sophisticated pricing techniques, quality and timely claims handling, careful reinsurance pricing, experienced underwriting and a friendly staff, Cabrillo Coastal provides the quality service and competitive pricing our customers deserve.
+
+Behind Cabrillo Coastal is a strong group of affiliated companies, including US Coastal Insurance Company, Safe Harbor Insurance Company, Orange Insurance Exchange, and US Coastal P&C Insurance Company. Each plays a strategic role in helping us serve coastal homeowners with stability, flexibility, and competitive pricing.
+`,
+
+
   features: [
     {
       icon: <FaMapMarkedAlt className="text-white text-4xl" />,
