@@ -5,31 +5,28 @@ import { Quote } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { FaStar } from 'react-icons/fa';
 
+
 const testimonials = [
   {
-    name: 'Lakshmamma',
+    name: 'Ramesh',
+    location: 'Terakanambi',
+    message:
+      'CurePlus Hospital gives very good care. The doctors and nurses treat with respect and patience. For any basic health issue, we always go there. Very neat and well-maintained hospital.',
+  }
+  ,
+  {
+    name: 'Lakshmi Bhat',
     location: 'Mysore',
     message:
-      'I was treated for a urinary infection at Srinivasa Hospital and received free medicines. I’m truly grateful to the staff and organization.',
+      'I had visited CurePlus for fever and general checkup. The treatment was quick and the staff was very polite. Affordable charges and clean facilities. Thank you to the whole team!',
   },
   {
-    name: 'Neelavathi',
-    location: 'Maddur',
+    name: 'Mahesh Gowda',
+    location: 'Chinakuruli',
     message:
-      'I received excellent care at Srinivasa Hospital. The staff follows proper protocols and provides free treatment to those in need.',
+      'Good experience at CurePlus. I took my mother for sugar and BP checkup. Doctor explained everything clearly. Very helpful and caring service. Definitely recommend for regular health care.',
   },
-  {
-    name: 'Gowramma',
-    location: 'Mysore',
-    message:
-      'I underwent surgery at Disha Hospital and received great care. I’m thankful to the organization for supporting low-income families like mine.',
-  },
-  {
-    name: 'Rahman Shariff',
-    location: 'Mysore',
-    message:
-      'My ulcer treatment at Bharath Cancer Hospital was smooth, and the SAS card covered all medical expenses. I’m very grateful.',
-  },
+  
 ];
 
 const Testimonial = () => {
