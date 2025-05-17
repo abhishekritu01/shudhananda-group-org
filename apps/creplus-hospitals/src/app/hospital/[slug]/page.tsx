@@ -687,20 +687,23 @@ import { FaParking, FaProcedures, FaUserMd, FaWifi } from 'react-icons/fa';
 import { HiOutlineClock, HiOutlineLocationMarker, HiOutlinePhone, HiOutlineStar } from 'react-icons/hi';
 import { MdLocalHospital, MdOutlineEmergency, MdOutlineLocalHotel } from 'react-icons/md';
 
+
+
+
 const hospitalsList = [
-  { id: 1, name: 'CurePlus Disha Hospital', image: '/cureplus/cureplus.png', status: 'popular' },
-  { id: 2, name: 'CurePlus Dharani Hospital', image: '/dharni/dharni.png', status: 'normal' },
-  { id: 3, name: 'CurePlus Kaveri Hospital', image: '/kaveri/kaveri1.png', status: 'featured' },
-  { id: 4, name: 'CurePlus Krishna Hospital', image: '/krishna/krishna1.png', status: 'normal' },
-  { id: 5, name: 'CurePlus Narasegowda Memorial Hospital', image: '/narasegowda/narasaregoda1.png', status: 'popular' },
-  { id: 6, name: 'CurePlus Shanivarasanthe Hospital', image: '/Shanivarasanthe/shanivarasanthe.png', status: 'normal' },
-  { id: 7, name: 'CurePlus Ramapura Hospital', image: '/rampura/rampura.png', status: 'featured' },
-  { id: 8, name: 'CurePlus Terakanambi Hospital', image: '/terakanamb/terakanamb.png', status: 'normal' },
-  { id: 9, name: 'CurePlus Bherya Hospital', image: '/bheraya/bheraya.png', status: 'popular' },
-  { id: 10, name: 'CurePlus T. Narasipura Hospital', image: '/Narasipura/Narasipura.png', status: 'normal' },
-  { id: 11, name: 'CurePlus Handpost Hospital', image: '/HandPost/HandPost1.png', status: 'featured' },
-  { id: 12, name: 'CurePlus Hosur Hospital', image: '/hosur/hosur.png', status: 'normal' },
-  { id: 13, name: 'CurePlus Halli Mysore Hospital', image: '/halli/halli.png', status: 'popular' },
+  { id: 1, name: 'CurePlus Disha Hospital', image: '/cureplus/cureplus.png', status: 'popular' ,phone:'0821-2454798' },
+  { id: 2, name: 'CurePlus Dharani Hospital', image: '/dharni/dharni.png', status: 'normal' ,phone:'08226-297298' },
+  { id: 3, name: 'CurePlus Kaveri Hospital', image: '/kaveri/kaveri1.png', status: 'featured' ,phone:'08276 298998' },
+  { id: 4, name: 'CurePlus Krishna Hospital', image: '/krishna/krishna1.png', status: 'normal' ,phone:'08223-275798' },
+  { id: 5, name: 'CurePlus Narasegowda Memorial Hospital', image: '/narasegowda/narasaregoda1.png', status: 'popular' ,phone:'08236-200466' },
+  { id: 6, name: 'CurePlus Shanivarasanthe Hospital', image: '/Shanivarasanthe/shanivarasanthe.png', status: 'normal' ,phone:'9035193777' },
+  { id: 7, name: 'CurePlus Ramapura Hospital', image: '/rampura/rampura.png', status: 'featured' ,phone:'08225-272200' },
+  { id: 8, name: 'CurePlus Terakanambi Hospital', image: '/terakanamb/terakanamb.png', status: 'normal' ,phone:'08229-222044' },
+  { id: 9, name: 'CurePlus Bherya Hospital', image: '/bheraya/bheraya.png', status: 'popular' ,phone:'08223-200604' },
+  { id: 10, name: 'CurePlus T. Narasipura Hospital', image: '/Narasipura/Narasipura.png', status: 'normal' ,phone:'08227-200940' },
+  { id: 11, name: 'CurePlus Handpost Hospital', image: '/HandPost/HandPost1.png', status: 'featured' ,phone:'8228257300' },
+  { id: 12, name: 'CurePlus Hosur Hospital', image: '/hosur/hosur.png', status: 'normal' ,phone:'9035193777' },
+  { id: 13, name: 'CurePlus Halli Mysore Hospital', image: '/halli/halli.png', status: 'popular' ,phone:'08175-273114' },
 ];
 
 const fadeIn = {
