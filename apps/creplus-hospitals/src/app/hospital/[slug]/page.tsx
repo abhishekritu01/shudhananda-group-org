@@ -850,9 +850,9 @@ const Page = () => {
                     </div>
                     <div>
                       <span className="text-gray-700 font-medium text-sm sm:text-base">{service.label}</span>
-                      {typeof service.icon === 'function' && (
+                      {/* {typeof service.icon === 'function' && (
                         <p className="text-xs sm:text-sm text-gray-500 mt-1">No additional description available</p>
-                      )}
+                      )} */}
                     </div>
                   </motion.li>
                 ))}
