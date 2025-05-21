@@ -98,12 +98,13 @@ const HospitalsWithMap = () => {
                     <div className="flex items-center gap-3">
                       <MdLocalHospital className="text-purple-600 text-xl" />
                       {/* <Image  
-                        src="/hospital-icon.jpeg"
+                        src="/hospital-icon1.png"
                         alt="Hospital"
                         width={50}
                         height={50}
                         className="rounded-full border border-gray-200 shadow-sm"
                       /> */}
+                      
                       <h3 className="text-lg font-semibold text-purple-600">{hospital.name}</h3>
                     </div>
                     <div className="flex items-center text-sm text-gray-600 gap-2">
