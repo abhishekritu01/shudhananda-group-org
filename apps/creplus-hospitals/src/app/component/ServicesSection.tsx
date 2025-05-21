@@ -28,7 +28,7 @@
 //         <div className="bg-purple-50 p-8 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300">
 //           <FaPhoneAlt size={50} className="text-purple-800 mb-5 mx-auto" />
 //           <h3 className="text-2xl font-semibold text-purple-900 mb-3 text-center">
-//             Cure+ Pharma
+//             CurePlus  Pharma
 //           </h3>
 //           <p className="text-gray-600 text-center">
 //             Delivering high-quality, affordable medicines through integrated pharmacy services, supporting holistic healthcare solutions.
@@ -74,7 +74,7 @@
 //   },
 //   {
 //     icon: <FaCapsules />,
-//     title: 'Cure+ Pharma',
+//     title: 'CurePlus  Pharma',
 //     description:
 //       'High-quality, affordable medicines through integrated pharmacy services.',
 //   },
@@ -155,7 +155,7 @@
 //   },
 //   {
 //     icon: <FaCapsules />,
-//     title: 'Cure+ Pharma',
+//     title: 'CurePlus  Pharma',
 //     description:
 //       'Affordable, high-quality medicines via integrated pharmacy services.',
 //   },
@@ -251,7 +251,7 @@ const services = [
   },
   {
     icon: <FaCapsules />,
-    title: 'Cure+ Pharma',
+    title: 'CurePlus  Pharma',
     description:
       'Affordable, high-quality medicines via integrated pharmacy services.',
   },

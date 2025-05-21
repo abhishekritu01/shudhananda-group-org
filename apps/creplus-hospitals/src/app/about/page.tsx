@@ -17,19 +17,19 @@
 // };
 
 // const hospitalsList = [
-//   { id: 1, name: 'Cure Plus Disha Hospital', image: '/hospital/cure+.png' },
-//   { id: 2, name: 'Cure Plus Dharani Hospital', image: '/hospital/dharni.png' },
-//   { id: 3, name: 'Cure Plus Kaveri Hospital', image: '/hospital/kaveri.png' },
-//   { id: 4, name: 'Cure Plus Krishna Hospital', image: '/hospital/krishna.png' },
-//   { id: 5, name: 'Cure Plus Narasegowda Memorial Hospital', image: '/hospital/Narasegowda.png' },
-//   { id: 6, name: 'Cure Plus Shanivarasanthe Hospital', image: '/hospital/Shanivarasanth.png' },
-//   { id: 7, name: 'Cure Plus Ramapura Hospital', image: '/hospital/Ramapura.png' },
-//   { id: 8, name: 'Cure Plus Terakanambi Hospital', image: '/hospital/Terakanambi.png' },
-//   { id: 9, name: 'Cure Plus Bherya Hospital', image: '/hospital/Bherya.png' },
-//   { id: 10, name: 'Cure Plus T. Narasipura Hospital', image: '/hospital/T. Narasipura.png' },
-//   { id: 11, name: 'Cure Plus Handpost Hospital', image: '/hospital/Handpost.png' },
-//   { id: 12, name: 'Cure Plus Hosur Hospital', image: '/hospital/Hosur.png' },
-//   { id: 13, name: 'Cure Plus Halli Mysore Hospital', image: '/hospital/Halli Mysore.png' },
+//   { id: 1, name: 'CurePlus  Disha Hospital', image: '/hospital/cure+.png' },
+//   { id: 2, name: 'CurePlus  Dharani Hospital', image: '/hospital/dharni.png' },
+//   { id: 3, name: 'CurePlus  Kaveri Hospital', image: '/hospital/kaveri.png' },
+//   { id: 4, name: 'CurePlus  Krishna Hospital', image: '/hospital/krishna.png' },
+//   { id: 5, name: 'CurePlus  Narasegowda Memorial Hospital', image: '/hospital/Narasegowda.png' },
+//   { id: 6, name: 'CurePlus  Shanivarasanthe Hospital', image: '/hospital/Shanivarasanth.png' },
+//   { id: 7, name: 'CurePlus  Ramapura Hospital', image: '/hospital/Ramapura.png' },
+//   { id: 8, name: 'CurePlus  Terakanambi Hospital', image: '/hospital/Terakanambi.png' },
+//   { id: 9, name: 'CurePlus  Bherya Hospital', image: '/hospital/Bherya.png' },
+//   { id: 10, name: 'CurePlus  T. Narasipura Hospital', image: '/hospital/T. Narasipura.png' },
+//   { id: 11, name: 'CurePlus  Handpost Hospital', image: '/hospital/Handpost.png' },
+//   { id: 12, name: 'CurePlus  Hosur Hospital', image: '/hospital/Hosur.png' },
+//   { id: 13, name: 'CurePlus  Halli Mysore Hospital', image: '/hospital/Halli Mysore.png' },
 // ];
 
 // const AboutPage = () => {
@@ -65,11 +65,11 @@
 //           viewport={{ once: true }}
 //           className="text-lg leading-loose mb-12 max-w-5xl mx-auto"
 //         >
-//           Founded in August 2013 by Dr. Arjun Sachidanand and Dr. Sini Arjun, Sudhanand Healthcare Solutions Pvt. Ltd. is dedicated to delivering high-quality healthcare services at subsidized rates in India and globally. Central to its mission are the esteemed Cure Plus Hospitals, exemplifying the company’s commitment to healthcare excellence.
+//           Founded in August 2013 by Dr. Arjun Sachidanand and Dr. Sini Arjun, Sudhanand Healthcare Solutions Pvt. Ltd. is dedicated to delivering high-quality healthcare services at subsidized rates in India and globally. Central to its mission are the esteemed CurePlus  Hospitals, exemplifying the company’s commitment to healthcare excellence.
 
 //           The organization aims to establish, manage, and promote healthcare facilities that offer comprehensive services including preventive care, diagnostics, telemedicine, and educational initiatives. This holistic approach underscores its dedication to enhancing healthcare accessibility and quality.
 
-//           Sudhanand Healthcare Solutions Pvt. Ltd. focuses on setting up healthcare centers that cater to both rural and urban underserved populations, contributing significantly to improving health outcomes across India. This effort is supported by Dr. M. D. Sachidananda Murthy Memorial Hospitals and an expanding network of Cure Plus Hospitals across various districts in Karnataka, India.
+//           Sudhanand Healthcare Solutions Pvt. Ltd. focuses on setting up healthcare centers that cater to both rural and urban underserved populations, contributing significantly to improving health outcomes across India. This effort is supported by Dr. M. D. Sachidananda Murthy Memorial Hospitals and an expanding network of CurePlus  Hospitals across various districts in Karnataka, India.
 //         </motion.p>
 
 //         {/* Vision / Mission / Goal */}
@@ -272,19 +272,19 @@
 // };
 
 // const hospitalsList = [
-//   { id: 1, name: 'Cure Plus Disha Hospital', image: '/hospital/cure+.png' },
-//   { id: 2, name: 'Cure Plus Dharani Hospital', image: '/hospital/dharni.png' },
-//   { id: 3, name: 'Cure Plus Kaveri Hospital', image: '/hospital/kaveri.png' },
-//   { id: 4, name: 'Cure Plus Krishna Hospital', image: '/hospital/krishna.png' },
-//   { id: 5, name: 'Cure Plus Narasegowda Memorial Hospital', image: '/hospital/Narasegowda.png' },
-//   { id: 6, name: 'Cure Plus Shanivarasanthe Hospital', image: '/hospital/Shanivarasanth.png' },
-//   { id: 7, name: 'Cure Plus Ramapura Hospital', image: '/hospital/Ramapura.png' },
-//   { id: 8, name: 'Cure Plus Terakanambi Hospital', image: '/hospital/Terakanambi.png' },
-//   { id: 9, name: 'Cure Plus Bherya Hospital', image: '/hospital/Bherya.png' },
-//   { id: 10, name: 'Cure Plus T. Narasipura Hospital', image: '/hospital/T. Narasipura.png' },
-//   { id: 11, name: 'Cure Plus Handpost Hospital', image: '/hospital/Handpost.png' },
-//   { id: 12, name: 'Cure Plus Hosur Hospital', image: '/hospital/Hosur.png' },
-//   { id: 13, name: 'Cure Plus Halli Mysore Hospital', image: '/hospital/Halli Mysore.png' },
+//   { id: 1, name: 'CurePlus  Disha Hospital', image: '/hospital/cure+.png' },
+//   { id: 2, name: 'CurePlus  Dharani Hospital', image: '/hospital/dharni.png' },
+//   { id: 3, name: 'CurePlus  Kaveri Hospital', image: '/hospital/kaveri.png' },
+//   { id: 4, name: 'CurePlus  Krishna Hospital', image: '/hospital/krishna.png' },
+//   { id: 5, name: 'CurePlus  Narasegowda Memorial Hospital', image: '/hospital/Narasegowda.png' },
+//   { id: 6, name: 'CurePlus  Shanivarasanthe Hospital', image: '/hospital/Shanivarasanth.png' },
+//   { id: 7, name: 'CurePlus  Ramapura Hospital', image: '/hospital/Ramapura.png' },
+//   { id: 8, name: 'CurePlus  Terakanambi Hospital', image: '/hospital/Terakanambi.png' },
+//   { id: 9, name: 'CurePlus  Bherya Hospital', image: '/hospital/Bherya.png' },
+//   { id: 10, name: 'CurePlus  T. Narasipura Hospital', image: '/hospital/T. Narasipura.png' },
+//   { id: 11, name: 'CurePlus  Handpost Hospital', image: '/hospital/Handpost.png' },
+//   { id: 12, name: 'CurePlus  Hosur Hospital', image: '/hospital/Hosur.png' },
+//   { id: 13, name: 'CurePlus  Halli Mysore Hospital', image: '/hospital/Halli Mysore.png' },
 // ];
 
 // const AboutPage = () => {
@@ -358,11 +358,11 @@
 //         >
 //           <div className="absolute -left-8 top-0 h-full w-1 bg-gradient-to-b from-purple-200 to-blue-200 rounded-full hidden md:block"></div>
 //           <p className="text-lg md:text-xl leading-relaxed md:leading-loose text-gray-700 max-w-5xl mx-auto pl-0 md:pl-8">
-//             Founded in August 2013 by Dr. Arjun Sachidanand and Dr. Sini Arjun, Sudhanand Healthcare Solutions Pvt. Ltd. is dedicated to delivering high-quality healthcare services at subsidized rates in India and globally. Central to its mission are the esteemed Cure Plus Hospitals, exemplifying the company's commitment to healthcare excellence.
+//             Founded in August 2013 by Dr. Arjun Sachidanand and Dr. Sini Arjun, Sudhanand Healthcare Solutions Pvt. Ltd. is dedicated to delivering high-quality healthcare services at subsidized rates in India and globally. Central to its mission are the esteemed CurePlus  Hospitals, exemplifying the company's commitment to healthcare excellence.
 //             <br /><br />
 //             The organization aims to establish, manage, and promote healthcare facilities that offer comprehensive services including preventive care, diagnostics, telemedicine, and educational initiatives. This holistic approach underscores its dedication to enhancing healthcare accessibility and quality.
 //             <br /><br />
-//             Sudhanand Healthcare Solutions Pvt. Ltd. focuses on setting up healthcare centers that cater to both rural and urban underserved populations, contributing significantly to improving health outcomes across India. This effort is supported by Dr. M. D. Sachidananda Murthy Memorial Hospitals and an expanding network of Cure Plus Hospitals across various districts in Karnataka, India.
+//             Sudhanand Healthcare Solutions Pvt. Ltd. focuses on setting up healthcare centers that cater to both rural and urban underserved populations, contributing significantly to improving health outcomes across India. This effort is supported by Dr. M. D. Sachidananda Murthy Memorial Hospitals and an expanding network of CurePlus  Hospitals across various districts in Karnataka, India.
 //           </p>
 //         </motion.div>
 
@@ -622,19 +622,19 @@ const fadeUp = {
 };
 
 const hospitalsList = [
-  { id: 1, name: 'Cure Plus Disha Hospital', image: '/hospital/cure+.png' },
-  { id: 2, name: 'Cure Plus Dharani Hospital', image: '/hospital/dharni.png' },
-  { id: 3, name: 'Cure Plus Kaveri Hospital', image: '/hospital/kaveri.png' },
-  { id: 4, name: 'Cure Plus Krishna Hospital', image: '/hospital/krishna.png' },
-  { id: 5, name: 'Cure Plus Narasegowda Memorial Hospital', image: '/hospital/Narasegowda.png' },
-  { id: 6, name: 'Cure Plus Shanivarasanthe Hospital', image: '/hospital/Shanivarasanth.png' },
-  { id: 7, name: 'Cure Plus Ramapura Hospital', image: '/hospital/Ramapura.png' },
-  { id: 8, name: 'Cure Plus Terakanambi Hospital', image: '/hospital/Terakanambi.png' },
-  { id: 9, name: 'Cure Plus Bherya Hospital', image: '/hospital/Bherya.png' },
-  { id: 10, name: 'Cure Plus T. Narasipura Hospital', image: '/hospital/T. Narasipura.png' },
-  { id: 11, name: 'Cure Plus Handpost Hospital', image: '/hospital/Handpost.png' },
-  { id: 12, name: 'Cure Plus Hosur Hospital', image: '/hospital/Hosur.png' },
-  { id: 13, name: 'Cure Plus Halli Mysore Hospital', image: '/hospital/Halli Mysore.png' },
+  { id: 1, name: 'CurePlus  Disha Hospital', image: '/hospital/cure+.png' },
+  { id: 2, name: 'CurePlus  Dharani Hospital', image: '/hospital/dharni.png' },
+  { id: 3, name: 'CurePlus  Kaveri Hospital', image: '/hospital/kaveri.png' },
+  { id: 4, name: 'CurePlus  Krishna Hospital', image: '/hospital/krishna.png' },
+  { id: 5, name: 'CurePlus  Narasegowda Memorial Hospital', image: '/hospital/Narasegowda.png' },
+  { id: 6, name: 'CurePlus  Shanivarasanthe Hospital', image: '/hospital/Shanivarasanth.png' },
+  { id: 7, name: 'CurePlus  Ramapura Hospital', image: '/hospital/Ramapura.png' },
+  { id: 8, name: 'CurePlus  Terakanambi Hospital', image: '/hospital/Terakanambi.png' },
+  { id: 9, name: 'CurePlus  Bherya Hospital', image: '/hospital/Bherya.png' },
+  { id: 10, name: 'CurePlus  T. Narasipura Hospital', image: '/hospital/T. Narasipura.png' },
+  { id: 11, name: 'CurePlus  Handpost Hospital', image: '/hospital/Handpost.png' },
+  { id: 12, name: 'CurePlus  Hosur Hospital', image: '/hospital/Hosur.png' },
+  { id: 13, name: 'CurePlus  Halli Mysore Hospital', image: '/hospital/Halli Mysore.png' },
 ];
 
 const AboutPage = () => {
@@ -667,11 +667,11 @@ const AboutPage = () => {
           className="mb-16 md:mb-20 max-w-5xl mx-auto"
         >
           <p className="text-lg leading-relaxed text-gray-700">
-            Founded in August 2013 by Dr. Arjun Sachidanand and Dr. Sini Arjun, Sudhanand Healthcare Solutions Pvt. Ltd. is dedicated to delivering high-quality healthcare services at subsidized rates in India and globally. Central to its mission are the esteemed Cure Plus Hospitals, exemplifying the company&apos;s commitment to healthcare excellence.
+            Founded in August 2013 by Dr. Arjun Sachidanand and Dr. Sini Arjun, Sudhanand Healthcare Solutions Pvt. Ltd. is dedicated to delivering high-quality healthcare services at subsidized rates in India and globally. Central to its mission are the esteemed CurePlus  Hospitals, exemplifying the company&apos;s commitment to healthcare excellence.
             <br /><br />
             The organization aims to establish, manage, and promote healthcare facilities that offer comprehensive services including preventive care, diagnostics, telemedicine, and educational initiatives. This holistic approach underscores its dedication to enhancing healthcare accessibility and quality.
             <br /><br />
-            Sudhanand Healthcare Solutions Pvt. Ltd. focuses on setting up healthcare centers that cater to both rural and urban underserved populations, contributing significantly to improving health outcomes across India. This effort is supported by Dr. M. D. Sachidananda Murthy Memorial Hospitals and an expanding network of Cure Plus Hospitals across various districts in Karnataka, India.
+            Sudhanand Healthcare Solutions Pvt. Ltd. focuses on setting up healthcare centers that cater to both rural and urban underserved populations, contributing significantly to improving health outcomes across India. This effort is supported by Dr. M. D. Sachidananda Murthy Memorial Hospitals and an expanding network of CurePlus  Hospitals across various districts in Karnataka, India.
           </p>
         </motion.div>
 
@@ -680,7 +680,7 @@ const AboutPage = () => {
           {[
             {
               title: 'Vision',
-              desc: 'To provide affordable, accessible, inclusive & quality healthcare services to five million rural and urban poor by 2025.',
+              desc: 'To provide affordable, accessible, inclusive & quality healthcare services to five million rural and urban poor by 2030.',
               color: 'bg-blue-50',
               icon: <FaEye className="text-purple-600 w-8 h-8" />,
             },

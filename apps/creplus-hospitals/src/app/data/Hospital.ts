@@ -38,7 +38,7 @@ export const hospitals: Hospital[] = [
     name: 'CurePlus Disha Hospital',
     location: 'Mysuru',
     icon: FaHospitalAlt,
-    description: `Established in 2014, CurePlus Disha Hospital is a leading NABH-accredited multi-specialty hospital in Mysuru. As the flagship of the Dr. M. D. Sachidananda Murthy Memorial Hospitals chain, it offers affordable, accessible, and world-class healthcare. With 40 beds and two advanced operation theatres, the hospital performs 80 to 100 surgeries monthly, serving diverse medical needs with expertise and care.
+    description: `Established in 2014, CurePlus Disha Hospital is a leading NABH-accredited multi-specialty hospital in Mysuru. As the flagship of the CurePlus  Hospitals chain, it offers affordable, accessible, and world-class healthcare. With 40 beds and two advanced operation theatres, the hospital performs 80 to 100 surgeries monthly, serving diverse medical needs with expertise and care.
 
 The hospital’s modern infrastructure and cutting-edge equipment ensure high standards in patient care. Treating around 70 outpatients daily, it provides expert consultations across specialties, supported by a Medico-Social Welfare Help Desk that ensures a smooth and compassionate healthcare experience.
 
@@ -55,11 +55,28 @@ Strategically located in the culturally rich city of Mysuru, CurePlus Disha Hosp
       { label: 'Orthopedics', icon: FaUserMd },
       { label: 'Gynecology', icon: FaUserMd },
       { label: 'Pediatrics', icon: FaUserMd },
+      { label: 'Urology', icon: FaUserMd },
+      { label: 'ENT', icon: FaUserMd },
+      { label: 'General Medicine', icon: FaUserMd },
+      { label: 'Dermatology', icon: FaUserMd },
+      { label: 'Neurology', icon: FaUserMd },
+      { label: 'Pathology', icon: FaUserMd },
+      { label: 'Physiotherapy', icon: FaUserMd },
+      { label: 'Emergency Medicine', icon: FaUserMd },
     ],
+
     facilities: [
-      { label: '40 Beds', icon: FaBed },
+      { label: '40+ Beds', icon: FaBed },
       { label: '2 Operation Theatres', icon: FaXRay },
       { label: 'Medico-Social Welfare Desk', icon: FaHospitalAlt },
+      { label: 'UCG Scanning', icon: FaXRay },
+      { label: 'Physiotherapy', icon: FaXRay },
+      { label: '24/7 Ambulance Service', icon: FaHospitalAlt },
+      { label: '24/7 Pharmacy Services', icon: FaHospitalAlt },
+      { label: 'Expert Care by Qualified Medical Practitioners', icon: FaHospitalAlt },
+      { label: 'OPD & IPD Services', icon: FaXRay },
+      { label: 'X-Ray and USG Scanning', icon: FaXRay },
+      { label: 'Pathology Lab', icon: FaXRay },
     ],
     infrastructure:
       'Equipped with cutting-edge medical equipment and a modern facility to support high-volume surgeries and patient care.',
@@ -75,7 +92,7 @@ Strategically located in the culturally rich city of Mysuru, CurePlus Disha Hosp
     name: 'CurePlus Dharani Hospital',
     location: 'Santhemarahalli, Yelandur Taluk, Chamarajanagara District',
     icon: FaHospitalAlt,
-    description: `Dharani Hospital, established in 2017 in Santhemarahalli, Yelandur Taluk, Chamarajanagara District, was founded to address the region’s long-standing lack of quality healthcare. As part of the CurePlus Disha Hospital and Dr. M. D. Sachidananda Murthy Memorial Hospitals chain, this 16-bedded multi-specialty center offers modern, affordable, and accessible medical care to rural communities.
+    description: `Dharani Hospital, established in 2017 in Santhemarahalli, Yelandur Taluk, Chamarajanagara District, was founded to address the region’s long-standing lack of quality healthcare. As part of the CurePlus Disha Hospital and CurePlus  Hospitals chain, this 16-bedded multi-specialty center offers modern, affordable, and accessible medical care to rural communities.
 
 Serving over 67,500 patients from nearly 90 villages, Dharani Hospital has become a vital healthcare provider in the region. Its strategic location makes it easily accessible to nearby towns such as Chamarajanagar, Kollegal, Hannur, and Gundlupet, reinforcing its role as the best hospital in Yelandur.
 
@@ -94,9 +111,15 @@ With state-of-the-art infrastructure, skilled medical professionals, and a commi
       { label: 'Pediatrics', icon: FaUserMd },
     ],
     facilities: [
-      { label: '16 Beds', icon: FaBed },
+      { label: '16+ Beds', icon: FaBed },
       { label: 'Multi-Specialty Care', icon: FaHospitalAlt },
+      { label: 'Medico-Social Welfare Desk', icon: FaHospitalAlt },
+      { label: '24/7 Ambulance Service', icon: FaHospitalAlt },
+      { label: '24/7 Pharmacy Services', icon: FaHospitalAlt },
+      { label: 'Expert Care by Qualified Medical Practitioners', icon: FaHospitalAlt },
       { label: 'OPD & IPD Services', icon: FaXRay },
+      { label: 'X-Ray ', icon: FaXRay },
+      { label: 'Pathology Lab', icon: FaXRay },
     ],
     infrastructure:
       'Equipped with essential diagnostic and treatment facilities to deliver efficient and modern care in a rural setting.',
@@ -113,7 +136,7 @@ With state-of-the-art infrastructure, skilled medical professionals, and a commi
     location: 'Kushalnagar, Somwarpet Taluk, Kodagu District',
     icon: FaHospitalAlt,
     description: `
-    Established in 2018, CurePlus Kaveri Hospital in Kushalnagar was launched by the Sudhanand Group as part of the Dr. M. D. Sachidananda Murthy Memorial Hospitals chain. Initially a 20-bedded facility, it underwent a major expansion in 2022 and now operates as a 40-bedded NABH-accredited multi-specialty hospital. Equipped with a state-of-the-art operation theater, advanced ICU, audiometry services, and both private and semi-private wards, it stands as the second hub of the hospital group.
+    Established in 2018, CurePlus Kaveri Hospital in Kushalnagar was launched by the Sudhanand Group as part of the CurePlus  Hospitals chain. Initially a 20-bedded facility, it underwent a major expansion in 2022 and now operates as a 40-bedded NABH-accredited multi-specialty hospital. Equipped with a state-of-the-art operation theater, advanced ICU, audiometry services, and both private and semi-private wards, it stands as the second hub of the hospital group.
 
 CurePlus Kaveri Hospital is the only NABH-accredited healthcare center in Kushalnagar and is recognized for delivering exceptional, patient-centric care. Its expert medical team, modern infrastructure, and commitment to quality have earned it a reputation as the best hospital in Kushalnagar.
 
@@ -121,7 +144,7 @@ Strategically located, the hospital is easily accessible to patients from across
     `,
     imageUrl: '/kaveri/kaveri1.png',
     gallery: [
-     
+
       '/kaveri/kaveri2.png',
       '/kaveri/kaveri3.png',
       '/kaveri/kaveri4.png',
@@ -132,11 +155,28 @@ Strategically located, the hospital is easily accessible to patients from across
       { label: 'ENT & Audiometry', icon: FaUserMd },
       { label: 'Critical Care', icon: FaUserMd },
       { label: 'Inpatient Care', icon: FaUserMd },
+      { label: 'Urology', icon: FaUserMd },
+      { label: 'ENT', icon: FaUserMd },
+      { label: 'General Medicine', icon: FaUserMd },
+      { label: 'Dermatology', icon: FaUserMd },
+      { label: 'Neurology', icon: FaUserMd },
+      { label: 'Pathology', icon: FaUserMd },
+      { label: 'Physiotherapy', icon: FaUserMd },
+      { label: 'Emergency Medicine', icon: FaUserMd },
     ],
     facilities: [
-      { label: '40 Beds', icon: FaBed },
-      { label: 'ICU & OT', icon: FaXRay },
-      { label: 'Private & Semi-Private Wards', icon: FaHospitalAlt },
+      { label: '40+ Beds', icon: FaBed },
+      { label: '2 Operation Theatres', icon: FaXRay },
+      { label: 'Medico-Social Welfare Desk', icon: FaHospitalAlt },
+      { label: 'UCG Scanning', icon: FaXRay },
+      { label: 'Physiotherapy', icon: FaXRay },
+      { label: '24/7 Ambulance Service', icon: FaHospitalAlt },
+      { label: '24/7 Pharmacy Services', icon: FaHospitalAlt },
+      { label: 'Expert Care by Qualified Medical Practitioners', icon: FaHospitalAlt },
+      { label: 'OPD & IPD Services', icon: FaXRay },
+      { label: 'X-Ray and USG Scanning', icon: FaXRay },
+      { label: 'Pathology Lab', icon: FaXRay },
+
     ],
     infrastructure:
       'Features modern operation theaters, advanced ICU, and private rooms to meet growing healthcare needs in Kodagu District.',
@@ -171,7 +211,13 @@ Strategically located, the hospital is easily accessible to patients from across
     facilities: [
       { label: '20 Beds', icon: FaBed },
       { label: 'Private Multi-Specialty Facility', icon: FaHospitalAlt },
-      { label: 'Covid-19 Response Center', icon: FaXRay },
+      { label: 'Medico-Social Welfare Desk', icon: FaHospitalAlt },
+      { label: '24/7 Ambulance Service', icon: FaHospitalAlt },
+      { label: '24/7 Pharmacy Services', icon: FaHospitalAlt },
+      { label: 'Expert Care by Qualified Medical Practitioners', icon: FaHospitalAlt },
+      { label: 'OPD & IPD Services', icon: FaXRay },
+      { label: 'X-Ray ', icon: FaXRay },
+      { label: 'Pathology Lab', icon: FaXRay },
     ],
     infrastructure:
       'Built during the pandemic with a focus on accessibility and comprehensive medical care for rural populations.',
@@ -207,6 +253,13 @@ Strategically located, the hospital is easily accessible to patients from across
       { label: '20 Beds', icon: FaBed },
       { label: '24/7 Ambulance Service', icon: FaHospitalAlt },
       { label: 'Diagnostic X-Ray Services', icon: FaXRay },
+      { label: 'Medico-Social Welfare Desk', icon: FaHospitalAlt },
+      { label: '24/7 Ambulance Service', icon: FaHospitalAlt },
+      { label: '24/7 Pharmacy Services', icon: FaHospitalAlt },
+      { label: 'Expert Care by Qualified Medical Practitioners', icon: FaHospitalAlt },
+      { label: 'OPD & IPD Services', icon: FaXRay },
+      { label: 'X-Ray ', icon: FaXRay },
+      { label: 'Pathology Lab', icon: FaXRay },
     ],
     infrastructure:
       'Equipped with emergency beds, separate male and female wards, an in-house pharmacy, and a pathology lab.',
@@ -219,12 +272,11 @@ Strategically located, the hospital is easily accessible to patients from across
   },
   {
     id: 6,
-    name: 'CurePlus Shanivarasanthe Hospital',
+    name: 'CurePlus Hospital Shanivarasanthe ',
     location: 'Shanivarasanthe, Kodagu District',
     icon: FaHospitalAlt,
     description: `
     CurePlus Shanivarasanthe Hospital, located in the scenic town of Shanivarasanthe in Kodagu, is a leading 20-bedded multi-specialty hospital dedicated to providing exceptional and affordable healthcare. Renowned as the best hospital in Shanivarasanthe and one of the top hospitals in Kodagu, it offers specialized services in orthopedics, gynecology, pediatrics, and general medicine. The hospital features modern infrastructure, including advanced diagnostic tools and well-equipped treatment rooms, ensuring a comfortable and safe environment for all patients. Backed by a team of experienced orthopedic surgeons, gynecologists, pediatricians, and general physicians, CurePlus Shanivarasanthe Hospital delivers personalized, compassionate, and timely care. With its patient-centric approach and commitment to community well-being, the hospital continues to earn trust and recognition across the region. It stands as a reliable healthcare partner, combining medical expertise with a heartfelt dedication to improving lives and enhancing health outcomes for the people of Kodagu.
-    
     `,
     imageUrl: '/Shanivarasanthe/shanivarasanthe.png',
     gallery: [
@@ -240,9 +292,16 @@ Strategically located, the hospital is easily accessible to patients from across
       { label: 'General Medicine', icon: FaUserMd },
     ],
     facilities: [
-      { label: '20 Beds', icon: FaBed },
+      { label: '15+ Beds', icon: FaBed },
       { label: 'Advanced Diagnostic Tools', icon: FaXRay },
       { label: 'Private and Semi-Private Wards', icon: FaHospitalAlt },
+      { label: 'Medico-Social Welfare Desk', icon: FaHospitalAlt },
+      { label: '24/7 Ambulance Service', icon: FaHospitalAlt },
+      { label: '24/7 Pharmacy Services', icon: FaHospitalAlt },
+      { label: 'Expert Care by Qualified Medical Practitioners', icon: FaHospitalAlt },
+      { label: 'OPD & IPD Services', icon: FaXRay },  
+      { label: 'X-Ray ', icon: FaXRay },
+      { label: 'Pathology Lab', icon: FaXRay },
     ],
     infrastructure:
       'State-of-the-art medical infrastructure, ensuring personalized and specialized treatments.',
@@ -255,7 +314,7 @@ Strategically located, the hospital is easily accessible to patients from across
   },
   {
     id: 7,
-    name: 'CurePlus Ramapura Hospital',
+    name: 'CurePlus Hospital Ramapura ',
     location: 'Ramapura, Chamarajanagar',
     icon: FaHospitalAlt,
     description: `CurePlus Ramapura Hospital, located in the heart of Ramapura, Chamarajanagar, is a 20-bedded multi-specialty facility recognized for delivering high-quality, patient-centered healthcare. Known as the best hospital in Ramapura and among the top in Chamarajanagara, it specializes in orthopedics and general medicine, offering expert treatment for bone and joint issues as well as comprehensive primary care. The hospital is equipped with modern diagnostic tools and well-maintained inpatient rooms to ensure comfort, safety, and efficiency in medical service delivery. A dedicated team of experienced orthopedic specialists and general physicians provides compassionate, personalized care tailored to each patient’s unique needs. Committed to community health, CurePlus Ramapura Hospital strives to make advanced and affordable healthcare accessible to all, while building lasting trust through its empathetic approach. With a focus on wellness and recovery, the hospital continues to serve as a reliable healthcare partner for individuals and families across the Chamarajanagar region.`,
@@ -271,7 +330,7 @@ Strategically located, the hospital is easily accessible to patients from across
       { label: 'General Medicine', icon: FaUserMd },
     ],
     facilities: [
-      { label: '20 Beds', icon: FaBed },
+      { label: '15+ Beds', icon: FaBed },
       { label: 'Well-Equipped Inpatient Rooms', icon: FaHospitalAlt },
     ],
     infrastructure:
@@ -285,7 +344,7 @@ Strategically located, the hospital is easily accessible to patients from across
   },
   {
     id: 8,
-    name: 'CurePlus Terakanambi Hospital',
+    name: 'CurePlus Hospital Terakanambi',
     location: 'Terakanambi, Chamarajanagar',
     icon: FaHospitalAlt,
     description: `
@@ -303,8 +362,15 @@ Strategically located, the hospital is easily accessible to patients from across
       { label: 'General Medicine', icon: FaUserMd },
     ],
     facilities: [
-      { label: '20 Beds', icon: FaBed },
+      { label: '15+ Beds', icon: FaBed },
       { label: 'Modern Diagnostic and Treatment Facilities', icon: FaXRay },
+      { label: 'Medico-Social Welfare Desk', icon: FaHospitalAlt },
+      { label: '24/7 Ambulance Service', icon: FaHospitalAlt },
+      { label: '24/7 Pharmacy Services', icon: FaHospitalAlt },
+      { label: 'Expert Care by Qualified Medical Practitioners', icon: FaHospitalAlt },
+      { label: 'OPD & IPD Services', icon: FaXRay },
+      { label: 'X-Ray ', icon: FaXRay },
+      { label: 'Pathology Lab', icon: FaXRay },
     ],
     infrastructure:
       'Equipped with modern diagnostic and treatment facilities to ensure effective patient care.',
@@ -317,7 +383,7 @@ Strategically located, the hospital is easily accessible to patients from across
   },
   {
     id: 9,
-    name: 'CurePlus Bherya Hospital',
+    name: 'CurePlus Hospital Bherya',
     location: 'Bherya, Saligrama Taluk, Mysore',
     icon: FaHospitalAlt,
     description: `CurePlus Bherya Hospital, located in Bherya, Saligrama Taluk, Mysore, is a trusted center for quality healthcare in the region. As a 20-bedded facility, the hospital is dedicated to offering personalized, affordable, and effective medical services to the local community. Specializing in orthopedics and general medicine, CurePlus Bherya Hospital addresses a wide range of health concerns—from bone and joint issues to comprehensive general medical care. The hospital is equipped with modern infrastructure and advanced diagnostic tools, ensuring accurate, timely, and efficient treatment in a comfortable and well-maintained environment. With a dedicated team of experienced orthopedic specialists and general physicians, the hospital follows a compassionate, patient-first approach, focusing on personalized care and optimal outcomes. Easily accessible to residents across Saligrama Taluk, CurePlus Bherya Hospital continues to set the standard for healthcare in the area. It stands as a beacon of hope and wellness, delivering reliable, community-focused care to everyone it serves.`,
@@ -333,8 +399,15 @@ Strategically located, the hospital is easily accessible to patients from across
       { label: 'General Medicine', icon: FaUserMd },
     ],
     facilities: [
-      { label: '20 Beds', icon: FaBed },
+      { label: '15+ Beds', icon: FaBed },
       { label: 'Advanced Medical Infrastructure', icon: FaXRay },
+      { label: 'Medico-Social Welfare Desk', icon: FaHospitalAlt },
+      { label: '24/7 Ambulance Service', icon: FaHospitalAlt },
+      { label: '24/7 Pharmacy Services', icon: FaHospitalAlt },
+      { label: 'Expert Care by Qualified Medical Practitioners', icon: FaHospitalAlt },
+      { label: 'OPD & IPD Services', icon: FaXRay },
+      { label: 'X-Ray ', icon: FaXRay },
+      { label: 'Pathology Lab', icon: FaXRay },
     ],
     infrastructure:
       'Designed to provide high-quality medical care with modern infrastructure and expert medical professionals.',
@@ -347,7 +420,7 @@ Strategically located, the hospital is easily accessible to patients from across
   },
   {
     id: 10,
-    name: 'CurePlus T Narasipura Hospital',
+    name: 'CurePlus Hospital T Narasipura',
     location: 'T Narasipura, Mysore',
     icon: FaHospitalAlt,
     description: `CurePlus T Narasipura Hospital, located in T Narasipura, Mysore, is dedicated to delivering accessible, affordable, and high-quality healthcare to the local community. Specializing in orthopedics and general medicine, the hospital provides expert treatment for bone and joint conditions, routine consultations, and care for various medical concerns. With a 20-bed facility equipped with advanced medical technology, patients receive timely and efficient care in a comfortable environment. A unique feature of the hospital is its provision of generic medicines, ensuring that essential treatments remain cost-effective for all. The compassionate team of orthopedic specialists, general practitioners, and support staff is committed to offering personalized and patient-centered services with empathy and integrity. Conveniently located in the heart of T Narasipura, the hospital is easily accessible, positioning itself as a trusted healthcare provider in the region. CurePlus T Narasipura Hospital continues to uphold its mission of being a reliable, community-focused hub for comprehensive medical care.`,
@@ -365,6 +438,13 @@ Strategically located, the hospital is easily accessible to patients from across
     facilities: [
       { label: '20 Beds', icon: FaBed },
       { label: 'Advanced Medical Facilities', icon: FaXRay },
+      { label: 'Medico-Social Welfare Desk', icon: FaHospitalAlt },
+      { label: '24/7 Ambulance Service', icon: FaHospitalAlt },
+      { label: '24/7 Pharmacy Services', icon: FaHospitalAlt },
+      { label: 'Expert Care by Qualified Medical Practitioners', icon: FaHospitalAlt },
+      { label: 'OPD & IPD Services', icon: FaXRay },
+      { label: 'X-Ray ', icon: FaXRay },
+      { label: 'Pathology Lab', icon: FaXRay },
     ],
     infrastructure:
       'Equipped with modern medical technology and infrastructure to deliver top-notch care.',
@@ -377,7 +457,7 @@ Strategically located, the hospital is easily accessible to patients from across
   },
   {
     id: 11,
-    name: 'CurePlus Hand Post Hospital',
+    name: 'CurePlus Hospital Hand Post',
     location: 'H.D. Kote, Mysore',
     icon: FaHospitalAlt,
     description: `CurePlus Hand Post Hospital, located in H.D. Kote, Mysore, is dedicated to providing high-quality and accessible healthcare to the local community. With a focus on orthopedics and general medicine, the hospital offers expert care for a range of health conditions—from bone and joint disorders to general medical issues. Our 20-bed facility is equipped with modern infrastructure to ensure efficient and comfortable treatment for every patient. Committed to affordability, the hospital also provides a range of generic medicines, ensuring cost-effective access to essential treatments. The compassionate team of orthopedic specialists, general physicians, and support staff is devoted to offering personalized, patient-first care at every stage—from consultation to recovery. Conveniently located in Hand Post, H.D. Kote, CurePlus Hospital is a trusted healthcare destination for residents of Mysore and nearby areas. We strive to deliver timely, effective, and empathetic care that prioritizes the well-being of every individual we serve.`,
@@ -395,6 +475,13 @@ Strategically located, the hospital is easily accessible to patients from across
     facilities: [
       { label: '20 Beds', icon: FaBed },
       { label: 'Diagnostic Services', icon: FaXRay },
+      { label: 'Medico-Social Welfare Desk', icon: FaHospitalAlt },
+      { label: '24/7 Ambulance Service', icon: FaHospitalAlt },
+      { label: '24/7 Pharmacy Services', icon: FaHospitalAlt },
+      { label: 'Expert Care by Qualified Medical Practitioners', icon: FaHospitalAlt },
+      { label: 'OPD & IPD Services', icon: FaXRay },
+      { label: 'X-Ray ', icon: FaXRay },
+      { label: 'Pathology Lab', icon: FaXRay },
     ],
     infrastructure:
       'Comprehensive medical expertise with advanced diagnostic and rehabilitation services.',
@@ -407,7 +494,7 @@ Strategically located, the hospital is easily accessible to patients from across
   },
   {
     id: 12,
-    name: 'CurePlus Hosur Hospital',
+    name: 'CurePlus Hospital Hosur',
     location: 'Saligrama Taluk, Mysore',
     icon: FaHospitalAlt,
     description: `CurePlus Hosur Hospital, located in Saligrama Taluk, Mysore, is committed to providing high-quality, accessible healthcare tailored to the needs of the local community. Specializing in orthopedics and general medicine, our experienced doctors offer expert care for bone and joint issues, as well as comprehensive treatment for common medical conditions. Our 20-bed facility features clean, comfortable inpatient rooms, advanced diagnostic tools, and a dedicated orthopedic rehabilitation unit to support recovery. We also offer a fully stocked onsite pharmacy with both generic and branded medicines, ensuring that treatment remains affordable and within reach. At CurePlus Hosur Hospital, we believe in a patient-first approach, delivering compassionate care that addresses each individual's unique health concerns. Our team of skilled specialists and support staff is devoted to creating a positive, healing environment for every patient. Conveniently located in Hosur, we are proud to serve as a trusted healthcare partner for residents across Saligrama Taluk and beyond.`,
@@ -425,6 +512,13 @@ Strategically located, the hospital is easily accessible to patients from across
     facilities: [
       { label: '20 Beds', icon: FaBed },
       { label: 'Modern Medical Facilities', icon: FaXRay },
+      { label: 'Medico-Social Welfare Desk', icon: FaHospitalAlt },
+      { label: '24/7 Ambulance Service', icon: FaHospitalAlt },
+      { label: '24/7 Pharmacy Services', icon: FaHospitalAlt },
+      { label: 'Expert Care by Qualified Medical Practitioners', icon: FaHospitalAlt },
+      { label: 'OPD & IPD Services', icon: FaXRay },
+      { label: 'X-Ray ', icon: FaXRay },
+      { label: 'Pathology Lab', icon: FaXRay },
     ],
     infrastructure:
       'Affordable and accessible healthcare with a focus on patient-centered care.',
@@ -437,7 +531,7 @@ Strategically located, the hospital is easily accessible to patients from across
   },
   {
     id: 13,
-    name: 'CurePlus Halli Mysuru Hospital',
+    name: 'CurePlus Hospital Halli Mysuru ',
     location: 'Halli Mysuru, Mysore',
     icon: FaHospitalAlt,
     description: `CurePlus Halli Mysuru Hospital is committed to delivering high-quality, affordable healthcare to the residents of Halli Mysuru and nearby areas. With a focus on patient-centered care, we offer specialized services in orthopedics and general medicine. Whether you need treatment for bone and joint disorders or general health concerns, our experienced doctors provide accurate diagnoses and effective treatment plans. To ensure affordability, we offer a range of generic medicines, making essential treatments accessible to all. Our 20-bed inpatient facility is clean, comfortable, and equipped to support a smooth recovery. Backed by modern medical infrastructure, we strive to deliver efficient, timely care. At the heart of our hospital is a compassionate team of orthopedic specialists, general physicians, and support staff, dedicated to understanding and addressing each patient's unique needs. Conveniently located in Halli Mysuru, our hospital is easily accessible and ready to serve the community with dependable, personalized healthcare solutions.`,
@@ -455,6 +549,13 @@ Strategically located, the hospital is easily accessible to patients from across
     facilities: [
       { label: '20 Beds', icon: FaBed },
       { label: 'Comprehensive Medical Facilities', icon: FaXRay },
+      { label: 'Medico-Social Welfare Desk', icon: FaHospitalAlt },
+      { label: '24/7 Ambulance Service', icon: FaHospitalAlt },
+      { label: '24/7 Pharmacy Services', icon: FaHospitalAlt },
+      { label: 'Expert Care by Qualified Medical Practitioners', icon: FaHospitalAlt },
+      { label: 'OPD & IPD Services', icon: FaXRay },
+      { label: 'X-Ray ', icon: FaXRay },
+      { label: 'Pathology Lab', icon: FaXRay },
     ],
     infrastructure:
       'Designed to provide high-quality medical care with modern infrastructure and expert medical professionals.',

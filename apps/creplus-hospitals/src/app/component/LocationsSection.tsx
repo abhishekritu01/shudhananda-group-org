@@ -4,21 +4,23 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { useState } from 'react';
 import { FaHospitalAlt, FaMapMarkerAlt } from 'react-icons/fa';
+import Image from 'next/image';
+import { MdLocalHospital } from 'react-icons/md';
 
 const hospitals = [
-  { id: 1, name: 'Cure Plus Disha Hospital', location: 'Mysore', tags: ['24x7', 'General Surgery', 'Orthopedics', 'Gynecology', 'Pediatrics'] },
-  { id: 2, name: 'Cure Plus Dharani Hospital', location: 'Yelandur Taluk,Chamarajanagara', tags: ['24x7', 'General Surgery', 'Orthopedics', 'Gynecology', 'Pediatrics'] },
-  { id: 3, name: 'Cure Plus Kaveri Hospital', location: 'Somwarpet Taluk ,Kodagu', tags: ['General Surgery', 'ENT & Audiometry', 'Critical Care', 'Inpatient Care'] },
-  { id: 4, name: 'Cure Plus Krishna Hospital', location: 'Piriyapatna Taluk,Mysore', tags: ['Multi-Specialty Care', 'Outpatient & Inpatient Services', 'Preventive Health Checkups', 'Emergency Services'] },
-  { id: 5, name: 'Cure Plus Narasegowda Memorial Hospital', location: 'Chinakurali, Pandavapura Taluk ,Mandya', tags: ['Emergency Medicine', 'General Medicine', 'Orthopedics'] },
-  { id: 6, name: 'Cure Plus Shanivarasanthe Hospital', location: 'Kodagu', tags: ['Pediatrics', 'Orthopedics', 'Gynecology', 'General Medicine'] },
-  { id: 7, name: 'Cure Plus Ramapura Hospital', location: 'Chamarajanagar', tags: ['Orthopedics', 'General Medicine'] },
-  { id: 8, name: 'Cure Plus Terakanambi Hospital', location: 'Terakanambi, Chamarajanagar', tags: ['Outpatient', 'General Medicine'] },
-  { id: 9, name: 'Cure Plus Bherya Hospital', location: 'Saligrama Taluk, Mysore', tags: ['Orthopedics', 'General Medicine'] },
-  { id: 10, name: 'Cure Plus T. Narasipura Hospital', location: 'T Narasipura,Mysore', tags: ['Orthopedics', 'General Medicine'] },
-  { id: 11, name: 'Cure Plus Handpost Hospital', location: 'H.D. Kote, Mysore', tags: ['24x7', ' orthopedic', 'General Medicine'] },
-  { id: 12, name: 'Cure Plus Hosur Hospital', location: 'Saligrama Taluk, Mysore', tags: ['24x7', 'Emergency', 'Orthopedics', 'General Medicine'] },
-  { id: 13, name: 'CurePlus Halli Mysuru Hospital', location: 'Halli Mysuru', tags: ['Orthopedics', 'General Medicine'] },
+  { id: 1, name: 'CurePlus  Disha Hospital', location: 'Mysore', tags: ['24x7', 'General Surgery', 'Orthopedics', 'Gynecology', 'Pediatrics'] },
+  { id: 2, name: 'CurePlus  Dharani Hospital', location: 'Yelandur Taluk,Chamarajanagara', tags: ['24x7', 'General Surgery', 'Orthopedics', 'Gynecology', 'Pediatrics'] },
+  { id: 3, name: 'CurePlus  Kaveri Hospital', location: 'Somwarpet Taluk ,Kodagu', tags: ['General Surgery', 'ENT & Audiometry', 'Critical Care', 'Inpatient Care'] },
+  { id: 4, name: 'CurePlus  Krishna Hospital', location: 'Piriyapatna Taluk,Mysore', tags: ['Multi-Specialty Care', 'Outpatient & Inpatient Services', 'Preventive Health Checkups', 'Emergency Services'] },
+  { id: 5, name: 'CurePlus  Narasegowda Memorial Hospital', location: 'Chinakurali, Pandavapura Taluk ,Mandya', tags: ['Emergency Medicine', 'General Medicine', 'Orthopedics'] },
+  { id: 6, name: 'CurePlus  Hospital Shanivarasanthe', location: 'Kodagu', tags: ['Pediatrics', 'Orthopedics', 'Gynecology', 'General Medicine'] },
+  { id: 7, name: 'CurePlus  Hospital  Ramapura', location: 'Chamarajanagar', tags: ['Orthopedics', 'General Medicine'] },
+  { id: 8, name: 'CurePlus  Hospital Terakanambi', location: 'Terakanambi, Chamarajanagar', tags: ['Outpatient', 'General Medicine'] },
+  { id: 9, name: 'CurePlus  Hospital Bherya ', location: 'Saligrama Taluk, Mysore', tags: ['Orthopedics', 'General Medicine'] },
+  { id: 10, name: 'CurePlus  Hospital T. Narasipura', location: 'T Narasipura,Mysore', tags: ['Orthopedics', 'General Medicine'] },
+  { id: 11, name: 'CurePlus  Hospital  Handpost', location: 'H.D. Kote, Mysore', tags: ['24x7', ' orthopedic', 'General Medicine'] },
+  { id: 12, name: 'CurePlus  Hospital Hosur', location: 'Saligrama Taluk, Mysore', tags: ['24x7', 'Emergency', 'Orthopedics', 'General Medicine'] },
+  { id: 13, name: 'CurePlus Hospital Halli Mysuru', location: 'Halli Mysuru', tags: ['Orthopedics', 'General Medicine'] },
 ];
 
 const HospitalsWithMap = () => {
@@ -94,7 +96,14 @@ const HospitalsWithMap = () => {
                 <Link href={`/hospital/${hospital.id}`}>
                   <div className="flex flex-col gap-2">
                     <div className="flex items-center gap-3">
-                      <FaHospitalAlt className="text-purple-600 text-xl" />
+                      <MdLocalHospital className="text-purple-600 text-xl" />
+                      {/* <Image  
+                        src="/hospital-icon.jpeg"
+                        alt="Hospital"
+                        width={50}
+                        height={50}
+                        className="rounded-full border border-gray-200 shadow-sm"
+                      /> */}
                       <h3 className="text-lg font-semibold text-purple-600">{hospital.name}</h3>
                     </div>
                     <div className="flex items-center text-sm text-gray-600 gap-2">

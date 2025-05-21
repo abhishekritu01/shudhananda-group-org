@@ -70,7 +70,7 @@
 //           <br /><br />
 //           Our state-of-the-art facilities provide round-the-clock medical
 //           services, cutting-edge diagnostic solutions, specialized treatments,
-//           and integrated Cure+ Pharma, ensuring access to high-quality,
+//           and integrated CurePlus  Pharma, ensuring access to high-quality,
 //           affordable medicines for all.
 //         </p>
 //       </div>
@@ -100,9 +100,9 @@ const stats = [
   { icon: <FaHospital />, label: '15+ Hospitals Across Karnataka', bg: 'bg-gradient-to-r from-purple-100 to-purple-200' },
   { icon: <FaAmbulance />, label: '24/7 Emergency Services', bg: 'bg-gradient-to-r from-sky-100 to-sky-200' },
   { icon: <FaUserMd />, label: '100+ Doctors & Specialists', bg: 'bg-gradient-to-r from-indigo-100 to-indigo-200' },
-  { icon: <FaUsers />, label: '1 Lakh+ Patients Served', bg: 'bg-gradient-to-r from-pink-100 to-pink-200' },
+  { icon: <FaUsers />, label: '5 Lakh+ Patients Served', bg: 'bg-gradient-to-r from-pink-100 to-pink-200' },
   { icon: <FaBullseye />, label: 'Goal: 200+ Hospitals by 2028', bg: 'bg-gradient-to-r from-orange-100 to-orange-200' },
-  { icon: <FaMapMarkedAlt />, label: 'Serving 5 Regions in Karnataka', bg: 'bg-gradient-to-r from-teal-100 to-teal-200' },
+  { icon: <FaMapMarkedAlt />, label: 'Serving 5 Districts in Karnataka', bg: 'bg-gradient-to-r from-teal-100 to-teal-200' },
 ];
 
 const fadeInVariants = {
@@ -135,7 +135,7 @@ const AboutSection = () => (
         <p className="text-lg md:text-xl text-zinc-600 max-w-4xl mx-auto leading-relaxed">
           CurePlus Hospitals, a part of Sudhanand Health Care Solutions, is transforming rural healthcare with a growing network across Karnataka.
           <br /><br />
-          Our 24/7 medical care, advanced diagnostics, and Cure+ Pharma make quality treatment accessible and affordable to everyone.
+          Our 24/7 medical care, advanced diagnostics, and CurePlus  Pharma make quality treatment accessible and affordable to everyone.
         </p>
       </motion.div>
 
