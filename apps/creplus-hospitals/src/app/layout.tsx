@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 
 
 export const metadata: Metadata = {
-  title: "CurePlus",
-  description: " Cure Plus Hospital",
+  title: "CurePlus Hospitals | Advanced Multispeciality Healthcare You Can Trust ",
+  description: "CurePlus Hospitals delivers expert medical care across multiple specialties with state-of-the-art facilities, experienced doctors, and compassionate service. Your health, our priority. "
 };
 
 
@@ -30,7 +30,6 @@ const customNavLinks = [
   { name: 'Contact Us', href: '/contact' },
 ];
 
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -38,9 +37,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+       <head>
+          <link rel='icon' href='/CUREPLUS HOSPITALS.png' />
+        </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+       
         <Header navLinks={customNavLinks} />
         {children}
         <ChatBot />

@@ -3,8 +3,7 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { useState } from 'react';
-import { FaHospitalAlt, FaMapMarkerAlt } from 'react-icons/fa';
-import Image from 'next/image';
+import { FaMapMarkerAlt } from 'react-icons/fa';
 import { MdLocalHospital } from 'react-icons/md';
 
 const hospitals = [
