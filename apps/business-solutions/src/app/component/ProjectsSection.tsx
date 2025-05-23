@@ -163,7 +163,7 @@
 
 
 'use client';
-import { motion, px } from "framer-motion";
+import { motion } from "framer-motion";
 import { FaMapMarkedAlt, FaLaptop, FaHeadset, FaBolt } from "react-icons/fa";
 import Image from "next/image";
 
