@@ -13,8 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sudhanand Business Solutions",
-  description: "Empowering your business with cutting-edge solutions.",
+  title: "Sudhanand Business Solutions | Innovative Strategies for Business Growth",
+  // authors: "Sudhanand Business Solutions",
+  description: "Sudhanand Business Solutions provides expert consulting, technology integration, and operational support to help businesses scale efficiently and thrive in competitive markets.",
   icons: {
     icon: "/SBPL.png",
     shortcut: "/SBPL.png",
