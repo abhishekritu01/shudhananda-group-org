@@ -67,15 +67,15 @@ const NavBar = () => {
             <Image
               src="/SBPL.png"
               alt="SBPL Logo"
-              width={60}
-              height={50}
+              width={100}
+              height={80}
               className="rounded-full z-10"
               priority={true}
             />
           </Link>
           <Link
             href={"/"}
-            className="text-sm sm:text-base font-semibold text-orange-600 tracking-wide"
+            className="text-sm sm:text-xl font-bold text-orange-600 tracking-wide"
           >
             Sudhanand Business Solutions
           </Link>

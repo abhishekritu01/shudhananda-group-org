@@ -13,13 +13,17 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sudhanand Business Solutions",
-  description: "Empowering your business with cutting-edge solutions.",
-  icons: {
-    icon: "/SBPL.png",
-    shortcut: "/SBPL.png",
-    apple: "/SBPL.png",
-  },
+  title: "Sudhanand Business Solutions | Innovative Strategies for Business Growth",
+  description: "Sudhanand Business Solutions provides expert consulting, technology integration, and operational support to help businesses scale efficiently and thrive in competitive markets",
+  keywords: [
+    "business solutions",
+    "consulting",
+    "technology integration",
+    "operational support",
+    "business growth",
+    "scalability",
+    "competitive advantage",
+  ],
 };
 
 
@@ -30,6 +34,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel='icon' href='/SBPL.png' />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
