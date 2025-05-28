@@ -278,7 +278,8 @@ Strategically located, the hospital is easily accessible to patients from across
     description: `
     CurePlus Shanivarasanthe Hospital, located in the scenic town of Shanivarasanthe in Kodagu, is a leading 20-bedded multi-specialty hospital dedicated to providing exceptional and affordable healthcare. Renowned as the best hospital in Shanivarasanthe and one of the top hospitals in Kodagu, it offers specialized services in orthopedics, gynecology, pediatrics, and general medicine. The hospital features modern infrastructure, including advanced diagnostic tools and well-equipped treatment rooms, ensuring a comfortable and safe environment for all patients. Backed by a team of experienced orthopedic surgeons, gynecologists, pediatricians, and general physicians, CurePlus Shanivarasanthe Hospital delivers personalized, compassionate, and timely care. With its patient-centric approach and commitment to community well-being, the hospital continues to earn trust and recognition across the region. It stands as a reliable healthcare partner, combining medical expertise with a heartfelt dedication to improving lives and enhancing health outcomes for the people of Kodagu.
     `,
-    imageUrl: '/Shanivarasanthe/shanivarasanthe.png',
+
+    imageUrl:'/Shanivarasanthe/shanivarasanthe.png',
     gallery: [
       '/Shanivarasanthe/shanivarasanthe2.png',
       '/Shanivarasanthe/shanivarasanthe3.png',
@@ -461,13 +462,10 @@ Strategically located, the hospital is easily accessible to patients from across
     location: 'H.D. Kote, Mysore',
     icon: FaHospitalAlt,
     description: `CurePlus Hand Post Hospital, located in H.D. Kote, Mysore, is dedicated to providing high-quality and accessible healthcare to the local community. With a focus on orthopedics and general medicine, the hospital offers expert care for a range of health conditions—from bone and joint disorders to general medical issues. Our 20-bed facility is equipped with modern infrastructure to ensure efficient and comfortable treatment for every patient. Committed to affordability, the hospital also provides a range of generic medicines, ensuring cost-effective access to essential treatments. The compassionate team of orthopedic specialists, general physicians, and support staff is devoted to offering personalized, patient-first care at every stage—from consultation to recovery. Conveniently located in Hand Post, H.D. Kote, CurePlus Hospital is a trusted healthcare destination for residents of Mysore and nearby areas. We strive to deliver timely, effective, and empathetic care that prioritizes the well-being of every individual we serve.`,
-    imageUrl: '/HandPost/HandPost1.png',
-    gallery: [
-      '/HandPost/HandPost2.png',
-      '/HandPost/HandPost3.png',
-      '/HandPost/HandPost4.png',
-      '/HandPost/HandPost5.png',
-    ],
+    
+    imageUrl:'/HandPost/HandPost1.png',
+    
+    gallery: ['/HandPost/HandPost2.png','/HandPost/HandPost3.png', '/HandPost/HandPost4.png','/HandPost/HandPost5.png'],
     services: [
       { label: 'Orthopedics', icon: FaUserMd },
       { label: 'General Medicine', icon: FaUserMd },
