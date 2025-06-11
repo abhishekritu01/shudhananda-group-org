@@ -1,7 +1,8 @@
 'use client';
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { FaQuoteLeft, FaQuoteRight, FaRegSadTear } from 'react-icons/fa';
+import axios from "axios";
 
 interface Testimonial {
   name: string;
@@ -10,17 +11,21 @@ interface Testimonial {
   image: string;
 }
 
-const testimonials: Testimonial[] = [
-  // Example: Uncomment when testimonials are available
-  // {
-  //   name: "John Doe",
-  //   role: "Donor",
-  //   feedback: "Donating blood is an amazing experience. I feel proud to have helped save lives!",
-  //   image: "https://randomuser.me/api/portraits/men/1.jpg",
-  // },
-];
+export default function Testimonials() {
+  const [testimonials, setTestimonials] = useState<Testimonial[]>([]);
 
-const Testimonials: React.FC = () => {
+  useEffect(() => {
+    const fetchTestimonials = async () => {
+      try {
+        const response = await axios.get('/api/testimonial');
+        setTestimonials(response.data);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+    fetchTestimonials();
+  }, []);
+
   const noTestimonialsTemplate = (
     <motion.div 
       className="flex flex-col items-center justify-center h-full text-center"
@@ -85,6 +90,4 @@ const Testimonials: React.FC = () => {
       </div>
     </section>
   );
-};
-
-export default Testimonials;
+}
