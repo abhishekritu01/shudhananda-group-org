@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Background & Surface Colors */
+  --background: #ffffff;
+  --foreground: #171717;
+  --surface: #f8f9fa;
+  /* Light gray for surfaces */
+  --surface-dark: #e9ecef;
+
+  /* Primary Color Palette */
+  --primary: #8a4ba8;
+  /* Main Purple */
+  --primary-dark: #6d2e97;
+  --primary-light: #b38adb;
+  --primary-muted: #f3e8ff;
+
+  /* Secondary & Accent Colors */
+  --secondary: #4b5563;
+  /* Neutral gray */
+  --accent: #ff9800;
+  /* Accent color for highlights */
+
+  /* Text Colors */
+  --text-primary: var(--foreground);
+  --text-secondary: #4b5563;
+  --text-muted: #9ca3af;
+
+  /* Button Colors */
+  --button-bg: var(--primary);
+  --button-text: #ffffff;
+  --button-hover-bg: var(--primary-dark);
+  --button-disabled-bg: #d1d5db;
+  --button-disabled-text: #6b7280;
+
+  /* Border & Shadow */
+  --border-color: #d1d5db;
+  --border-dark: #6b7280;
+  --shadow-light: rgba(0, 0, 0, 0.05);
+  --shadow-dark: rgba(0, 0, 0, 0.2);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #ffffff;
+    --foreground: #171717;
+    --surface: #222222;
+    --surface-dark: #333333;
+    --text-primary: #ffffff;
+    --text-secondary: #d1d5db;
+    --text-muted: #9ca3af;
+    --border-color: #4b5563;
+    --shadow-light: rgba(255, 255, 255, 0.05);
+  }
+}
+
+/* Global Styles */
+body {
+  background: var(--background);
+  color: var(--text-primary);
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Buttons */
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 16px;
+  font-weight: 600;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background: var(--button-bg);
+  color: var(--button-text);
+  transition: background 0.3s ease-in-out;
+}
+
+.button:hover {
+  background: var(--button-hover-bg);
+}
+
+.button:disabled {
+  background: var(--button-disabled-bg);
+  color: var(--button-disabled-text);
+  cursor: not-allowed;
+}
+
+/* Card */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border-color);
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px var(--shadow-light);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0px 6px 12px var(--shadow-dark);
+}
+
+/* Links */
+a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
