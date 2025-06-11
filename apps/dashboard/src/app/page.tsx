@@ -1,10 +1,9 @@
+import ListDonors from "@/app/bloodbank/listdonors/page";
 
-import React from 'react'
-
-const page = () => {
+export default function Home() {
   return (
-    <div>page</div>
-  )
+    <main>
+      <ListDonors />
+    </main>
+  );
 }
-
-export default page
