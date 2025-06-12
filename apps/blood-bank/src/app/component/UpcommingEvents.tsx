@@ -1,23 +1,42 @@
 'use client';
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import { FaCalendarAlt, FaMapMarkerAlt, FaHeartbeat, FaRegSadCry } from 'react-icons/fa';
 
 interface Event {
   date: string;
   location: string;
   description: string;
+  image: string;
 }
 
-const events: Event[] = [
-  // Keep data here. For now, comment out to test "No Camps" template.
-  // {
-  //   date: "March 5, 2025",
-  //   location: "City Hospital",
-  //   description: "Join us for a blood donation drive and help save lives.",
-  // },
-];
-
 const UpcomingEvents: React.FC = () => {
+  const [events, setEvents] = useState<Event[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchEvents = async () => {
+      try {
+        const res = await axios.get('/api/upcommingEvents');
+        setEvents(res.data);
+      } catch (err) {
+        console.error('Error fetching events:', err);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchEvents();
+  }, []);
+  //const events: Event[] = [
+  // Keep data here. For now, comment out to test "No Camps" template.
+  //{
+  // date: "March 5, 2025",
+  //location: "City Hospital",
+  //description: "Join us for a blood donation drive and help save lives.",
+  //image: ""
+  //},
+  //];
   const noEventsTemplate = (
     <div className="flex flex-col items-center justify-center h-full text-center">
       <div className="bg-white text-gray-900 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-105 p-8 max-w-md w-full">
