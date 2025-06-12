@@ -1,5 +1,5 @@
-import { Connect } from "@/app/db/dbConfig";
-import UpcomingEvent from "@/app/model/upcommingEventSchema";
+import { Connect } from "@/db/dbConfig";
+import UpcomingEvent from "@/model/upcommingEventSchema";
 import { NextResponse } from "next/server";
 
 export async function PUT(request: Request, { params }: { params: { id: string } }) {
