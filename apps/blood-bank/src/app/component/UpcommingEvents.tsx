@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { FaCalendarAlt, FaMapMarkerAlt, FaHeartbeat, FaRegSadCry } from 'react-icons/fa';
 
+
 interface Event {
   date: string;
   location: string;
@@ -12,7 +13,7 @@ interface Event {
 
 const UpcomingEvents: React.FC = () => {
   const [events, setEvents] = useState<Event[]>([]);
-  const [loading, setLoading] = useState(true);
+
 
   useEffect(() => {
     const fetchEvents = async () => {
@@ -21,8 +22,6 @@ const UpcomingEvents: React.FC = () => {
         setEvents(res.data);
       } catch (err) {
         console.error('Error fetching events:', err);
-      } finally {
-        setLoading(false);
       }
     };
 
