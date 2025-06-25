@@ -1,7 +1,10 @@
 'use client';
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { FaQuoteLeft, FaQuoteRight, FaRegSadTear } from 'react-icons/fa';
+//import axios from "axios";
+import Image from "next/image";
+
 
 interface Testimonial {
   name: string;
@@ -10,19 +13,24 @@ interface Testimonial {
   image: string;
 }
 
-const testimonials: Testimonial[] = [
-  // Example: Uncomment when testimonials are available
-  // {
-  //   name: "John Doe",
-  //   role: "Donor",
-  //   feedback: "Donating blood is an amazing experience. I feel proud to have helped save lives!",
-  //   image: "https://randomuser.me/api/portraits/men/1.jpg",
-  // },
-];
+export default function Testimonials() {
+  //const [testimonials, setTestimonials] = useState<Testimonial[]>([]);
+  const [testimonials] = useState<Testimonial[]>([]);
 
-const Testimonials: React.FC = () => {
+  // useEffect(() => {
+  //   const fetchTestimonials = async () => {
+  //     try {
+  //       const response = await axios.get('/api/testimonial');
+  //       setTestimonials(response.data);
+  //     } catch (error) {
+  //       console.error(error);
+  //     }
+  //   };
+  //   fetchTestimonials();
+  // }, []);
+
   const noTestimonialsTemplate = (
-    <motion.div 
+    <motion.div
       className="flex flex-col items-center justify-center h-full text-center"
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
@@ -43,7 +51,7 @@ const Testimonials: React.FC = () => {
 
   return (
     <section className="py-20 bg-gray-50 min-h-[500px] flex flex-col items-center justify-center text-center">
-      <motion.h2 
+      <motion.h2
         className="text-4xl font-bold mb-16 text-gray-900"
         initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
@@ -57,7 +65,7 @@ const Testimonials: React.FC = () => {
         ) : (
           <div className="grid md:grid-cols-3 gap-12 px-6">
             {testimonials.map((testimonial, index) => (
-              <motion.div 
+              <motion.div
                 key={index}
                 className="bg-gray-100 p-8 rounded-lg shadow-xl hover:scale-105 transition-all duration-300 text-zinc-900"
                 initial={{ opacity: 0, y: 30 }}
@@ -65,10 +73,12 @@ const Testimonials: React.FC = () => {
                 transition={{ duration: 0.5, delay: index * 0.3 }}
               >
                 <div className="flex justify-center mb-6">
-                  <img 
+                  <Image
                     src={testimonial.image}
-                    alt={`${testimonial.name}'s avatar`} 
-                    className="w-20 h-20 rounded-full border-4 border-white shadow-lg"
+                    alt={`${testimonial.name}'s avatar`}
+                    width={80}
+                    height={80}
+                    className="rounded-full border-4 border-white shadow-lg"
                   />
                 </div>
                 <p className="italic text-zinc-900 mb-4 relative">
@@ -85,6 +95,4 @@ const Testimonials: React.FC = () => {
       </div>
     </section>
   );
-};
-
-export default Testimonials;
+}

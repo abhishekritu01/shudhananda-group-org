@@ -221,6 +221,7 @@ import clsx from 'clsx';
 import Link from 'next/link';
 import { FaDownload } from "react-icons/fa";
 import { useState, useEffect } from 'react';
+import Image from "next/image";
 
 type NavItem = {
   name: string;
@@ -270,7 +271,16 @@ const BloodBankNavbar = ({ navigation }: Props) => {
             {/* Mobile: Left Section */}
             <div className="flex w-full items-center justify-between sm:hidden">
               <Link href="/">
-                <img className="h-12 w-auto bg-white px-2 py-1 rounded" src="/bloodBank.png" alt="Blood Bank" />
+
+                <Image
+                  src="/bloodBank.png"
+                  alt="Blood Bank"
+                  width={100}
+                  height={48}
+                  className="h-12 w-auto bg-white px-2 py-1 rounded"
+                />
+
+
               </Link>
 
               <div className="flex items-center gap-2">
@@ -300,8 +310,15 @@ const BloodBankNavbar = ({ navigation }: Props) => {
             {/* Desktop: Logo */}
             <div className="hidden sm:flex items-center gap-3 h-16 w-32 bg-white">
               <Link href="/">
-                <img className="px-4" src="/bloodBank.png" alt="Blood Bank" />
+                <Image
+                  src="/bloodBank.png"
+                  alt="Blood Bank"
+                  width={128}
+                  height={64}
+                  className="px-4"
+                />
               </Link>
+
             </div>
 
             {/* Desktop: Navigation */}
@@ -313,8 +330,8 @@ const BloodBankNavbar = ({ navigation }: Props) => {
                   className={clsx(
                     item.current
                       ? 'bg-white text-red-900'
-                      : isScrolled 
-                        ? 'text-gray-300 hover:bg-red-700 hover:text-white' 
+                      : isScrolled
+                        ? 'text-gray-300 hover:bg-red-700 hover:text-white'
                         : 'text-gray-700 hover:bg-gray-200',
                     'rounded-md px-4 py-2 text-sm font-medium transition duration-150'
                   )}
@@ -332,13 +349,13 @@ const BloodBankNavbar = ({ navigation }: Props) => {
                   onClick={openLicenseViewer}
                   className={clsx(
                     "flex items-center rounded-full p-2 hover:text-white focus:outline-none focus:ring-2",
-                    isScrolled 
-                      ? "bg-red-900 text-gray-300 hover:bg-red-800 focus:ring-white" 
+                    isScrolled
+                      ? "bg-red-900 text-gray-300 hover:bg-red-800 focus:ring-white"
                       : "bg-red-800 text-white hover:bg-red-700 focus:ring-gray-500"
                   )}
                 >
                   <span className='mr-2'>View License</span>
-                  <FaDownload /> 
+                  <FaDownload />
                 </button>
                 <MenuItems className="absolute right-0 mt-2 w-48 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black/10 focus:outline-none">
                   <MenuItem>
@@ -390,8 +407,8 @@ const BloodBankNavbar = ({ navigation }: Props) => {
               className={clsx(
                 item.current
                   ? 'bg-white text-red-900'
-                  : isScrolled 
-                    ? 'text-gray-300 hover:bg-red-700 hover:text-white' 
+                  : isScrolled
+                    ? 'text-gray-300 hover:bg-red-700 hover:text-white'
                     : 'text-gray-700 hover:bg-gray-200',
                 'block rounded-md px-3 py-2 text-base font-medium transition'
               )}
@@ -418,9 +435,9 @@ const BloodBankNavbar = ({ navigation }: Props) => {
               </button>
             </div>
             <div className="h-[80vh]">
-              <iframe 
-                src="https://drive.google.com/file/d/1eLIcyYrW7A5HL3z63T69IkkUiuABRcul/preview" 
-                width="100%" 
+              <iframe
+                src="https://drive.google.com/file/d/1eLIcyYrW7A5HL3z63T69IkkUiuABRcul/preview"
+                width="100%"
                 height="100%"
                 className="border-0"
                 allow="autoplay"

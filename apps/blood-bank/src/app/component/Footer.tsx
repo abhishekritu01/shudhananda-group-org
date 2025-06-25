@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
+import Image from "next/image";
 
 const Footer = () => {
   const [subscribed, setSubscribed] = useState(false);
@@ -23,36 +24,36 @@ const Footer = () => {
           <div className="mb-6">
             <h2 className="text-2xl font-bold mb-4">Stay Connected</h2>
             <div className="flex justify-center gap-6 mb-4">
-              <motion.a 
-                href="https://facebook.com" 
-                target="_blank" 
+              <motion.a
+                href="https://facebook.com"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="text-2xl hover:text-blue-600 transition"
                 whileHover={{ scale: 1.1 }}
               >
                 <FaFacebook />
               </motion.a>
-              <motion.a 
-                href="https://twitter.com" 
-                target="_blank" 
+              <motion.a
+                href="https://twitter.com"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="text-2xl hover:text-blue-400 transition"
                 whileHover={{ scale: 1.1 }}
               >
                 <FaTwitter />
               </motion.a>
-              <motion.a 
-                href="https://instagram.com" 
-                target="_blank" 
+              <motion.a
+                href="https://instagram.com"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="text-2xl hover:text-pink-500 transition"
                 whileHover={{ scale: 1.1 }}
               >
                 <FaInstagram />
               </motion.a>
-              <motion.a 
-                href="https://linkedin.com" 
-                target="_blank" 
+              <motion.a
+                href="https://linkedin.com"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="text-2xl hover:text-blue-700 transition"
                 whileHover={{ scale: 1.1 }}
@@ -65,10 +66,13 @@ const Footer = () => {
           {/* Make spacing mobile friendly */}
           <div className="grid md:grid-cols-3 gap-8 mb-6">
             <div className="flex flex-col items-center md:-mt-20 -mt-0">
-              <img
+              <Image
                 className="h-28 w-80 rounded-md p-1 mb-4"
                 src="/finallogo.png"
                 alt="Blood Bank"
+                width={320} // or the actual width of your image
+                height={112} // or the actual height of your image
+                priority // optional: use if it's a top-of-page logo or above-the-fold image
               />
               <div className="mt-8 text-center">
                 <h3 className="text-xl font-semibold mb-2">Contact Us</h3>
