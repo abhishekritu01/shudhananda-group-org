@@ -40,7 +40,6 @@ const UpcomingEvents: React.FC = () => {
         fetchEvents();
     }, []);
 
-
     const handleEdit = (event: Event) => {
         setFormData(event);
         setEditEventId(event._id || null);
@@ -55,7 +54,9 @@ const UpcomingEvents: React.FC = () => {
         if (!confirmDelete) return;
 
         try {
-            await axios.delete(`/api/upcommingEvents/${id}`);
+            await axios.delete("/api/upcommingEvents", {
+                data: { id },
+            });
             setEvents(prev => prev.filter(e => e._id !== id));
         } catch (error) {
             console.error("Error deleting event:", error);
@@ -65,15 +66,18 @@ const UpcomingEvents: React.FC = () => {
     const handleSubmit = async () => {
         try {
             if (isEditing && editEventId) {
-                await axios.put(`/api/upcommingEvents/${editEventId}`, formData);
+                // PUT request with id in body
+                await axios.put("/api/upcommingEvents", {
+                    id: editEventId,
+                    ...formData
+                });
             } else {
+                // POST request
                 await axios.post("/api/upcommingEvents", formData);
             }
 
-            // Auto-refresh the event list
             await fetchEvents();
 
-            // Reset form state
             setShowForm(false);
             setFormData({ date: '', location: '', description: '', image: '' });
             setIsEditing(false);
@@ -187,8 +191,8 @@ const UpcomingEvents: React.FC = () => {
                             </tr>
                         </thead>
                         <tbody>
-                            {events.map((event, idx) => (
-                                <tr key={idx} className="border-t border-gray-200 hover:bg-gray-100 transition">
+                            {events.map((event) => (
+                                <tr key={event._id} className="border-t border-gray-200 hover:bg-gray-100 transition">
                                     <td className="py-3 px-4 text-black">{event.date}</td>
                                     <td className="py-3 px-4 text-black">{event.location}</td>
                                     <td className="py-3 px-4 text-black">{event.description}</td>
@@ -219,3 +223,4 @@ const UpcomingEvents: React.FC = () => {
 };
 
 export default UpcomingEvents;
+

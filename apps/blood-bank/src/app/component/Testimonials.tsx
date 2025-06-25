@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { FaQuoteLeft, FaQuoteRight, FaRegSadTear } from 'react-icons/fa';
-import axios from "axios";
+//import axios from "axios";
 import Image from "next/image";
 
 
@@ -14,8 +14,8 @@ interface Testimonial {
 }
 
 export default function Testimonials() {
-  const [testimonials, setTestimonials] = useState<Testimonial[]>([]);
-  // const [testimonials] = useState<Testimonial[]>([]);
+  //const [testimonials, setTestimonials] = useState<Testimonial[]>([]);
+  const [testimonials] = useState<Testimonial[]>([]);
 
   // useEffect(() => {
   //   const fetchTestimonials = async () => {
