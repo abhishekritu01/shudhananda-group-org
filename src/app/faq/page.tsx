@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Footer from '../component/FooterSection';
+import { useEffect } from 'react';
 
 type FAQ = {
     question: string;
@@ -62,6 +63,9 @@ const FAQItem: React.FC<{
 );
 
 const Page: React.FC = () => {
+    useEffect(() => {
+  document.title = 'FAQs | CurePlus Hospitals';
+}, []);
     const [openIndex, setOpenIndex] = useState<number | null>(null);
 
     return (

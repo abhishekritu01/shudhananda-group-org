@@ -608,23 +608,27 @@ import Footer from '../component/FooterSection';
 import Link from 'next/link';
 import Head from 'next/head';
 import Image from 'next/image';
+import { useEffect } from 'react';
 
 
 
 
-const fadeUp = {
+import type { Variants } from "framer-motion";
+
+const fadeUp: Variants = {
   hidden: { opacity: 0, y: 30 },
-  visible: (i: number) => ({
+  visible: (custom: number = 0) => ({
     opacity: 1,
     y: 0,
     transition: {
-      delay: i * 0.15,
-      type: "spring",
+      delay: custom * 0.15,
+      type: "spring" as const,
       stiffness: 100,
       damping: 10
     },
   }),
 };
+
 
 const hospitalsList = [
   { slug: 'cureplus-disha-hospital', name: 'CurePlus  Disha Hospital', image: '/hospital/cure+.png' },
@@ -643,6 +647,9 @@ const hospitalsList = [
 ];
 
 const AboutPage = () => {
+  useEffect(() => {
+  document.title = 'About | CurePlus Hospitals';
+}, []);
   return (
     <>
       <Head>

@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Footer from '../component/FooterSection';
 import Head from 'next/head';
+import { useEffect } from 'react';
 
 
 const teamMembers = [
@@ -89,6 +90,9 @@ const fadeIn = {
 };
 
 const TeamPage = () => {
+  useEffect(() => {
+  document.title = 'Team | CurePlus Hospitals';
+}, []);
   return (
     <>
       <Head>

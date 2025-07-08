@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { FiPhone, FiMail, FiMapPin, FiSend } from 'react-icons/fi';
 import Footer from '../component/FooterSection';
 import Head from 'next/head';
+import { useEffect } from 'react';
 
 
 const fadeVariant = {
@@ -16,6 +17,9 @@ const fadeVariant = {
 };
 
 const ContactUs = () => {
+  useEffect(() => {
+  document.title = 'Contact | CurePlus Hospitals';
+}, []);
   const [formData, setFormData] = useState({
     name: '',
     email: '',

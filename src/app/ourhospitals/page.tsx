@@ -198,6 +198,7 @@ import { FaHospital, FaClinicMedical, FaMapMarkerAlt } from 'react-icons/fa';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 import Head from 'next/head';
+import { useEffect } from 'react';
 
 
 // Enhanced animations
@@ -227,6 +228,9 @@ const scaleIn = {
 };
 
 const HospitalsPage = () => {
+  useEffect(() => {
+  document.title = 'Hospitals | CurePlus Hospitals';
+}, []);
   const hospitals = [
     { slug: 'cureplus-disha-hospital', name: 'CurePlus  Disha Hospital', image: '/hospital/cure+.png', phone: '0821-2454798' },
     { slug: 'cureplus-dharani-hospital', name: 'CurePlus  Dharani Hospital', image: '/hospital/dharni.png', phone: '08226-297298' },
@@ -249,6 +253,7 @@ const HospitalsPage = () => {
   ];
 
   return (
+    
     <>
       <Head>
         <link rel="canonical" href="https://www.cureplushospitals.com/ourhospitals" />

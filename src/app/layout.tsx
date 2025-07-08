@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "./component/Header";
 import ChatBot from "./component/ChatBot";
 import Script from 'next/script';
+import type { Metadata } from 'next';
 
 
 const geistSans = Geist({
@@ -15,11 +16,11 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// export const metadata: Metadata = {
-//   title: "Best Hospitals Near Me | Trusted, Affordable & Advanced Healthcare Everyone",
-//   description:
-//     "As the Best Hospitals Near Me, we deliver compassionate, tech-driven care that puts patients first. Your well-being is our mission—today and always.",
-// };
+export const metadata: Metadata = {
+  title: "CurePlus Hospitals",
+  description:
+    "As the Best Hospitals Near Me, we deliver compassionate, tech-driven care that puts patients first. Your well-being is our mission—today and always.",
+};
 
 const customNavLinks = [
   { name: "Home", href: "/" },

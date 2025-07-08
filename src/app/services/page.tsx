@@ -13,6 +13,7 @@ import { FiArrowRight } from 'react-icons/fi';
 import Footer from '../component/FooterSection';
 import Link from 'next/link';
 import Head from 'next/head';
+import { useEffect } from 'react';
 
 
 const fadeUp = {
@@ -25,6 +26,9 @@ const fadeUp = {
 };
 
 const Page = () => {
+  useEffect(() => {
+  document.title = 'Specialities | CurePlus Hospitals';
+}, []);
   const services = useMemo(() => [
     {
       icon: <FaStethoscope className="text-blue-500 w-7 h-7" />,
@@ -59,6 +63,7 @@ const Page = () => {
   ], []);
 
   return (
+    
     <>
       <Head>
         <link rel="canonical" href="https://www.cureplushospitals.com/services" />

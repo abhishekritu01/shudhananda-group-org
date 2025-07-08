@@ -6,6 +6,7 @@ import { useParams } from 'next/navigation';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import Image from 'next/image';
+import { useEffect } from 'react';
 
 
 import { FaParking, FaProcedures, FaUserMd, FaWifi } from 'react-icons/fa';
@@ -42,7 +43,14 @@ const Page = () => {
   const hospitalSlug = decodeURIComponent(params.slug as string);
   const hospital = hospitals.find((h) => h.slug === hospitalSlug);
 
-
+  useEffect(() => {
+    const hosp = hospitalsList.find((h) => h.slug === hospitalSlug);
+    if (hosp?.name) {
+      document.title = hosp.name;
+    } else {
+      document.title = 'Hospital Name';
+    }
+  }, [hospitalSlug]);
 
   if (!hospital) {
     return (
