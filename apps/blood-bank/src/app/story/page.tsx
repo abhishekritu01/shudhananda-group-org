@@ -23,25 +23,25 @@ const teamMembers = [
     name: 'Dr. Sini Arjun',
     role: 'Medical Officer',
     image: '/sinimam.jpg',
-    bio: 'Dr. Sini Arjun is a compassionate medical officer at CurePlus Blood Bank, dedicated to ensuring the safety and quality of blood donations. Her expertise and commitment to patient care are invaluable to our mission.',
+    bio: 'Dr. Sini Arjun is a compassionate medical officer at CurePlus Blood Center, dedicated to ensuring the safety and quality of blood donations. Her expertise and commitment to patient care are invaluable to our mission.',
   },
   {
     name: 'Dr. Arjun Sachidanand',
     role: 'Managing Trustee',
     image: '/ArjunSachidanand.jpeg',
-    bio: 'Dr. Arjun Sachidanand is a visionary leader and the driving force behind CurePlus Blood Bank. With a deep commitment to healthcare and community service, he has dedicated his career to improving access to life-saving resources in rural Karnataka.',
+    bio: 'Dr. Arjun Sachidanand is a visionary leader and the driving force behind CurePlus Blood Center. With a deep commitment to healthcare and community service, he has dedicated his career to improving access to life-saving resources in rural Karnataka.',
   },
   {
     name: 'Capt. Raghu Das',
     role: 'Chief Operating Officer',
-    image: '/RaghuDas.jpeg',
-    bio: 'Capt. Raghu Das is a seasoned professional with extensive experience in operations management. His strategic vision and leadership skills are instrumental in ensuring the efficient functioning of CurePlus Blood Bank.',
+    image: '/RaghuDas.png',
+    bio: 'Capt. Raghu Das is a seasoned professional with extensive experience in operations management. His strategic vision and leadership skills are instrumental in ensuring the efficient functioning of CurePlus Blood Center.',
   },
   {
     name: 'Mrs. Rashmi N. Raj',
     role: 'General Manager',
     image: '/RashmiRaj.jpeg',
-    bio: 'Mrs. Rashmi N. Raj is a dynamic general manager at CurePlus Blood Bank, overseeing daily operations and ensuring that our mission of saving lives is met with efficiency and compassion.',
+    bio: 'Mrs. Rashmi N. Raj is a dynamic general manager at CurePlus Blood Center, overseeing daily operations and ensuring that our mission of saving lives is met with efficiency and compassion.',
   },
 ]
 
@@ -62,7 +62,7 @@ const page = () => {
             Saving Lives. Spreading Hope.
           </h1>
           <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-            At CurePlus Blood Bank, our mission goes beyond storage - we’re building a movement that connects donors with those in need, no matter the distance.
+            At CurePlus Blood Center, our mission goes beyond storage - we’re building a movement that connects donors with those in need, no matter the distance.
           </p>
         </motion.div>
 
@@ -74,7 +74,7 @@ const page = () => {
         <div className="max-w-5xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-red-700 mb-6">Who We Are</h2>
           <p className="text-lg text-gray-700 leading-relaxed mx-2">
-            CurePlus Blood Bank is an initiative by
+            CurePlus Blood Center is an initiative by
             <strong>
               <span className='mx-2'> Dr. M. D. Sachidananda Murthy Memorial Educational Trust</span>
               <PiTrademarkRegistered className="-mt-4 inline-block ml-2 mx-1" />
@@ -200,7 +200,7 @@ const page = () => {
             Join us in creating a future where every patient has access to the blood they need - on time, every time.
           </p>
           <Link href="/join"
-           className="bg-white text-red-700 font-bold py-3 px-6 rounded-full hover:bg-red-100 transition">
+            className="bg-white text-red-700 font-bold py-3 px-6 rounded-full hover:bg-red-100 transition">
             Become a Donor
           </Link>
         </motion.div>

@@ -267,7 +267,7 @@ const HeroSection = () => {
           Saving Lives, One Donation at a Time
         </h1>
         <p className="text-lg sm:text-xl mb-4 text-gray-700">
-          Welcome to <span className="font-semibold text-red-700">CurePlus Blood Bank</span>, a platform dedicated to connecting donors with those in need. Every drop of blood you donate can make a difference in someone&apos;s life.
+          Welcome to <span className="font-semibold text-red-700">CurePlus Blood Center</span>, a platform dedicated to connecting donors with those in need. Every drop of blood you donate can make a difference in someone&apos;s life.
         </p>
         <p className="text-base sm:text-lg mb-6 text-gray-600">
           Join us in our mission to save lives by donating blood today. Whether you&apos;re a first-time donor or a regular contributor, your act of kindness counts.

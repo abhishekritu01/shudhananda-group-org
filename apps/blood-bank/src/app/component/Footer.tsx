@@ -115,7 +115,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="py-4 bg-gray-800">
-          <p className="text-gray-400">&copy;2025 CurePlus Blood Bank - All Rights Reserved.</p>
+          <p className="text-gray-400">&copy;2025 CurePlus Blood Center - All Rights Reserved.</p>
         </div>
       </motion.div>
     </footer>
